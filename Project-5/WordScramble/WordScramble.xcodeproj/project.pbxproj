@@ -24,6 +24,7 @@
 		3BD37EA524F77F5C00D1E0B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BD37EA824F77F5C00D1E0B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BD37EAA24F77F5C00D1E0B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BD37EB024F7807800D1E0B5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 				3BD37EA524F77F5C00D1E0B5 /* Assets.xcassets */,
 				3BD37EA724F77F5C00D1E0B5 /* LaunchScreen.storyboard */,
 				3BD37EAA24F77F5C00D1E0B5 /* Info.plist */,
+				3BD37EB024F7807800D1E0B5 /* README.md */,
 			);
 			path = WordScramble;
 			sourceTree = "<group>";
