@@ -13,6 +13,7 @@
 		3BD37EA424F77F5800D1E0B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD37EA224F77F5800D1E0B5 /* Main.storyboard */; };
 		3BD37EA624F77F5C00D1E0B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD37EA524F77F5C00D1E0B5 /* Assets.xcassets */; };
 		3BD37EA924F77F5C00D1E0B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD37EA724F77F5C00D1E0B5 /* LaunchScreen.storyboard */; };
+		3BD37EB224F7828600D1E0B5 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3BD37EB124F7828600D1E0B5 /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		3BD37EA824F77F5C00D1E0B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BD37EAA24F77F5C00D1E0B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BD37EB024F7807800D1E0B5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		3BD37EB124F7828600D1E0B5 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				3BD37EA524F77F5C00D1E0B5 /* Assets.xcassets */,
 				3BD37EA724F77F5C00D1E0B5 /* LaunchScreen.storyboard */,
 				3BD37EAA24F77F5C00D1E0B5 /* Info.plist */,
+				3BD37EB124F7828600D1E0B5 /* start.txt */,
 				3BD37EB024F7807800D1E0B5 /* README.md */,
 			);
 			path = WordScramble;
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BD37EA924F77F5C00D1E0B5 /* LaunchScreen.storyboard in Resources */,
+				3BD37EB224F7828600D1E0B5 /* start.txt in Resources */,
 				3BD37EA624F77F5C00D1E0B5 /* Assets.xcassets in Resources */,
 				3BD37EA424F77F5800D1E0B5 /* Main.storyboard in Resources */,
 			);
