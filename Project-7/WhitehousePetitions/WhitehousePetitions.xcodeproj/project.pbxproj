@@ -13,6 +13,8 @@
 		3BA7442324FE227800AB1042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA7442124FE227800AB1042 /* Main.storyboard */; };
 		3BA7442524FE227C00AB1042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA7442424FE227C00AB1042 /* Assets.xcassets */; };
 		3BA7442824FE227C00AB1042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA7442624FE227C00AB1042 /* LaunchScreen.storyboard */; };
+		3BA7443124FE258500AB1042 /* Petitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7443024FE258500AB1042 /* Petitions.swift */; };
+		3BA7443324FE280E00AB1042 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7443224FE280E00AB1042 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		3BA7442724FE227C00AB1042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BA7442924FE227C00AB1042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BA7442F24FE22B700AB1042 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		3BA7443024FE258500AB1042 /* Petitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petitions.swift; sourceTree = "<group>"; };
+		3BA7443224FE280E00AB1042 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,9 @@
 				3BA7441B24FE227700AB1042 /* AppDelegate.swift */,
 				3BA7441D24FE227700AB1042 /* SceneDelegate.swift */,
 				3BA7441F24FE227700AB1042 /* ViewController.swift */,
+				3BA7443224FE280E00AB1042 /* DetailViewController.swift */,
 				3BA7442124FE227800AB1042 /* Main.storyboard */,
+				3BA7443024FE258500AB1042 /* Petitions.swift */,
 				3BA7442424FE227C00AB1042 /* Assets.xcassets */,
 				3BA7442624FE227C00AB1042 /* LaunchScreen.storyboard */,
 				3BA7442924FE227C00AB1042 /* Info.plist */,
@@ -140,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BA7442024FE227700AB1042 /* ViewController.swift in Sources */,
+				3BA7443124FE258500AB1042 /* Petitions.swift in Sources */,
+				3BA7443324FE280E00AB1042 /* DetailViewController.swift in Sources */,
 				3BA7441C24FE227700AB1042 /* AppDelegate.swift in Sources */,
 				3BA7441E24FE227700AB1042 /* SceneDelegate.swift in Sources */,
 			);
