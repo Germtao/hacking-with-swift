@@ -18,6 +18,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjw-WP-cUl">
                                 <rect key="frame" x="107" y="124" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Cjw-WP-cUl" secondAttribute="height" multiplier="2:1" id="MHv-b1-jD6"/>
+                                </constraints>
                                 <state key="normal" image="france"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rgU-RW-all"/>
@@ -25,6 +28,9 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43i-z6-0Xj">
                                 <rect key="frame" x="107" y="254" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="43i-z6-0Xj" secondAttribute="height" multiplier="2:1" id="xlo-bt-FJF"/>
+                                </constraints>
                                 <state key="normal" image="france"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dgk-aU-BBx"/>
@@ -32,6 +38,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvp-my-2Bg">
                                 <rect key="frame" x="107" y="384" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kvp-my-2Bg" secondAttribute="height" multiplier="2:1" id="SBJ-Dv-PoT"/>
+                                </constraints>
                                 <state key="normal" image="france"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lND-y6-sI9"/>
@@ -46,6 +55,8 @@
                             <constraint firstItem="43i-z6-0Xj" firstAttribute="top" secondItem="Cjw-WP-cUl" secondAttribute="bottom" constant="30" id="XbM-ej-tx7"/>
                             <constraint firstItem="kvp-my-2Bg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j9S-Ux-iXi"/>
                             <constraint firstItem="Cjw-WP-cUl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="kxi-bg-EqH"/>
+                            <constraint firstItem="kvp-my-2Bg" firstAttribute="height" secondItem="Cjw-WP-cUl" secondAttribute="height" id="mQ8-yf-aVv"/>
+                            <constraint firstItem="43i-z6-0Xj" firstAttribute="height" secondItem="Cjw-WP-cUl" secondAttribute="height" id="qTl-jM-EAr"/>
                             <constraint firstItem="kvp-my-2Bg" firstAttribute="top" secondItem="43i-z6-0Xj" secondAttribute="bottom" constant="30" id="sgl-jV-5So"/>
                         </constraints>
                     </view>
