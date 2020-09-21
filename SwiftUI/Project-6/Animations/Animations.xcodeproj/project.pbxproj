@@ -29,6 +29,7 @@
 		3B48DDE025188F8300849464 /* ControllingTheAnimationStackContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllingTheAnimationStackContentView.swift; sourceTree = "<group>"; };
 		3B48DDE32518905B00849464 /* ExplicitAnimationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplicitAnimationContentView.swift; sourceTree = "<group>"; };
 		3B48DDE62518912800849464 /* AnimatedBindingsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBindingsContentView.swift; sourceTree = "<group>"; };
+		3B48DDEA25189E9E00849464 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		3B53D31824AAD1DB006C8873 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B53D31B24AAD1DB006C8873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B53D31D24AAD1DB006C8873 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 				3B48DDD525188CDE00849464 /* Views */,
 				3B48DDD325188CB500849464 /* ViewModifiers */,
 				3B53D32124AAD1DE006C8873 /* Assets.xcassets */,
+				3B48DDEA25189E9E00849464 /* README.md */,
 				3B53D32624AAD1DE006C8873 /* LaunchScreen.storyboard */,
 				3B53D32924AAD1DE006C8873 /* Info.plist */,
 				3B53D32324AAD1DE006C8873 /* Preview Content */,
