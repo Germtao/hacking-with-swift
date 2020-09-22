@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B1407E52519ECE0009D994D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		3B6C8C9724EA36C70093DD3D /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6C8C9A24EA36C70093DD3D /* CupcakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerApp.swift; sourceTree = "<group>"; };
 		3B6C8C9C24EA36C70093DD3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 				3B6C8CAD24EA68630093DD3D /* Models */,
 				3B6C8CA924EA66FD0093DD3D /* Reusables */,
 				3B6C8C9E24EA36CC0093DD3D /* Assets.xcassets */,
+				3B1407E52519ECE0009D994D /* README.md */,
 				3B6C8CA324EA36CC0093DD3D /* Info.plist */,
 				3B6C8CA024EA36CC0093DD3D /* Preview Content */,
 			);
