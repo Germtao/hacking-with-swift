@@ -23,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B14078C25199721009D994D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		3B38AB4D24AC699F00730422 /* Moonshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B38AB5024AC699F00730422 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B38AB5224AC699F00730422 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 				3B38AB6424AC6AF700730422 /* Json */,
 				3B38AB5624AC69A500730422 /* Assets.xcassets */,
 				3B38AB5B24AC69A500730422 /* LaunchScreen.storyboard */,
+				3B14078C25199721009D994D /* README.md */,
 				3B38AB5E24AC69A500730422 /* Info.plist */,
 				3B38AB5824AC69A500730422 /* Preview Content */,
 			);
