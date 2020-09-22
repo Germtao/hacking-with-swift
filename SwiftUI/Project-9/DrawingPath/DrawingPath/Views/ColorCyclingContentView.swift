@@ -53,6 +53,7 @@ struct ColorCyclingContentView: View {
     var body: some View {
         VStack {
             ColorCyclingCircle(amount: self.colorCycle)
+                .drawingGroup()
                 .frame(width: 300, height: 300)
 
             Slider(value: $colorCycle)

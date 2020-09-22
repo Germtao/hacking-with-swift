@@ -26,6 +26,7 @@
 		3B1407D32519C98F009D994D /* InsettableArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1407D22519C98F009D994D /* InsettableArc.swift */; };
 		3B1407D62519D38E009D994D /* TriangleContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1407D52519D38E009D994D /* TriangleContentView.swift */; };
 		3B1407DA2519D789009D994D /* ArcContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1407D92519D789009D994D /* ArcContentView.swift */; };
+		3B1407DF2519DEC1009D994D /* ImagePaintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1407DE2519DEC1009D994D /* ImagePaintView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		3B1407D22519C98F009D994D /* InsettableArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsettableArc.swift; sourceTree = "<group>"; };
 		3B1407D52519D38E009D994D /* TriangleContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleContentView.swift; sourceTree = "<group>"; };
 		3B1407D92519D789009D994D /* ArcContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcContentView.swift; sourceTree = "<group>"; };
+		3B1407DD2519DD98009D994D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		3B1407DE2519DEC1009D994D /* ImagePaintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePaintView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 				3B1407AF2519A78D009D994D /* Views */,
 				3B1407AB2519A72E009D994D /* Paths */,
 				3B14079F2519A6E3009D994D /* Assets.xcassets */,
+				3B1407DD2519DD98009D994D /* README.md */,
 				3B1407A42519A6E3009D994D /* Info.plist */,
 				3B1407A12519A6E3009D994D /* Preview Content */,
 			);
@@ -126,6 +130,7 @@
 				3B1407C02519AAC9009D994D /* BlendModesContentView.swift */,
 				3B1407C32519ABCB009D994D /* ColorCyclingContentView.swift */,
 				3B1407C92519C86B009D994D /* FlowerContentView.swift */,
+				3B1407DE2519DEC1009D994D /* ImagePaintView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				3B1407D62519D38E009D994D /* TriangleContentView.swift in Sources */,
 				3B1407DA2519D789009D994D /* ArcContentView.swift in Sources */,
 				3B14079E2519A6E0009D994D /* ContentView.swift in Sources */,
+				3B1407DF2519DEC1009D994D /* ImagePaintView.swift in Sources */,
 				3B1407CD2519C938009D994D /* Triangle.swift in Sources */,
 				3B1407D02519C972009D994D /* Arc.swift in Sources */,
 				3B1407C12519AAC9009D994D /* BlendModesContentView.swift in Sources */,

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let datas = ["Triangle", "Trapezoid", "Arc", "Spirograph", "Checkerboard", "Flower", "ColorCycling"]
+    let datas = ["Triangle", "Trapezoid", "Arc", "Spirograph", "Checkerboard", "Flower", "ColorCycling", "ImagePaint"]
     
     var body: some View {
         NavigationView {
@@ -28,8 +28,10 @@ struct ContentView: View {
                     NavigationLink(title, destination: CheckerboardContentView())
                 case 5:
                     NavigationLink(title, destination: FlowerContentView())
-                default:
+                case 6:
                     NavigationLink(title, destination: ColorCyclingContentView())
+                default:
+                    NavigationLink(title, destination: ImagePaintView())
                 }
             }
             .navigationTitle("Drawing Path")
