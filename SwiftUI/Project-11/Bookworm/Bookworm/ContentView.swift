@@ -41,7 +41,7 @@ struct ContentView: View {
                         }
                     )
                 }
-                .onDelete(perform: deleteBooks(at:))
+                .onDelete(perform: deleteBooks)
             }
             .navigationBarTitle("书架")
             .navigationBarItems(leading: EditButton(), trailing: Button(action: { showingAddScreen.toggle() }, label: {
