@@ -41,14 +41,25 @@ struct ContentView: View {
                         }
                     )
                 }
+                .onDelete(perform: deleteBooks(at:))
             }
             .navigationBarTitle("书架")
-            .navigationBarItems(trailing: Button(action: { showingAddScreen.toggle() }, label: {
+            .navigationBarItems(leading: EditButton(), trailing: Button(action: { showingAddScreen.toggle() }, label: {
                 Image(systemName: "plus")
             }))
             .sheet(isPresented: $showingAddScreen, content: {
                 AddBookView().environment(\.managedObjectContext, moc)
             })
+        }
+    }
+    
+    private func deleteBooks(at offsets: IndexSet) {
+        for offset in offsets {
+            let book = books[offset]
+            
+            moc.delete(book)
+            
+            try? moc.save()
         }
     }
 }
