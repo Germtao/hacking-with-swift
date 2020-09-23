@@ -32,6 +32,7 @@
 		3B4C2071251AE33C007FD5C3 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		3B4C2074251AF587007FD5C3 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 		3B4C2077251B20D8007FD5C3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		3B4C207A251B3AAA007FD5C3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 				3B4C20532519F88F007FD5C3 /* BookwormApp.swift */,
 				3B4C20552519F88F007FD5C3 /* ContentView.swift */,
 				3B4C206E251A01F1007FD5C3 /* Persistence.swift */,
+				3B4C207A251B3AAA007FD5C3 /* README.md */,
 				3B4C20682519F945007FD5C3 /* Views */,
 				3B4C20572519F891007FD5C3 /* Assets.xcassets */,
 				3B4C20612519F891007FD5C3 /* Info.plist */,
