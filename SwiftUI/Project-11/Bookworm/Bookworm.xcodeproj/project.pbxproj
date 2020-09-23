@@ -15,6 +15,7 @@
 		3B4C206A2519F953007FD5C3 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C20692519F953007FD5C3 /* AddBookView.swift */; };
 		3B4C206F251A01F1007FD5C3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C206E251A01F1007FD5C3 /* Persistence.swift */; };
 		3B4C2072251AE33C007FD5C3 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C2071251AE33C007FD5C3 /* RatingView.swift */; };
+		3B4C2075251AF587007FD5C3 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C2074251AF587007FD5C3 /* EmojiRatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3B4C20692519F953007FD5C3 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		3B4C206E251A01F1007FD5C3 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		3B4C2071251AE33C007FD5C3 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		3B4C2074251AF587007FD5C3 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				3B4C20692519F953007FD5C3 /* AddBookView.swift */,
 				3B4C2071251AE33C007FD5C3 /* RatingView.swift */,
+				3B4C2074251AF587007FD5C3 /* EmojiRatingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			files = (
 				3B4C20602519F891007FD5C3 /* Bookworm.xcdatamodeld in Sources */,
 				3B4C20562519F88F007FD5C3 /* ContentView.swift in Sources */,
+				3B4C2075251AF587007FD5C3 /* EmojiRatingView.swift in Sources */,
 				3B4C20542519F88F007FD5C3 /* BookwormApp.swift in Sources */,
 				3B4C2072251AE33C007FD5C3 /* RatingView.swift in Sources */,
 				3B4C206A2519F953007FD5C3 /* AddBookView.swift in Sources */,
