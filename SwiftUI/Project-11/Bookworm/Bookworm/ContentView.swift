@@ -17,7 +17,7 @@ struct ContentView: View {
         sortDescriptors: [
             NSSortDescriptor(keyPath: \Book.title, ascending: true),
             NSSortDescriptor(keyPath: \Book.author, ascending: true)
-        ]
+        ] // 使用NSSortDescriptor对提取请求进行排序
     ) var books: FetchedResults<Book>
     
     @State private var showingAddScreen = false
