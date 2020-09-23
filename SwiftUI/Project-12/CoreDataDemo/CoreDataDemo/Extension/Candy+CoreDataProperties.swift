@@ -19,6 +19,9 @@ extension Candy {
     @NSManaged public var name: String?
     @NSManaged public var origin: Country?
     
+    public var wrappedName: String {
+        name ?? "Unknown Candy"
+    }
 }
 
 extension Candy : Identifiable {
