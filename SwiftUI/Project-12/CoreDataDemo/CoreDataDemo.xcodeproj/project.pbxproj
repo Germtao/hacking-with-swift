@@ -21,6 +21,9 @@
 		3B4C20B2251B53DC007FD5C3 /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C20B0251B53DC007FD5C3 /* Candy+CoreDataProperties.swift */; };
 		3B4C20BC251B5475007FD5C3 /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C20BA251B5475007FD5C3 /* Singer+CoreDataClass.swift */; };
 		3B4C20BD251B5475007FD5C3 /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C20BB251B5475007FD5C3 /* Singer+CoreDataProperties.swift */; };
+		3B4C20C2251C7870007FD5C3 /* ShipContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C20C1251C7870007FD5C3 /* ShipContentView.swift */; };
+		3B4C20C6251C7AFA007FD5C3 /* WizardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C20C5251C7AFA007FD5C3 /* WizardContentView.swift */; };
+		3B4C20CA251C7E0F007FD5C3 /* DynamicFilteringContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C20C9251C7E0F007FD5C3 /* DynamicFilteringContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		3B4C20B0251B53DC007FD5C3 /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3B4C20BA251B5475007FD5C3 /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3B4C20BB251B5475007FD5C3 /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3B4C20C1251C7870007FD5C3 /* ShipContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipContentView.swift; sourceTree = "<group>"; };
+		3B4C20C5251C7AFA007FD5C3 /* WizardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardContentView.swift; sourceTree = "<group>"; };
+		3B4C20C9251C7E0F007FD5C3 /* DynamicFilteringContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFilteringContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 			children = (
 				3B4C2088251B3D65007FD5C3 /* CoreDataDemoApp.swift */,
 				3B4C208A251B3D65007FD5C3 /* ContentView.swift */,
+				3B4C20C0251C785A007FD5C3 /* Views */,
 				3B4C209D251B47CC007FD5C3 /* Extension */,
 				3B4C208C251B3D67007FD5C3 /* Assets.xcassets */,
 				3B4C2091251B3D67007FD5C3 /* Persistence.swift */,
@@ -105,6 +112,16 @@
 				3B4C20A4251B499F007FD5C3 /* Movie+CoreDataProperties.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		3B4C20C0251C785A007FD5C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B4C20C5251C7AFA007FD5C3 /* WizardContentView.swift */,
+				3B4C20C1251C7870007FD5C3 /* ShipContentView.swift */,
+				3B4C20C9251C7E0F007FD5C3 /* DynamicFilteringContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,12 +198,15 @@
 				3B4C20B2251B53DC007FD5C3 /* Candy+CoreDataProperties.swift in Sources */,
 				3B4C20BC251B5475007FD5C3 /* Singer+CoreDataClass.swift in Sources */,
 				3B4C2095251B3D67007FD5C3 /* CoreDataDemo.xcdatamodeld in Sources */,
+				3B4C20C6251C7AFA007FD5C3 /* WizardContentView.swift in Sources */,
 				3B4C208B251B3D65007FD5C3 /* ContentView.swift in Sources */,
+				3B4C20C2251C7870007FD5C3 /* ShipContentView.swift in Sources */,
 				3B4C20A5251B499F007FD5C3 /* Movie+CoreDataClass.swift in Sources */,
 				3B4C20AB251B53AC007FD5C3 /* Country+CoreDataProperties.swift in Sources */,
 				3B4C20AA251B53AC007FD5C3 /* Country+CoreDataClass.swift in Sources */,
 				3B4C20A6251B499F007FD5C3 /* Movie+CoreDataProperties.swift in Sources */,
 				3B4C2089251B3D65007FD5C3 /* CoreDataDemoApp.swift in Sources */,
+				3B4C20CA251C7E0F007FD5C3 /* DynamicFilteringContentView.swift in Sources */,
 				3B4C20B1251B53DC007FD5C3 /* Candy+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

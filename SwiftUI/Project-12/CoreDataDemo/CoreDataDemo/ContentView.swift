@@ -9,58 +9,39 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var moc
-
-    @FetchRequest(
-        entity: Ship.entity(),
-        sortDescriptors: [],
-        predicate: NSPredicate(format: "universe == 'Star Wars'")
-        // or NSPredicate(format: "universe == %@", "Star Wars")
-        // or NSPredicate(format: "name < %@", "F")
-        // NSPredicate(format: "universe IN %@", ["Aliens", "Firefly", "Star Trek"])
-        // NSPredicate(format: "name BEGINSWITH %@", "E")
-        // NSPredicate(format: "name BEGINSWITH[c] %@", "e") 忽略大小写
-        // NSPredicate(format: "NOT name BEGINSWITH[c] %@", "e")
-    ) var ships: FetchedResults<Ship>
+    let persistence = PersistenceController.shared
 
     var body: some View {
-        VStack {
-            List(ships, id: \.self) { ship in
-                Text(ship.name ?? "Unknown name")
+        NavigationView {
+            List {
+                ForEach(0..<6) { index in
+                    switch index {
+                    case 0:
+                        NavigationLink(
+                            "使用约束确保CoreData对象是唯一的",
+                            destination: WizardContentView().environment(\.managedObjectContext, persistence.container.viewContext)
+                        )
+                    case 1:
+                        NavigationLink(
+                            "使用NSPredicate过滤@FetchRequest",
+                            destination: ShipContentView().environment(\.managedObjectContext, persistence.container.viewContext)
+                        )
+                    case 2:
+                        NavigationLink(
+                            "使用SwiftUI动态过滤@FetchRequest",
+                            destination: DynamicFilteringContentView().environment(\.managedObjectContext, persistence.container.viewContext)
+                        )
+                    default: Text("default")
+                    }
+                }
             }
-            
-            Button("添加例子") {
-                let ship1 = Ship(context: self.moc)
-                ship1.name = "Enterprise"
-                ship1.universe = "Star Trek"
-
-                let ship2 = Ship(context: self.moc)
-                ship2.name = "Defiant"
-                ship2.universe = "Star Trek"
-
-                let ship3 = Ship(context: self.moc)
-                ship3.name = "Millennium Falcon"
-                ship3.universe = "Star Wars"
-
-                let ship4 = Ship(context: self.moc)
-                ship4.name = "Executor"
-                ship4.universe = "Star Wars"
-
-                try? self.moc.save()
-            }
+            .navigationBarTitle("Core Data")
         }
     }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()
     }
 }
