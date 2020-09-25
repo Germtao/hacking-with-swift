@@ -24,6 +24,7 @@
 		3B4C20C2251C7870007FD5C3 /* ShipContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C20C1251C7870007FD5C3 /* ShipContentView.swift */; };
 		3B4C20C6251C7AFA007FD5C3 /* WizardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C20C5251C7AFA007FD5C3 /* WizardContentView.swift */; };
 		3B4C20CA251C7E0F007FD5C3 /* DynamicFilteringContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C20C9251C7E0F007FD5C3 /* DynamicFilteringContentView.swift */; };
+		3B4C20CD251C9119007FD5C3 /* OneToManyRelationshipsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C20CC251C9119007FD5C3 /* OneToManyRelationshipsContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		3B4C20C1251C7870007FD5C3 /* ShipContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipContentView.swift; sourceTree = "<group>"; };
 		3B4C20C5251C7AFA007FD5C3 /* WizardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardContentView.swift; sourceTree = "<group>"; };
 		3B4C20C9251C7E0F007FD5C3 /* DynamicFilteringContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFilteringContentView.swift; sourceTree = "<group>"; };
+		3B4C20CC251C9119007FD5C3 /* OneToManyRelationshipsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneToManyRelationshipsContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				3B4C20C5251C7AFA007FD5C3 /* WizardContentView.swift */,
 				3B4C20C1251C7870007FD5C3 /* ShipContentView.swift */,
 				3B4C20C9251C7E0F007FD5C3 /* DynamicFilteringContentView.swift */,
+				3B4C20CC251C9119007FD5C3 /* OneToManyRelationshipsContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				3B4C2095251B3D67007FD5C3 /* CoreDataDemo.xcdatamodeld in Sources */,
 				3B4C20C6251C7AFA007FD5C3 /* WizardContentView.swift in Sources */,
 				3B4C208B251B3D65007FD5C3 /* ContentView.swift in Sources */,
+				3B4C20CD251C9119007FD5C3 /* OneToManyRelationshipsContentView.swift in Sources */,
 				3B4C20C2251C7870007FD5C3 /* ShipContentView.swift in Sources */,
 				3B4C20A5251B499F007FD5C3 /* Movie+CoreDataClass.swift in Sources */,
 				3B4C20AB251B53AC007FD5C3 /* Country+CoreDataProperties.swift in Sources */,

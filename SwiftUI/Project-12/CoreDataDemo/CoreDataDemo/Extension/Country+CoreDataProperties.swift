@@ -36,6 +36,10 @@ extension Country {
     }
 }
 
+extension Country : Identifiable {
+
+}
+
 // MARK: Generated accessors for candy
 extension Country {
     @objc(addCandyObject:)

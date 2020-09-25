@@ -31,6 +31,11 @@ struct ContentView: View {
                             "使用SwiftUI动态过滤@FetchRequest",
                             destination: DynamicFilteringContentView().environment(\.managedObjectContext, persistence.container.viewContext)
                         )
+                    case 3:
+                        NavigationLink(
+                            "与CoreData，SwiftUI和@FetchRequest的一对多关系",
+                            destination: OneToManyRelationshipsContentView().environment(\.managedObjectContext, persistence.container.viewContext)
+                        )
                     default: Text("default")
                     }
                 }
