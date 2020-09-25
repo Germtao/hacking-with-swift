@@ -6,49 +6,56 @@
 //
 
 import SwiftUI
+import CoreImage
+import CoreImage.CIFilterBuiltins
 
 struct ContentView: View {
-    @State private var blurAmount: CGFloat = 0
-    
-    @State private var showingActionSheet = false
-    @State private var backgroundColor = Color.white
+    @State private var image: Image?
     
     var body: some View {
-        let blur = Binding<CGFloat> {
-            self.blurAmount
-        } set: {
-            self.blurAmount = $0
-            print("New value is \(blurAmount)")
+        VStack {
+            image?
+                .resizable()
+                .scaledToFit()
         }
+        .onAppear(perform: loadImage)
+    }
+    
+    private func loadImage() {
+        guard let inputImage = UIImage(named: "Example") else { return }
+        let beginImage = CIImage(image: inputImage)
         
-        return VStack {
-            Text("Hello, world!")
-                .frame(width: 300, height: 300)
-                .background(backgroundColor)
-                .blur(radius: blurAmount)
-                .onTapGesture {
-                    showingActionSheet = true
-                }
-                .actionSheet(isPresented: $showingActionSheet, content: {
-                    ActionSheet(
-                        title: Text("改变颜色"),
-                        message: Text("选择一个新的颜色"),
-                        buttons: [
-                            .default(Text("红色"), action: {
-                                backgroundColor = .red
-                            }),
-                            .default(Text("绿色"), action: {
-                                backgroundColor = .green
-                            }),
-                            .default(Text("蓝色"), action: {
-                                backgroundColor = .blue
-                            }),
-                            .cancel(Text("取消"))
-                        ]
-                    )
-                })
+        let context = CIContext()
+//        let currentFilter = CIFilter.sepiaTone() // 棕褐色
+//        let currentFilter = CIFilter.pixellate() // 像素化
+//        let currentFilter = CIFilter.crystallize() // 水晶效果
+        
+//        currentFilter.inputImage = beginImage
+//        currentFilter.intensity = 1 // 深褐色效果的强度 0-原始图像和1-棕褐色
+//        currentFilter.scale = 100 // 像素
+        
+//        currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
+//        currentFilter.radius = 200 // 水晶
+        
+        guard let currentFilter = CIFilter(name: "CITwirlDistortion") else { return }
+        currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
+        currentFilter.setValue(2000, forKey: kCIInputRadiusKey)
+        currentFilter.setValue(
+            CIVector(x: inputImage.size.width / 2,
+                     y: inputImage.size.height / 2),
+            forKey: kCIInputCenterKey
+        )
+        
+        // 获取CIImage
+        guard let outputImage = currentFilter.outputImage else { return }
+        
+        // 从CIImage获取CGImage
+        if let cgImage = context.createCGImage(outputImage, from: outputImage.extent) {
+            // 转换为 UIImage
+            let uiImage = UIImage(cgImage: cgImage)
             
-            Slider(value: blur, in: 0...20)
+            // 并将其转换为SwiftUI图像
+            image = Image(uiImage: uiImage)
         }
     }
 }
