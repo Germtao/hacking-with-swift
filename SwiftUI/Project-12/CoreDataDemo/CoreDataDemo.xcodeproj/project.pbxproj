@@ -48,6 +48,7 @@
 		3B4C20C5251C7AFA007FD5C3 /* WizardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardContentView.swift; sourceTree = "<group>"; };
 		3B4C20C9251C7E0F007FD5C3 /* DynamicFilteringContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFilteringContentView.swift; sourceTree = "<group>"; };
 		3B4C20CC251C9119007FD5C3 /* OneToManyRelationshipsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneToManyRelationshipsContentView.swift; sourceTree = "<group>"; };
+		3B4C20D1251D9185007FD5C3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 				3B4C20C0251C785A007FD5C3 /* Views */,
 				3B4C209D251B47CC007FD5C3 /* Extension */,
 				3B4C208C251B3D67007FD5C3 /* Assets.xcassets */,
+				3B4C20D1251D9185007FD5C3 /* README.md */,
 				3B4C2091251B3D67007FD5C3 /* Persistence.swift */,
 				3B4C2096251B3D67007FD5C3 /* Info.plist */,
 				3B4C2093251B3D67007FD5C3 /* CoreDataDemo.xcdatamodeld */,
