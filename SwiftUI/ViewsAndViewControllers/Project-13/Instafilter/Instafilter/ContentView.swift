@@ -19,8 +19,19 @@ struct ContentView: View {
     
     @State private var inputImage: UIImage?
     
+    @State private var currentFilter = CIFilter.sepiaTone()
+    let context = CIContext()
+    
     var body: some View {
-        NavigationView {
+        let intensity = Binding<Double> {
+            filterIntensity
+        } set: {
+            filterIntensity = $0
+            applyProcessing()
+        }
+
+        
+        return NavigationView {
             VStack {
                 ZStack {
                     Rectangle()
@@ -42,7 +53,7 @@ struct ContentView: View {
                 
                 HStack {
                     Text("滤镜强度")
-                    Slider(value: $filterIntensity)
+                    Slider(value: intensity)
                 }
                 .padding(.vertical)
                 
@@ -68,9 +79,23 @@ struct ContentView: View {
 }
 
 extension ContentView {
+    private func applyProcessing() {
+        currentFilter.intensity = Float(filterIntensity)
+        
+        guard let outputImage = currentFilter.outputImage else { return }
+        
+        if let cgImage = context.createCGImage(outputImage, from: outputImage.extent) {
+            let uiImage = UIImage(cgImage: cgImage)
+            image = Image(uiImage: uiImage)
+        }
+    }
+    
     private func loadImage2() {
         guard let inputImage = inputImage else { return }
-        image = Image(uiImage: inputImage)
+        
+        let beginImage = CIImage(image: inputImage)
+        currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
+        applyProcessing()
     }
     
     private func loadImage() {
