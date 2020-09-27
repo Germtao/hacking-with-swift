@@ -8,30 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
-//    let values = [1, 5, 3, 6, 2, 9].sorted()
-    let users = [
-        User(firstName: "Arnold", lastName: "Rimmer"),
-        User(firstName: "Kristine", lastName: "Kochanski"),
-        User(firstName: "David", lastName: "Lister")
-    ].sorted()
-//    {
-//        $0.lastName < $1.lastName
-//    }
+    
+    var loadingState = LoadingState.loading
     
     var body: some View {
-        Text("Hello World")
-            .onTapGesture {
-                let str = "Test Message"
-                let url = getDocumentsDirectory().appendingPathComponent("message.txt")
-                
-                do {
-                    try str.write(to: url, atomically: true, encoding: .utf8)
-                    let input = try String(contentsOf: url)
-                    print("input: \(input)")
-                } catch {
-                    print("写文件发生错误: \(error.localizedDescription)")
-                }
+        Group {
+            if loadingState == .loading {
+                LoadingView()
+            } else if loadingState == .success {
+                SuccessView()
+            } else if loadingState == .failed {
+                FailedView()
             }
+        }
+//        Text("Hello World")
+//            .onTapGesture {
+//                let str = "Test Message"
+//                let url = getDocumentsDirectory().appendingPathComponent("message.txt")
+//
+//                do {
+//                    try str.write(to: url, atomically: true, encoding: .utf8)
+//                    let input = try String(contentsOf: url)
+//                    print("input: \(input)")
+//                } catch {
+//                    print("写文件发生错误: \(error.localizedDescription)")
+//                }
+//            }
     }
 }
 
