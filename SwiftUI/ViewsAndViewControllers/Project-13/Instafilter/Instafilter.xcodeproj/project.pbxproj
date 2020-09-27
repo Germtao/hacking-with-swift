@@ -24,6 +24,7 @@
 		3B4C20E8251DBAED007FD5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B4C20EF251DF4F2007FD5C3 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		3B4C20F225202E20007FD5C3 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		3B4C20F525206731007FD5C3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 				3B4C20E1251DBAEA007FD5C3 /* ContentView.swift */,
 				3B4C20EF251DF4F2007FD5C3 /* ImagePicker.swift */,
 				3B4C20F225202E20007FD5C3 /* ImageSaver.swift */,
+				3B4C20F525206731007FD5C3 /* README.md */,
 				3B4C20E3251DBAED007FD5C3 /* Assets.xcassets */,
 				3B4C20E8251DBAED007FD5C3 /* Info.plist */,
 				3B4C20E5251DBAED007FD5C3 /* Preview Content */,
