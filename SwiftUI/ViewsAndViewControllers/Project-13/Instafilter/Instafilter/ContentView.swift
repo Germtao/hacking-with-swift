@@ -24,6 +24,8 @@ struct ContentView: View {
     
     @State private var showingFilterSheet = false
     
+    @State private var processedImage: UIImage?
+    
     var body: some View {
         let intensity = Binding<Double> {
             filterIntensity
@@ -67,7 +69,16 @@ struct ContentView: View {
                     Spacer()
                     
                     Button("保存") {
-                        // save the picture
+                        guard let saveImage = processedImage else { return }
+                        
+                        let saver = ImageSaver()
+                        saver.writeToPhotoAlbum(image: saveImage)
+                        saver.successHandler = {
+                            print("保存照片成功!")
+                        }
+                        saver.failureHandler = {
+                            print("保存照片失败: \($0.localizedDescription)")
+                        }
                     }
                 }
             }
@@ -117,6 +128,7 @@ extension ContentView {
         if let cgImage = context.createCGImage(outputImage, from: outputImage.extent) {
             let uiImage = UIImage(cgImage: cgImage)
             image = Image(uiImage: uiImage)
+            processedImage = uiImage
         }
     }
     
