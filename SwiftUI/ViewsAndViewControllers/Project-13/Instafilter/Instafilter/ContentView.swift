@@ -37,7 +37,7 @@ struct ContentView: View {
                     }
                 }
                 .onTapGesture {
-                    // select an image
+                    showingImagePicker = true
                 }
                 
                 HStack {
@@ -60,6 +60,9 @@ struct ContentView: View {
             }
             .padding([.horizontal, .bottom])
             .navigationBarTitle("Instafilter")
+            .sheet(isPresented: $showingImagePicker, onDismiss: loadImage2, content: {
+                ImagePicker(image: $inputImage)
+            })
         }
     }
 }
@@ -68,11 +71,6 @@ extension ContentView {
     private func loadImage2() {
         guard let inputImage = inputImage else { return }
         image = Image(uiImage: inputImage)
-        
-        // 我们可以对其进行修改，以便立即保存已加载的图像，从而有效地创建副本
-//        UIImageWriteToSavedPhotosAlbum(inputImage, nil, nil, nil)
-        let saver = ImageSaver()
-        saver.writeToPhotoAlbum(image: inputImage)
     }
     
     private func loadImage() {
