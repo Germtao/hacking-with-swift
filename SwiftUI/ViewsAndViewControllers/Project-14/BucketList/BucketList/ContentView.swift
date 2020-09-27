@@ -12,28 +12,8 @@ struct ContentView: View {
     var loadingState = LoadingState.loading
     
     var body: some View {
-        Group {
-            if loadingState == .loading {
-                LoadingView()
-            } else if loadingState == .success {
-                SuccessView()
-            } else if loadingState == .failed {
-                FailedView()
-            }
-        }
-//        Text("Hello World")
-//            .onTapGesture {
-//                let str = "Test Message"
-//                let url = getDocumentsDirectory().appendingPathComponent("message.txt")
-//
-//                do {
-//                    try str.write(to: url, atomically: true, encoding: .utf8)
-//                    let input = try String(contentsOf: url)
-//                    print("input: \(input)")
-//                } catch {
-//                    print("写文件发生错误: \(error.localizedDescription)")
-//                }
-//            }
+        MapView()
+            .edgesIgnoringSafeArea(.all)
     }
 }
 

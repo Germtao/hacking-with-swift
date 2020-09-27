@@ -13,6 +13,7 @@
 		3B4C210B25206B98007FD5C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4C210A25206B98007FD5C3 /* Preview Assets.xcassets */; };
 		3B4C2115252073D6007FD5C3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C2114252073D6007FD5C3 /* User.swift */; };
 		3B4C211A25208A79007FD5C3 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C211925208A79007FD5C3 /* Loading.swift */; };
+		3B4C21262520941C007FD5C3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C21252520941C007FD5C3 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3B4C210C25206B98007FD5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B4C2114252073D6007FD5C3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3B4C211925208A79007FD5C3 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		3B4C21252520941C007FD5C3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				3B4C211925208A79007FD5C3 /* Loading.swift */,
+				3B4C21252520941C007FD5C3 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				3B4C210625206B94007FD5C3 /* ContentView.swift in Sources */,
 				3B4C210425206B94007FD5C3 /* BucketListApp.swift in Sources */,
+				3B4C21262520941C007FD5C3 /* MapView.swift in Sources */,
 				3B4C211A25208A79007FD5C3 /* Loading.swift in Sources */,
 				3B4C2115252073D6007FD5C3 /* User.swift in Sources */,
 			);
