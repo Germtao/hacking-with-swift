@@ -11,25 +11,60 @@ import CoreImage.CIFilterBuiltins
 
 struct ContentView: View {
     @State private var image: Image?
+    
+    /// 滤镜的强度: 0.0~1.0
+    @State private var filterIntensity = 0.5
+    
     @State private var showingImagePicker = false
     
     @State private var inputImage: UIImage?
     
     var body: some View {
-        VStack {
-            image?
-                .resizable()
-                .scaledToFit()
-            
-            Button("选择图片") {
-                showingImagePicker = true
+        NavigationView {
+            VStack {
+                ZStack {
+                    Rectangle()
+                        .fill(Color.secondary)
+                    
+                    if let image = image {
+                        image
+                            .resizable()
+                            .scaledToFit()
+                    } else {
+                        Text("点击选择一张照片")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                    }
+                }
+                .onTapGesture {
+                    // select an image
+                }
+                
+                HStack {
+                    Text("滤镜强度")
+                    Slider(value: $filterIntensity)
+                }
+                .padding(.vertical)
+                
+                HStack {
+                    Button("更换滤镜") {
+                        // change filter
+                    }
+                    
+                    Spacer()
+                    
+                    Button("保存") {
+                        // save the picture
+                    }
+                }
             }
+            .padding([.horizontal, .bottom])
+            .navigationBarTitle("Instafilter")
         }
-        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage2, content: {
-            ImagePicker(image: $inputImage)
-        })
     }
-    
+}
+
+extension ContentView {
     private func loadImage2() {
         guard let inputImage = inputImage else { return }
         image = Image(uiImage: inputImage)
