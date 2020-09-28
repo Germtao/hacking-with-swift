@@ -21,6 +21,8 @@ struct ContentView: View {
     @State private var selectedPlace: MKPointAnnotation?
     @State private var showingPlaceDetails = false
     
+    @State private var showingEditScreen = false
+    
     var body: some View {
         ZStack {
             MapView(centerCoordinate: $centerCoordinate,
@@ -40,9 +42,12 @@ struct ContentView: View {
                     Spacer()
                     Button {
                         let newLocation = MKPointAnnotation()
-                        newLocation.title = "Example location"
                         newLocation.coordinate = self.centerCoordinate
                         self.locations.append(newLocation)
+                        
+                        self.selectedPlace = newLocation
+                        self.showingEditScreen = true
+                        
                     } label: {
                         Image(systemName: "plus")
                     }
@@ -57,8 +62,13 @@ struct ContentView: View {
         }
         .alert(isPresented: $showingPlaceDetails) {
             Alert(title: Text(selectedPlace?.title ?? "未知"), message: Text(selectedPlace?.subtitle ?? "未找到位置信息"), primaryButton: .default(Text("确定")), secondaryButton: .default(Text("编辑"), action: {
-                // edit this place
+                self.showingEditScreen = true
             }))
+        }
+        .sheet(isPresented: $showingEditScreen) {
+            if self.selectedPlace != nil {
+                EditView(placemark: self.selectedPlace!)
+            }
         }
     }
 }
