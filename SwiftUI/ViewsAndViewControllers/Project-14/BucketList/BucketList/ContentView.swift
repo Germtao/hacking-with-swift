@@ -18,9 +18,15 @@ struct ContentView: View {
     
     @State private var locations = [MKPointAnnotation]()
     
+    @State private var selectedPlace: MKPointAnnotation?
+    @State private var showingPlaceDetails = false
+    
     var body: some View {
         ZStack {
-            MapView(centerCoordinate: $centerCoordinate, annotations: locations)
+            MapView(centerCoordinate: $centerCoordinate,
+                    annotations: locations,
+                    selectedPlace: $selectedPlace,
+                    showingPlaceDetails: $showingPlaceDetails)
                 .edgesIgnoringSafeArea(.all)
             
             Circle()
@@ -34,6 +40,7 @@ struct ContentView: View {
                     Spacer()
                     Button {
                         let newLocation = MKPointAnnotation()
+                        newLocation.title = "Example location"
                         newLocation.coordinate = self.centerCoordinate
                         self.locations.append(newLocation)
                     } label: {
@@ -47,6 +54,11 @@ struct ContentView: View {
                     .padding(.trailing)
                 }
             }
+        }
+        .alert(isPresented: $showingPlaceDetails) {
+            Alert(title: Text(selectedPlace?.title ?? "未知"), message: Text(selectedPlace?.subtitle ?? "未找到位置信息"), primaryButton: .default(Text("确定")), secondaryButton: .default(Text("编辑"), action: {
+                // edit this place
+            }))
         }
     }
 }
