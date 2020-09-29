@@ -16,7 +16,7 @@ struct ContentView: View {
     /// 中心坐标
     @State private var centerCoordinate = CLLocationCoordinate2D()
     
-    @State private var locations = [MKPointAnnotation]()
+    @State private var locations = [CodableMKPointAnnotation]()
     
     @State private var selectedPlace: MKPointAnnotation?
     @State private var showingPlaceDetails = false
@@ -41,7 +41,7 @@ struct ContentView: View {
                 HStack {
                     Spacer()
                     Button {
-                        let newLocation = MKPointAnnotation()
+                        let newLocation = CodableMKPointAnnotation()
                         newLocation.coordinate = self.centerCoordinate
                         self.locations.append(newLocation)
                         
@@ -60,12 +60,13 @@ struct ContentView: View {
                 }
             }
         }
+        .onAppear(perform: loadData)
         .alert(isPresented: $showingPlaceDetails) {
             Alert(title: Text(selectedPlace?.title ?? "未知"), message: Text(selectedPlace?.subtitle ?? "未找到位置信息"), primaryButton: .default(Text("确定")), secondaryButton: .default(Text("编辑"), action: {
                 self.showingEditScreen = true
             }))
         }
-        .sheet(isPresented: $showingEditScreen) {
+        .sheet(isPresented: $showingEditScreen, onDismiss: saveData) {
             if self.selectedPlace != nil {
                 EditView(placemark: self.selectedPlace!)
             }
@@ -74,6 +75,29 @@ struct ContentView: View {
 }
 
 extension ContentView {
+    private func loadData() {
+        let fileName = getDocumentsDirectory().appendingPathComponent("SavedPlaces")
+        
+        do {
+            let data = try Data(contentsOf: fileName)
+            locations = try JSONDecoder().decode([CodableMKPointAnnotation].self, from: data)
+        } catch {
+            print("无法加载保存的数据.")
+        }
+    }
+    
+    private func saveData() {
+        let fileName = getDocumentsDirectory().appendingPathComponent("SavedPlaces")
+        
+        do {
+            let data = try JSONEncoder().encode(locations)
+            // 确保文件以强加密方式存储: .completeFileProtection
+            try data.write(to: fileName, options: [.atomicWrite, .completeFileProtection])
+        } catch {
+            print("无法保存数据.")
+        }
+    }
+    
     /// FaceID认证
     private func authenticate() {
         let context = LAContext()
