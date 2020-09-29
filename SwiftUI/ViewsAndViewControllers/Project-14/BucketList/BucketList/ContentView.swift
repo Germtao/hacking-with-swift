@@ -25,39 +25,50 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            MapView(centerCoordinate: $centerCoordinate,
-                    annotations: locations,
-                    selectedPlace: $selectedPlace,
-                    showingPlaceDetails: $showingPlaceDetails)
-                .edgesIgnoringSafeArea(.all)
-            
-            Circle()
-                .fill(Color.blue)
-                .opacity(0.3)
-                .frame(width: 32, height: 32)
-            
-            VStack {
-                Spacer()
-                HStack {
+
+            if isUnlocked {
+                MapView(centerCoordinate: $centerCoordinate,
+                        annotations: locations,
+                        selectedPlace: $selectedPlace,
+                        showingPlaceDetails: $showingPlaceDetails)
+                    .edgesIgnoringSafeArea(.all)
+                
+                Circle()
+                    .fill(Color.blue)
+                    .opacity(0.3)
+                    .frame(width: 32, height: 32)
+                
+                VStack {
                     Spacer()
-                    Button {
-                        let newLocation = CodableMKPointAnnotation()
-                        newLocation.coordinate = self.centerCoordinate
-                        self.locations.append(newLocation)
-                        
-                        self.selectedPlace = newLocation
-                        self.showingEditScreen = true
-                        
-                    } label: {
-                        Image(systemName: "plus")
+                    HStack {
+                        Spacer()
+                        Button {
+                            let newLocation = CodableMKPointAnnotation()
+                            newLocation.coordinate = self.centerCoordinate
+                            self.locations.append(newLocation)
+                            
+                            self.selectedPlace = newLocation
+                            self.showingEditScreen = true
+                            
+                        } label: {
+                            Image(systemName: "plus")
+                        }
+                        .padding()
+                        .background(Color.black.opacity(0.75))
+                        .foregroundColor(.white)
+                        .font(.title)
+                        .clipShape(Circle())
+                        .padding(.trailing)
                     }
-                    .padding()
-                    .background(Color.black.opacity(0.75))
-                    .foregroundColor(.white)
-                    .font(.title)
-                    .clipShape(Circle())
-                    .padding(.trailing)
                 }
+            } else {
+                Button("解锁访问位置") {
+                    authenticate()
+                }
+                .padding()
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .clipShape(Capsule())
             }
         }
         .onAppear(perform: loadData)
@@ -105,7 +116,7 @@ extension ContentView {
         
         // 检查生物识别认证是否可用
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            let reason = "我们需要解锁您的数据"
+            let reason = "请验证您的身份以解锁您的位置"
             
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { (success, error) in
                 // 身份验证已完成
