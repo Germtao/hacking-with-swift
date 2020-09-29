@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum LoadingState {
-    case loading, success, failed
+    case loading, loaded, failed
 }
 
 struct LoadingView: View {

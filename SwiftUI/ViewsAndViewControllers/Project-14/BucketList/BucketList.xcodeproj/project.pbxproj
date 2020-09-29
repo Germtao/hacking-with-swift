@@ -16,6 +16,7 @@
 		3B4C21262520941C007FD5C3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C21252520941C007FD5C3 /* MapView.swift */; };
 		3B4C212A2521D988007FD5C3 /* MKPointAnnotation+ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C21292521D988007FD5C3 /* MKPointAnnotation+ObservableObject.swift */; };
 		3B4C212E2521DE29007FD5C3 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C212D2521DE29007FD5C3 /* EditView.swift */; };
+		3B4C21312521E4FC007FD5C3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C21302521E4FC007FD5C3 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3B4C21252520941C007FD5C3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		3B4C21292521D988007FD5C3 /* MKPointAnnotation+ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation+ObservableObject.swift"; sourceTree = "<group>"; };
 		3B4C212D2521DE29007FD5C3 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		3B4C21302521E4FC007FD5C3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				3B4C2114252073D6007FD5C3 /* User.swift */,
+				3B4C21302521E4FC007FD5C3 /* Result.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				3B4C211A25208A79007FD5C3 /* Loading.swift in Sources */,
 				3B4C212E2521DE29007FD5C3 /* EditView.swift in Sources */,
 				3B4C2115252073D6007FD5C3 /* User.swift in Sources */,
+				3B4C21312521E4FC007FD5C3 /* Result.swift in Sources */,
 				3B4C212A2521D988007FD5C3 /* MKPointAnnotation+ObservableObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
