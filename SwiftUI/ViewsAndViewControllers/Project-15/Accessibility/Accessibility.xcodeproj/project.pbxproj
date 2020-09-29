@@ -11,6 +11,7 @@
 		3B4C2147252309A2007FD5C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C2146252309A2007FD5C3 /* ContentView.swift */; };
 		3B4C2149252309A3007FD5C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4C2148252309A3007FD5C3 /* Assets.xcassets */; };
 		3B4C214C252309A3007FD5C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4C214B252309A3007FD5C3 /* Preview Assets.xcassets */; };
+		3B4C215725232CE7007FD5C3 /* SliderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C215625232CE7007FD5C3 /* SliderContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		3B4C2148252309A3007FD5C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B4C214B252309A3007FD5C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B4C214D252309A3007FD5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4C215625232CE7007FD5C3 /* SliderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				3B4C2144252309A2007FD5C3 /* AccessibilityApp.swift */,
 				3B4C2146252309A2007FD5C3 /* ContentView.swift */,
+				3B4C215625232CE7007FD5C3 /* SliderContentView.swift */,
 				3B4C2148252309A3007FD5C3 /* Assets.xcassets */,
 				3B4C214D252309A3007FD5C3 /* Info.plist */,
 				3B4C214A252309A3007FD5C3 /* Preview Content */,
@@ -140,6 +143,7 @@
 			files = (
 				3B4C2147252309A2007FD5C3 /* ContentView.swift in Sources */,
 				3B4C2145252309A2007FD5C3 /* AccessibilityApp.swift in Sources */,
+				3B4C215725232CE7007FD5C3 /* SliderContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
