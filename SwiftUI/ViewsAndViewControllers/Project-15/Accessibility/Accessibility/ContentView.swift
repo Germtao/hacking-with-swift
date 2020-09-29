@@ -33,7 +33,7 @@ struct ContentView: View {
             }
             .accessibility(label: Text(labels[selectedPicture]))
             .accessibility(addTraits: .isButton)
-            .accessibility(addTraits: .isImage)
+            .accessibility(removeTraits: .isImage)
     }
 }
 
