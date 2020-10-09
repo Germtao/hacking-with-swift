@@ -14,6 +14,7 @@
 		3B7C93F625300AA10092AFFF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C93F525300AA10092AFFF /* User.swift */; };
 		3B7C93FB253010120092AFFF /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C93FA253010120092AFFF /* EditView.swift */; };
 		3B7C94002530132D0092AFFF /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C93FF2530132D0092AFFF /* DisplayView.swift */; };
+		3B7C940325305FFE0092AFFF /* DelayedUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C940225305FFE0092AFFF /* DelayedUpdater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3B7C93F525300AA10092AFFF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3B7C93FA253010120092AFFF /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		3B7C93FF2530132D0092AFFF /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		3B7C940225305FFE0092AFFF /* DelayedUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayedUpdater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				3B7C93F525300AA10092AFFF /* User.swift */,
+				3B7C940225305FFE0092AFFF /* DelayedUpdater.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7C940325305FFE0092AFFF /* DelayedUpdater.swift in Sources */,
 				3B7C93E6252FFE020092AFFF /* ContentView.swift in Sources */,
 				3B7C93E4252FFE020092AFFF /* HotProspectsApp.swift in Sources */,
 				3B7C93FB253010120092AFFF /* EditView.swift in Sources */,

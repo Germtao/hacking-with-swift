@@ -12,28 +12,32 @@ enum NetworkError: Error {
 }
 
 struct ContentView: View {
-    @State private var selectedTab = 0
+    @ObservedObject var updater = DelayedUpdater()
     
     var body: some View {
-        Text("Hello World")
-            .onAppear {
-                self.fetchData(from: "https://www.apple.com") { result in
-                    switch result {
-                    case .success(let str):
-                        print("success: \(str)")
-                    case .failure(let error):
-                        switch error {
-                        case .badURL:
-                            print("Bad URL.")
-                        case .requestFailed:
-                            print("Request Failed.")
-                        case .unknown:
-                            print("Unknown error.")
-                        }
-                    }
-                }
-            }
+        Text("value is: \(updater.value)")
     }
+    
+//    var body: some View {
+//        Text("Hello World")
+//            .onAppear {
+//                self.fetchData(from: "https://www.apple.com") { result in
+//                    switch result {
+//                    case .success(let str):
+//                        print("success: \(str)")
+//                    case .failure(let error):
+//                        switch error {
+//                        case .badURL:
+//                            print("Bad URL.")
+//                        case .requestFailed:
+//                            print("Request Failed.")
+//                        case .unknown:
+//                            print("Unknown error.")
+//                        }
+//                    }
+//                }
+//            }
+//    }
 }
 
 extension ContentView {
