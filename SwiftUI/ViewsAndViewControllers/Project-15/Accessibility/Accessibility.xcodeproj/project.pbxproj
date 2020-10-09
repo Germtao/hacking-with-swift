@@ -22,6 +22,7 @@
 		3B4C214B252309A3007FD5C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B4C214D252309A3007FD5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B4C215625232CE7007FD5C3 /* SliderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderContentView.swift; sourceTree = "<group>"; };
+		3B7C93D6252FF9C90092AFFF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 				3B4C2144252309A2007FD5C3 /* AccessibilityApp.swift */,
 				3B4C2146252309A2007FD5C3 /* ContentView.swift */,
 				3B4C215625232CE7007FD5C3 /* SliderContentView.swift */,
+				3B7C93D6252FF9C90092AFFF /* README.md */,
 				3B4C2148252309A3007FD5C3 /* Assets.xcassets */,
 				3B4C214D252309A3007FD5C3 /* Info.plist */,
 				3B4C214A252309A3007FD5C3 /* Preview Content */,
