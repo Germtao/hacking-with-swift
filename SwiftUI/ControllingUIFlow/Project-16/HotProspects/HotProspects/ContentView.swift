@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 enum NetworkError: Error {
     case badURL, requestFailed, unknown
@@ -19,51 +20,81 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("Hello World!")
-                .padding()
-                .background(backgroundColor)
+            Button("Request Permission") {
+                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (success, error) in
+                    if success {
+                        print("All set!")
+                    } else if let error = error {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
             
-            Text("Change Color")
-                .padding()
-                .contextMenu(menuItems: /*@START_MENU_TOKEN@*/{
-                    Button(action: {
-                        self.backgroundColor = .red
-                        self.selectedTag = 0
-                    }, label: {
-                        Text("Red")
-                        if self.selectedTag == 0 {
-                            Image(systemName: "checkmark.circle.fill")
-                                .foregroundColor(.red)
-                        }
-                    })
-                    .tag(0)
-                    
-                    Button(action: {
-                        self.backgroundColor = .green
-                        self.selectedTag = 1
-                    }, label: {
-                        Text("Green")
-                        if self.selectedTag == 1 {
-                            Image(systemName: "checkmark.circle.fill")
-                                .foregroundColor(.red)
-                        }
-                    })
-                    .tag(1)
-                    
-                    Button(action: {
-                        self.backgroundColor = .blue
-                        self.selectedTag = 2
-                    }, label: {
-                        Text("Blue")
-                        if self.selectedTag == 2 {
-                            Image(systemName: "checkmark.circle.fill")
-                                .foregroundColor(.red)
-                        }
-                    })
-                    .tag(2)
-                }/*@END_MENU_TOKEN@*/)
+            Button("Schedule Notification") {
+                let content = UNMutableNotificationContent()
+                content.title = "Feed the cat"
+                content.subtitle = "It looks hungry"
+                content.sound = UNNotificationSound.default
+                
+                // 从现在起5秒钟显示此通知
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+                
+                // 选择一个随机标识符
+                let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+                
+                UNUserNotificationCenter.current().add(request)
+            }
         }
     }
+    
+    /// 上下文菜单
+//    var body: some View {
+//        VStack {
+//            Text("Hello World!")
+//                .padding()
+//                .background(backgroundColor)
+//
+//            Text("Change Color")
+//                .padding()
+//                .contextMenu(menuItems: /*@START_MENU_TOKEN@*/{
+//                    Button(action: {
+//                        self.backgroundColor = .red
+//                        self.selectedTag = 0
+//                    }, label: {
+//                        Text("Red")
+//                        if self.selectedTag == 0 {
+//                            Image(systemName: "checkmark.circle.fill")
+//                                .foregroundColor(.red)
+//                        }
+//                    })
+//                    .tag(0)
+//
+//                    Button(action: {
+//                        self.backgroundColor = .green
+//                        self.selectedTag = 1
+//                    }, label: {
+//                        Text("Green")
+//                        if self.selectedTag == 1 {
+//                            Image(systemName: "checkmark.circle.fill")
+//                                .foregroundColor(.red)
+//                        }
+//                    })
+//                    .tag(1)
+//
+//                    Button(action: {
+//                        self.backgroundColor = .blue
+//                        self.selectedTag = 2
+//                    }, label: {
+//                        Text("Blue")
+//                        if self.selectedTag == 2 {
+//                            Image(systemName: "checkmark.circle.fill")
+//                                .foregroundColor(.red)
+//                        }
+//                    })
+//                    .tag(2)
+//                }/*@END_MENU_TOKEN@*/)
+//        }
+//    }
     
 //    var body: some View {
 //        Image("example")
