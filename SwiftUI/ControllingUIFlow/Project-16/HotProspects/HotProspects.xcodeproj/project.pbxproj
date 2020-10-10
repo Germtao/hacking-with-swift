@@ -16,6 +16,8 @@
 		3B7C94002530132D0092AFFF /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C93FF2530132D0092AFFF /* DisplayView.swift */; };
 		3B7C940325305FFE0092AFFF /* DelayedUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C940225305FFE0092AFFF /* DelayedUpdater.swift */; };
 		3B7C940725318F5A0092AFFF /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 3B7C940625318F5A0092AFFF /* SamplePackage */; };
+		3B7C940A25319B160092AFFF /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C940925319B160092AFFF /* ProspectsView.swift */; };
+		3B7C940D25319B260092AFFF /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C940C25319B260092AFFF /* MeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		3B7C93FA253010120092AFFF /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		3B7C93FF2530132D0092AFFF /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 		3B7C940225305FFE0092AFFF /* DelayedUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayedUpdater.swift; sourceTree = "<group>"; };
+		3B7C940925319B160092AFFF /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
+		3B7C940C25319B260092AFFF /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 			children = (
 				3B7C93FA253010120092AFFF /* EditView.swift */,
 				3B7C93FF2530132D0092AFFF /* DisplayView.swift */,
+				3B7C940925319B160092AFFF /* ProspectsView.swift */,
+				3B7C940C25319B260092AFFF /* MeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +183,8 @@
 				3B7C940325305FFE0092AFFF /* DelayedUpdater.swift in Sources */,
 				3B7C93E6252FFE020092AFFF /* ContentView.swift in Sources */,
 				3B7C93E4252FFE020092AFFF /* HotProspectsApp.swift in Sources */,
+				3B7C940A25319B160092AFFF /* ProspectsView.swift in Sources */,
+				3B7C940D25319B260092AFFF /* MeView.swift in Sources */,
 				3B7C93FB253010120092AFFF /* EditView.swift in Sources */,
 				3B7C94002530132D0092AFFF /* DisplayView.swift in Sources */,
 				3B7C93F625300AA10092AFFF /* User.swift in Sources */,

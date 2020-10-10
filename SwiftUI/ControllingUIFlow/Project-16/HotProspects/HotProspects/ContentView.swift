@@ -27,8 +27,36 @@ struct ContentView: View {
     }
     
     var body: some View {
-        Text(results)
+        TabView {
+            ProspectsView(filter: .none)
+                .tabItem {
+                    Image(systemName: "person.3")
+                    Text("所有人")
+                }
+            
+            ProspectsView(filter: .contacted)
+                .tabItem {
+                    Image(systemName: "checkmark.circle")
+                    Text("最近联系")
+                }
+            
+            ProspectsView(filter: .uncontacted)
+                .tabItem {
+                    Image(systemName: "questionmark.diamond")
+                    Text("未联系")
+                }
+            
+            MeView()
+                .tabItem {
+                    Image(systemName: "person.crop.square")
+                    Text("我")
+                }
+        }
     }
+    
+//    var body: some View {
+//        Text(results)
+//    }
     
     // 本地通知
 //    var body: some View {
