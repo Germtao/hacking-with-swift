@@ -6,10 +6,32 @@
 //
 
 import SwiftUI
+import CoreImage.CIFilterBuiltins
 
 struct MeView: View {
+    @State private var name = "Anonymous"
+    @State private var emailAddress = "you@yoursite.com"
+    
+    let context = CIContext()
+    let filter = CIFilter.qrCodeGenerator()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                TextField("姓名", text: $name)
+                    .textContentType(.name)
+                    .font(.title)
+                    .padding(.horizontal)
+                
+                TextField("邮箱地址", text: $emailAddress)
+                    .textContentType(.emailAddress)
+                    .font(.title)
+                    .padding([.horizontal, .bottom])
+                
+                Spacer()
+            }
+            .navigationBarTitle("Your code")
+        }
     }
 }
 
