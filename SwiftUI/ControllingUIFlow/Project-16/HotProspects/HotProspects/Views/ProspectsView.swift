@@ -25,10 +25,21 @@ struct ProspectsView: View {
         }
     }
     
+    @EnvironmentObject var prospects: Prospects
+    
     var body: some View {
         NavigationView {
-            Text("Hello, World!")
+            Text("People: \(prospects.people.count)")
                 .navigationBarTitle(title)
+                .navigationBarItems(trailing: Button(action: {
+                    let prospect = Prospect()
+                    prospect.name = "Paul Hudson"
+                    prospect.emailAddress = "paul@hackingwithswift.com"
+                    self.prospects.people.append(prospect)
+                }, label: {
+                    Image(systemName: "qrcode.viewfinder")
+                    Text("Scan")
+                }))
         }
     }
 }

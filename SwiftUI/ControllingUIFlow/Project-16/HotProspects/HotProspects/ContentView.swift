@@ -14,17 +14,8 @@ enum NetworkError: Error {
 }
 
 struct ContentView: View {
-    @ObservedObject var updater = DelayedUpdater()
     
-    @State private var backgroundColor = Color.red
-    @State private var selectedTag = 0
-    
-    let possibleNumbers = Array(1...60)
-    var results: String {
-        let selected = possibleNumbers.random(7).sorted()
-        let strings = selected.map(String.init)
-        return strings.joined(separator: ", ")
-    }
+    var prospects = Prospects()
     
     var body: some View {
         TabView {
@@ -52,13 +43,21 @@ struct ContentView: View {
                     Text("我")
                 }
         }
+        .environmentObject(prospects)
     }
     
+    /// MARK - SPM
+//    let possibleNumbers = Array(1...60)
+//    var results: String {
+//        let selected = possibleNumbers.random(7).sorted()
+//        let strings = selected.map(String.init)
+//        return strings.joined(separator: ", ")
+//    }
 //    var body: some View {
 //        Text(results)
 //    }
     
-    // 本地通知
+    /// MARK - 本地通知
 //    var body: some View {
 //        VStack {
 //            Button("Request Permission") {
@@ -88,7 +87,10 @@ struct ContentView: View {
 //        }
 //    }
     
-    /// 上下文菜单
+    /// MARK - 上下文菜单
+//    @State private var backgroundColor = Color.red
+//    @State private var selectedTag = 0
+//
 //    var body: some View {
 //        VStack {
 //            Text("Hello World!")
@@ -137,6 +139,8 @@ struct ContentView: View {
 //        }
 //    }
     
+//    @ObservedObject var updater = DelayedUpdater()
+//
 //    var body: some View {
 //        Image("example")
 //            .interpolation(.none)
