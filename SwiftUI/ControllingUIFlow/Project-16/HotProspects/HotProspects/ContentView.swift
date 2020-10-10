@@ -7,6 +7,7 @@
 
 import SwiftUI
 import UserNotifications
+import SamplePackage
 
 enum NetworkError: Error {
     case badURL, requestFailed, unknown
@@ -18,34 +19,46 @@ struct ContentView: View {
     @State private var backgroundColor = Color.red
     @State private var selectedTag = 0
     
-    var body: some View {
-        VStack {
-            Button("Request Permission") {
-                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (success, error) in
-                    if success {
-                        print("All set!")
-                    } else if let error = error {
-                        print(error.localizedDescription)
-                    }
-                }
-            }
-            
-            Button("Schedule Notification") {
-                let content = UNMutableNotificationContent()
-                content.title = "Feed the cat"
-                content.subtitle = "It looks hungry"
-                content.sound = UNNotificationSound.default
-                
-                // 从现在起5秒钟显示此通知
-                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-                
-                // 选择一个随机标识符
-                let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-                
-                UNUserNotificationCenter.current().add(request)
-            }
-        }
+    let possibleNumbers = Array(1...60)
+    var results: String {
+        let selected = possibleNumbers.random(7).sorted()
+        let strings = selected.map(String.init)
+        return strings.joined(separator: ", ")
     }
+    
+    var body: some View {
+        Text(results)
+    }
+    
+    // 本地通知
+//    var body: some View {
+//        VStack {
+//            Button("Request Permission") {
+//                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (success, error) in
+//                    if success {
+//                        print("All set!")
+//                    } else if let error = error {
+//                        print(error.localizedDescription)
+//                    }
+//                }
+//            }
+//
+//            Button("Schedule Notification") {
+//                let content = UNMutableNotificationContent()
+//                content.title = "Feed the cat"
+//                content.subtitle = "It looks hungry"
+//                content.sound = UNNotificationSound.default
+//
+//                // 从现在起5秒钟显示此通知
+//                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+//
+//                // 选择一个随机标识符
+//                let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+//
+//                UNUserNotificationCenter.current().add(request)
+//            }
+//        }
+//    }
     
     /// 上下文菜单
 //    var body: some View {
