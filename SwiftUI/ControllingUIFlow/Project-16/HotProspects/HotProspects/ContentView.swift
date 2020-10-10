@@ -15,8 +15,18 @@ struct ContentView: View {
     @ObservedObject var updater = DelayedUpdater()
     
     var body: some View {
-        Text("value is: \(updater.value)")
+        Image("example")
+            .interpolation(.none)
+            .resizable()
+            .scaledToFit()
+            .frame(maxHeight: .infinity)
+            .background(Color.black)
+            .edgesIgnoringSafeArea(.all)
     }
+    
+//    var body: some View {
+//        Text("value is: \(updater.value)")
+//    }
     
 //    var body: some View {
 //        Text("Hello World")
