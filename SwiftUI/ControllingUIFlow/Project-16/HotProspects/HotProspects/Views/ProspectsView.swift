@@ -89,7 +89,7 @@ extension ProspectsView {
             person.name = details[0]
             person.emailAddress = details[1]
             
-            self.prospects.people.append(person)
+            self.prospects.add(person)
             
         case .failure(let error):
             print("Scanning failed: \(error.localizedDescription)")
