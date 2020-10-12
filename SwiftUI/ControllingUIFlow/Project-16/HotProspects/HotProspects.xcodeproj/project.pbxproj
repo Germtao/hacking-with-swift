@@ -19,6 +19,7 @@
 		3B7C940A25319B160092AFFF /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C940925319B160092AFFF /* ProspectsView.swift */; };
 		3B7C940D25319B260092AFFF /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C940C25319B260092AFFF /* MeView.swift */; };
 		3B7C941025319E850092AFFF /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C940F25319E850092AFFF /* Prospect.swift */; };
+		3B7C94142533F1B80092AFFF /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 3B7C94132533F1B80092AFFF /* CodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7C94142533F1B80092AFFF /* CodeScanner in Frameworks */,
 				3B7C940725318F5A0092AFFF /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +128,7 @@
 			name = HotProspects;
 			packageProductDependencies = (
 				3B7C940625318F5A0092AFFF /* SamplePackage */,
+				3B7C94132533F1B80092AFFF /* CodeScanner */,
 			);
 			productName = HotProspects;
 			productReference = 3B7C93E0252FFE020092AFFF /* HotProspects.app */;
@@ -156,6 +159,7 @@
 			mainGroup = 3B7C93D7252FFE020092AFFF;
 			packageReferences = (
 				3B7C940525318F5A0092AFFF /* XCRemoteSwiftPackageReference "SamplePackage" */,
+				3B7C94122533F1B80092AFFF /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = 3B7C93E1252FFE020092AFFF /* Products */;
 			projectDirPath = "";
@@ -388,6 +392,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		3B7C94122533F1B80092AFFF /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -395,6 +407,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3B7C940525318F5A0092AFFF /* XCRemoteSwiftPackageReference "SamplePackage" */;
 			productName = SamplePackage;
+		};
+		3B7C94132533F1B80092AFFF /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B7C94122533F1B80092AFFF /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
