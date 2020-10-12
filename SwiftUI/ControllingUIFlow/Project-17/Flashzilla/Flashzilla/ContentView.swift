@@ -6,103 +6,73 @@
 //
 
 import SwiftUI
+import CoreHaptics
 
 struct ContentView: View {
-    /// 圆已经拖了多远
-    @State private var offset = CGSize.zero
-    /// 当前是否被拖动
-    @State private var isDragging = false
     
-//    @State private var currentAmount: Angle = .degrees(0)
-//    @State private var finalAmount: Angle = .degrees(1)
-    
-//    @State private var currentAmount: CGFloat = 0
-//    @State private var finalAmount: CGFloat = 1
+    @State private var engine: CHHapticEngine?
     
     var body: some View {
-        let dragGesture = DragGesture()
-            .onChanged { value in
-                self.offset = value.translation
-            }
-            .onEnded { _ in
-                withAnimation {
-                    self.offset = .zero
-                    self.isDragging = false
-                }
-            }
+        Text("Hello, world!")
+            .onAppear(perform: prepareHaptics)
+            .onTapGesture(perform: complexSuccess)
         
-        let pressGesture = LongPressGesture()
-            .onEnded { value in
-                withAnimation {
-                    self.isDragging = true
-                }
-            }
+//            .onTapGesture(perform: simpleSuccess)
+    }
+}
+
+extension ContentView {
+    func simpleSuccess() {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.error)
+    }
+    
+    func prepareHaptics() {
+        guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
         
-        let combined = pressGesture.sequenced(before: dragGesture)
+        do {
+            self.engine = try CHHapticEngine()
+            try engine?.start()
+        } catch {
+            print("There was an error creating the engine: \(error.localizedDescription)")
+        }
+    }
+    
+    func complexSuccess() {
+        // 确保设备支持触觉
+        guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
         
-        return Circle()
-            .fill(Color.red)
-            .frame(width: 64, height: 64)
-            .scaleEffect(isDragging ? 1.5 : 1)
-            .offset(offset)
-            .gesture(combined)
+        var events = [CHHapticEvent]()
         
-//        VStack {
-//            Text("Hello, world!")
-//                .onTapGesture(count: 1, perform: {
-//                    print("Text Tapped!")
-//                })
-//        }
-//        .simultaneousGesture( // 父手势和子手势同时触发
-//            TapGesture()
-//                .onEnded {
-//                    print("VStack Tapped!")
-//                }
-//        )
+        // 创建一个强烈而尖锐的Tap
+//        let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: 1)
+//        let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: 1)
+//        let event = CHHapticEvent(eventType: .hapticTransient, parameters: [intensity, sharpness], relativeTime: 0)
+//        events.append(event)
         
-//        .highPriorityGesture( // 强制优化父控件手势
-//            TapGesture()
-//                .onEnded {
-//                    print("VStack Tapped!")
-//                }
-//        )
-//        .onTapGesture(count: 1, perform: {
-//            print("VStack Tapped!")
-//        }) // 默认优先子控件手势
+        for i in stride(from: 0, to: 1, by: 0.1) {
+            let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: Float(i))
+            let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: Float(i))
+            let event = CHHapticEvent(eventType: .hapticTransient, parameters: [intensity, sharpness], relativeTime: i)
+            events.append(event)
+        }
         
-//        Text("Hello, world!")
-//            .rotationEffect(finalAmount + currentAmount)
-//            .gesture(
-//                RotationGesture() // 旋转
-//                    .onChanged({ angle in
-//                        self.currentAmount = angle
-//                    })
-//                    .onEnded({ angle in
-//                        self.finalAmount += self.currentAmount
-//                        self.currentAmount = .degrees(0)
-//                    })
-//            )
+        for i in stride(from: 0, to: 1, by: 0.1) {
+            let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: Float(1 - i))
+            let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: Float(1 - i))
+            let event = CHHapticEvent(eventType: .hapticTransient, parameters: [intensity, sharpness], relativeTime: 1 + i)
+            events.append(event)
+        }
         
-//            .scaleEffect(finalAmount + currentAmount)
-//            .gesture(
-//                MagnificationGesture() // 放大手势
-//                    .onChanged({ amount in
-//                        self.currentAmount = amount - 1
-//                    })
-//                    .onEnded({ amount in
-//                        self.finalAmount += self.currentAmount
-//                        self.currentAmount = 0
-//                    })
-//            )
-        
-//            .onTapGesture(count: 2, perform: {
-//                print("Double tapped!")
-//            })
-//            .onLongPressGesture(minimumDuration: 1, pressing: { inProgress in
-//                print("In progress: \(inProgress)")
-//            }) {
-//                print("Long pressed!")
-//            }
+        // 将这些事件转换为模式并立即播放
+        do {
+            let pattern = try CHHapticPattern(events: events, parameters: [])
+            let player = try engine?.makePlayer(with: pattern)
+            try player?.start(atTime: 0)
+        } catch {
+            print("Failed to play pattern: \(error.localizedDescription).")
+
+        }
     }
 }
 
