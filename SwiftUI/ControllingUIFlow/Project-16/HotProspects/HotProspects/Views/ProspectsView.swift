@@ -51,6 +51,11 @@ struct ProspectsView: View {
                         Text(prospect.emailAddress)
                             .foregroundColor(.secondary)
                     }
+                    .contextMenu(menuItems: /*@START_MENU_TOKEN@*/{
+                        Button(prospect.isContacted ? "Mark Uncontacted" : "Mark Contacted") {
+                            self.prospects.toggle(prospect)
+                        }
+                    }/*@END_MENU_TOKEN@*/)
                 }
             }
             .navigationBarTitle(title)
