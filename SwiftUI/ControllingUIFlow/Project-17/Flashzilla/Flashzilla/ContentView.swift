@@ -13,9 +13,38 @@ struct ContentView: View {
     @State private var engine: CHHapticEngine?
     
     var body: some View {
-        Text("Hello, world!")
-            .onAppear(perform: prepareHaptics)
-            .onTapGesture(perform: complexSuccess)
+        
+        VStack {
+            Text("Hello")
+            Spacer().frame(height: 100)
+            Text("World")
+        }
+        .contentShape(Rectangle()) // Spacer区域也能点击
+        .onTapGesture(count: 1, perform: {
+            print("VStack Tapped.")
+        })
+        
+//        ZStack {
+//            Rectangle()
+//                .fill(Color.blue)
+//                .frame(width: 300, height: 300)
+//                .onTapGesture {
+//                    print("Rectangle tapped!")
+//                }
+//
+//            Circle()
+//                .fill(Color.red)
+//                .frame(width: 300, height: 300)
+//                .contentShape(Rectangle()) // 2. 指定可点击的形状
+//                .onTapGesture {
+//                    print("Circle tapped!")
+//                }
+////                .allowsHitTesting(false) // 1. 不可点击
+//        }
+        
+//        Text("Hello, world!")
+//            .onAppear(perform: prepareHaptics)
+//            .onTapGesture(perform: complexSuccess)
         
 //            .onTapGesture(perform: simpleSuccess)
     }
