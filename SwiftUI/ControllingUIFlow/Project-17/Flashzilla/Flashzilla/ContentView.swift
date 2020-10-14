@@ -68,18 +68,19 @@ struct ContentView: View {
                 HStack {
                     Spacer()
                     
-                    Button {
+                    Button(action: {
                         self.showingEditScreen = true
-                    } label: {
+                    }, label: {
                         Image(systemName: "plus.circle")
                             .padding()
                             .background(Color.black.opacity(0.7))
                             .clipShape(Circle())
-                    }
+                    })
                 }
                 
                 Spacer()
             }
+            .frame(width: UIScreen.main.bounds.width)
             .foregroundColor(.white)
             .font(.largeTitle)
             .padding()
@@ -89,34 +90,35 @@ struct ContentView: View {
                     Spacer()
                     
                     HStack {
-                        Button {
+                        Button(action: {
                             withAnimation {
                                 self.removeCard(at: self.cards.count - 1)
                             }
-                        } label: {
+                        }, label: {
                             Image(systemName: "xmark.circle")
                                 .padding()
                                 .background(Color.black.opacity(0.7))
                                 .clipShape(Circle())
-                        }
+                        })
                         .accessibility(label: Text("Wrong"))
                         .accessibility(hint: Text("Mark your answer as being incorrect."))
 
                         Spacer()
                         
-                        Button {
+                        Button(action: {
                             withAnimation {
                                 self.removeCard(at: self.cards.count - 1)
                             }
-                        } label: {
+                        }, label: {
                             Image(systemName: "checkmark.circle")
                                 .padding()
                                 .background(Color.black.opacity(0.7))
                                 .clipShape(Circle())
-                        }
+                        })
                         .accessibility(label: Text("Correct"))
                         .accessibility(hint: Text("Mark your answer as being correct."))
                     }
+                    .frame(width: UIScreen.main.bounds.width)
                     .foregroundColor(.white)
                     .font(.largeTitle)
                     .padding()
