@@ -26,6 +26,7 @@
 		3B7C94382535523D0092AFFF /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		3B7C943D253552850092AFFF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3B92C88F2536A1CD00A475FE /* EditCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCardsView.swift; sourceTree = "<group>"; };
+		3B92C8922536D3C300A475FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 			children = (
 				3B7C9427253433F60092AFFF /* FlashzillaApp.swift */,
 				3B7C9429253433F60092AFFF /* ContentView.swift */,
+				3B92C8922536D3C300A475FE /* README.md */,
 				3B7C943C253552730092AFFF /* Views */,
 				3B7C94372535522E0092AFFF /* Models */,
 				3B7C942B253433F90092AFFF /* Assets.xcassets */,
