@@ -39,7 +39,10 @@ struct ContentView: View {
                 )
             }
             .navigationBarTitle("Resorts")
+            
+            WelcomeView()
         }
+        .phoneOnlyStackNavigationView()
     }
 }
 
