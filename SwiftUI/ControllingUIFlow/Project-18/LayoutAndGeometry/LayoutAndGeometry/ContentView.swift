@@ -8,21 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
+    let colors: [Color] = [.red, .green, .blue, .orange, .pink, .purple, .yellow]
+    
     var body: some View {
-//        VStack {
-//            GeometryReader { geo in
-//                Text("Hello, World!")
-//                    .frame(width: geo.size.width * 0.9, height: 40)
-//                    .background(Color.red)
-//            }
-//            .background(Color.green)
-//
-//            Text("More Text")
-//                .background(Color.blue)
-//        }
-        OuterView()
-            .background(Color.red)
-            .coordinateSpace(name: "Custom")
+        GeometryReader { fullView in
+            ScrollView(.horizontal, showsIndicators: false/*.vertical*/) {
+                HStack {
+                    ForEach(0..<50) { index in
+                        GeometryReader { geo in
+                            Rectangle()
+                                .fill(self.colors[index % 7])
+                                .frame(height: 150)
+                                .rotation3DEffect(
+                                    .degrees(-Double(geo.frame(in: .global).midX - fullView.size.width / 2) / 10),
+                                    axis: (x: 0.0, y: 1.0, z: 0.0)
+                                )
+                            
+    //                        Text("Row: \(index)")
+    //                            .font(.title)
+    //                            .frame(width: fullView.size.width)
+    //                            .background(self.colors[index % 7])
+    //                            .rotation3DEffect(
+    //                                .degrees(Double(geo.frame(in: .global).minY) / 5),
+    //                                axis: (x: 0.0, y: 1.0, z: 0.0)
+    //                            )
+    //                            .rotation3DEffect(
+    //                                .degrees(Double(geo.frame(in: .global).minY - fullView.size.height / 2) / 5),
+    //                                axis: (x: 0.0, y: 1.0, z: 0.0)
+    //                            )
+                        }
+                        .frame(width: 150)
+    //                    .frame(height: 40.0)
+                    }
+                }
+                .padding(.horizontal, (fullView.size.width - 150) / 2)
+            }
+        }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
