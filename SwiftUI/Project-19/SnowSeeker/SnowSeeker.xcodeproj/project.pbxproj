@@ -14,6 +14,9 @@
 		3B92C8ED253827A200A475FE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92C8EC253827A100A475FE /* User.swift */; };
 		3B92C8F225382A7000A475FE /* SimpleTapAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92C8F125382A7000A475FE /* SimpleTapAlertView.swift */; };
 		3B92C8F625382B9400A475FE /* SimpleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92C8F525382B9400A475FE /* SimpleGroupView.swift */; };
+		3B92C8FB25382DCE00A475FE /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92C8FA25382DCE00A475FE /* Resort.swift */; };
+		3B92C8FE25382E2C00A475FE /* resorts.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B92C8FD25382E2C00A475FE /* resorts.json */; };
+		3B92C90125382E6C00A475FE /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92C90025382E6C00A475FE /* Bundle-Decodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		3B92C8EC253827A100A475FE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3B92C8F125382A7000A475FE /* SimpleTapAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTapAlertView.swift; sourceTree = "<group>"; };
 		3B92C8F525382B9400A475FE /* SimpleGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGroupView.swift; sourceTree = "<group>"; };
+		3B92C8FA25382DCE00A475FE /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
+		3B92C8FD25382E2C00A475FE /* resorts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resorts.json; sourceTree = "<group>"; };
+		3B92C90025382E6C00A475FE /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +66,12 @@
 			children = (
 				3B92C8DC25381B2200A475FE /* SnowSeekerApp.swift */,
 				3B92C8DE25381B2200A475FE /* ContentView.swift */,
-				3B92C8EC253827A100A475FE /* User.swift */,
+				3B92C90025382E6C00A475FE /* Bundle-Decodable.swift */,
+				3B92C8F825382DBD00A475FE /* Models */,
 				3B92C8EF25382A1600A475FE /* Views */,
 				3B92C8E025381B2700A475FE /* Assets.xcassets */,
 				3B92C8E525381B2700A475FE /* Info.plist */,
+				3B92C8FD25382E2C00A475FE /* resorts.json */,
 				3B92C8E225381B2700A475FE /* Preview Content */,
 			);
 			path = SnowSeeker;
@@ -84,6 +92,15 @@
 				3B92C8F525382B9400A475FE /* SimpleGroupView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3B92C8F825382DBD00A475FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B92C8EC253827A100A475FE /* User.swift */,
+				3B92C8FA25382DCE00A475FE /* Resort.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B92C8FE25382E2C00A475FE /* resorts.json in Resources */,
 				3B92C8E425381B2700A475FE /* Preview Assets.xcassets in Resources */,
 				3B92C8E125381B2700A475FE /* Assets.xcassets in Resources */,
 			);
@@ -159,6 +177,8 @@
 				3B92C8F625382B9400A475FE /* SimpleGroupView.swift in Sources */,
 				3B92C8F225382A7000A475FE /* SimpleTapAlertView.swift in Sources */,
 				3B92C8DD25381B2200A475FE /* SnowSeekerApp.swift in Sources */,
+				3B92C8FB25382DCE00A475FE /* Resort.swift in Sources */,
+				3B92C90125382E6C00A475FE /* Bundle-Decodable.swift in Sources */,
 				3B92C8ED253827A200A475FE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
