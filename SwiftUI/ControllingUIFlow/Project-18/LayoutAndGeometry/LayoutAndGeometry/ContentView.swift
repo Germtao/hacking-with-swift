@@ -9,11 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-//            .background(Color.red)
-            .position(x: 100, y: 100) // 绝对位置
-//            .offset(x: 100, y: 100) // 相对位置
+//        VStack {
+//            GeometryReader { geo in
+//                Text("Hello, World!")
+//                    .frame(width: geo.size.width * 0.9, height: 40)
+//                    .background(Color.red)
+//            }
+//            .background(Color.green)
+//
+//            Text("More Text")
+//                .background(Color.blue)
+//        }
+        OuterView()
             .background(Color.red)
+            .coordinateSpace(name: "Custom")
     }
 }
 
