@@ -36,6 +36,7 @@
 		3B92C8C62537F8C800A475FE /* CustomAlignmentGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlignmentGuideView.swift; sourceTree = "<group>"; };
 		3B92C8C92537F9C700A475FE /* ScrollEffectsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollEffectsContentView.swift; sourceTree = "<group>"; };
 		3B92C8CC2537FA5B00A475FE /* CoverFlowContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverFlowContentView.swift; sourceTree = "<group>"; };
+		3B92C8CF2538175B00A475FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +72,7 @@
 				3B92C89F2536D67A00A475FE /* LayoutAndGeometryApp.swift */,
 				3B92C8A12536D67A00A475FE /* ContentView.swift */,
 				3B92C8AF2536FBC200A475FE /* VerticalAlignment.swift */,
+				3B92C8CF2538175B00A475FE /* README.md */,
 				3B92C8B22537E5CA00A475FE /* Views */,
 				3B92C8A32536D68000A475FE /* Assets.xcassets */,
 				3B92C8A82536D68000A475FE /* Info.plist */,
