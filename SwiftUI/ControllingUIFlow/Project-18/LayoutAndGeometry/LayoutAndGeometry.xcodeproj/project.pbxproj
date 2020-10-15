@@ -14,6 +14,7 @@
 		3B92C8B02536FBC200A475FE /* VerticalAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92C8AF2536FBC200A475FE /* VerticalAlignment.swift */; };
 		3B92C8B82537E5EF00A475FE /* OuterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92C8B72537E5EF00A475FE /* OuterView.swift */; };
 		3B92C8BC2537E60000A475FE /* InnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92C8BB2537E60000A475FE /* InnerView.swift */; };
+		3B92C8C12537F7C500A475FE /* SimpleAlignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92C8C02537F7C500A475FE /* SimpleAlignmentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3B92C8AF2536FBC200A475FE /* VerticalAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalAlignment.swift; sourceTree = "<group>"; };
 		3B92C8B72537E5EF00A475FE /* OuterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OuterView.swift; sourceTree = "<group>"; };
 		3B92C8BB2537E60000A475FE /* InnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerView.swift; sourceTree = "<group>"; };
+		3B92C8C02537F7C500A475FE /* SimpleAlignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlignmentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				3B92C8B72537E5EF00A475FE /* OuterView.swift */,
 				3B92C8BB2537E60000A475FE /* InnerView.swift */,
+				3B92C8C02537F7C500A475FE /* SimpleAlignmentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B92C8C12537F7C500A475FE /* SimpleAlignmentView.swift in Sources */,
 				3B92C8B02536FBC200A475FE /* VerticalAlignment.swift in Sources */,
 				3B92C8B82537E5EF00A475FE /* OuterView.swift in Sources */,
 				3B92C8BC2537E60000A475FE /* InnerView.swift in Sources */,
