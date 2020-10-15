@@ -9,26 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack(alignment: .midAccountAndName) {
-            VStack {
-                Text("@twostraws")
-                    .alignmentGuide(.midAccountAndName, computeValue: { dimension in
-                        dimension[VerticalAlignment.center]
-                    })
-                Image("example")
-                    .resizable()
-                    .frame(width: 64, height: 64)
-            }
-            
-            VStack {
-                Text("Full name: ")
-                Text("PAUL HUDSON")
-                    .alignmentGuide(.midAccountAndName, computeValue: { dimension in
-                        dimension[VerticalAlignment.center]
-                    })
-                    .font(.largeTitle)
-            }
-        }
+        Text("Hello, World!")
+//            .background(Color.red)
+            .position(x: 100, y: 100) // 绝对位置
+//            .offset(x: 100, y: 100) // 相对位置
+            .background(Color.red)
     }
 }
 
