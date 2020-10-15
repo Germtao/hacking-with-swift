@@ -17,6 +17,7 @@
 		3B92C8C12537F7C500A475FE /* SimpleAlignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92C8C02537F7C500A475FE /* SimpleAlignmentView.swift */; };
 		3B92C8C42537F85B00A475FE /* SimpleAlignmentGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92C8C32537F85B00A475FE /* SimpleAlignmentGuideView.swift */; };
 		3B92C8C72537F8C800A475FE /* CustomAlignmentGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92C8C62537F8C800A475FE /* CustomAlignmentGuideView.swift */; };
+		3B92C8CA2537F9C700A475FE /* ScrollEffectsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92C8C92537F9C700A475FE /* ScrollEffectsContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3B92C8C02537F7C500A475FE /* SimpleAlignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlignmentView.swift; sourceTree = "<group>"; };
 		3B92C8C32537F85B00A475FE /* SimpleAlignmentGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlignmentGuideView.swift; sourceTree = "<group>"; };
 		3B92C8C62537F8C800A475FE /* CustomAlignmentGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlignmentGuideView.swift; sourceTree = "<group>"; };
+		3B92C8C92537F9C700A475FE /* ScrollEffectsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollEffectsContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				3B92C8C62537F8C800A475FE /* CustomAlignmentGuideView.swift */,
 				3B92C8C02537F7C500A475FE /* SimpleAlignmentView.swift */,
 				3B92C8C32537F85B00A475FE /* SimpleAlignmentGuideView.swift */,
+				3B92C8C92537F9C700A475FE /* ScrollEffectsContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				3B92C8C42537F85B00A475FE /* SimpleAlignmentGuideView.swift in Sources */,
 				3B92C8C72537F8C800A475FE /* CustomAlignmentGuideView.swift in Sources */,
 				3B92C8BC2537E60000A475FE /* InnerView.swift in Sources */,
+				3B92C8CA2537F9C700A475FE /* ScrollEffectsContentView.swift in Sources */,
 				3B92C8A22536D67A00A475FE /* ContentView.swift in Sources */,
 				3B92C8A02536D67A00A475FE /* LayoutAndGeometryApp.swift in Sources */,
 			);

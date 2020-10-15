@@ -12,7 +12,9 @@ struct ContentView: View {
 //        SimpleAlignmentView()
 //        SimpleAlignmentGuideView()
 //        CustomAlignmentGuideView()
-        OuterView()
+//        OuterView()
+        
+        ScrollEffectsContentView()
     }
 }
 
