@@ -11,7 +11,8 @@ struct ContentView: View {
     var body: some View {
 //        SimpleAlignmentView()
 //        SimpleAlignmentGuideView()
-        CustomAlignmentGuideView()
+//        CustomAlignmentGuideView()
+        OuterView()
     }
 }
 
