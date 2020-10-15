@@ -18,6 +18,7 @@
 		3B92C8C42537F85B00A475FE /* SimpleAlignmentGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92C8C32537F85B00A475FE /* SimpleAlignmentGuideView.swift */; };
 		3B92C8C72537F8C800A475FE /* CustomAlignmentGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92C8C62537F8C800A475FE /* CustomAlignmentGuideView.swift */; };
 		3B92C8CA2537F9C700A475FE /* ScrollEffectsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92C8C92537F9C700A475FE /* ScrollEffectsContentView.swift */; };
+		3B92C8CD2537FA5B00A475FE /* CoverFlowContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92C8CC2537FA5B00A475FE /* CoverFlowContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3B92C8C32537F85B00A475FE /* SimpleAlignmentGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlignmentGuideView.swift; sourceTree = "<group>"; };
 		3B92C8C62537F8C800A475FE /* CustomAlignmentGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlignmentGuideView.swift; sourceTree = "<group>"; };
 		3B92C8C92537F9C700A475FE /* ScrollEffectsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollEffectsContentView.swift; sourceTree = "<group>"; };
+		3B92C8CC2537FA5B00A475FE /* CoverFlowContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverFlowContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				3B92C8C02537F7C500A475FE /* SimpleAlignmentView.swift */,
 				3B92C8C32537F85B00A475FE /* SimpleAlignmentGuideView.swift */,
 				3B92C8C92537F9C700A475FE /* ScrollEffectsContentView.swift */,
+				3B92C8CC2537FA5B00A475FE /* CoverFlowContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				3B92C8B02536FBC200A475FE /* VerticalAlignment.swift in Sources */,
 				3B92C8B82537E5EF00A475FE /* OuterView.swift in Sources */,
 				3B92C8C42537F85B00A475FE /* SimpleAlignmentGuideView.swift in Sources */,
+				3B92C8CD2537FA5B00A475FE /* CoverFlowContentView.swift in Sources */,
 				3B92C8C72537F8C800A475FE /* CustomAlignmentGuideView.swift in Sources */,
 				3B92C8BC2537E60000A475FE /* InnerView.swift in Sources */,
 				3B92C8CA2537F9C700A475FE /* ScrollEffectsContentView.swift in Sources */,
