@@ -16,7 +16,10 @@ class MasterViewController: UIViewController {
                    description: "通过制作图像查看器应用并学习关键概念，开始在Swift中进行编码。"),
             Master(title: "Project 2: Guess the Flag",
                    subtitle: "Asset catalogs, UIButton, CALayer, UIColor, UIAlertController",
-                   description: "使用 UIKit 制作游戏，并了解整数，按钮，颜色和Actions。")
+                   description: "使用 UIKit 制作游戏，并了解整数，按钮，颜色和Actions。"),
+            Master(title: "Project 3: Social Media",
+                   subtitle: "UIBarButtonItem, UIActivityViewController, URL",
+                   description: "通过修改 Project 1，让用户共享到Facebook和Twitter。")
         ]
     }
 
@@ -56,7 +59,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         switch indexPath.row {
-        case 0: stormViewer()
+        case 0, 2: stormViewer()
         case 1: guessTheFlag()
         default:
             break
