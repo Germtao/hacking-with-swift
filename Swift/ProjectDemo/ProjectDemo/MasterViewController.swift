@@ -21,6 +21,11 @@ class MasterViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = false
+    }
 
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
@@ -42,6 +47,23 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
                                                  for: indexPath) as! MasterViewCell
         cell.update(with: dataSource[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        switch indexPath.row {
+        case 0: stormViewer()
+        default:
+            break
+        }
+    }
+}
+
+extension MasterViewController {
+    private func stormViewer() {
+        let vc = StormViewerViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
