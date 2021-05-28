@@ -13,7 +13,10 @@ class MasterViewController: UIViewController {
         return [
             Master(title: "Project 1: Storm Viewer",
                    subtitle: "常量和变量, UITableView, UIImageView, FileManager, Storyboards",
-                   description: "通过制作图像查看器应用并学习关键概念，开始在Swift中进行编码。")
+                   description: "通过制作图像查看器应用并学习关键概念，开始在Swift中进行编码。"),
+            Master(title: "Project 2: Guess the Flag",
+                   subtitle: "Asset catalogs, UIButton, CALayer, UIColor, UIAlertController",
+                   description: "使用 UIKit 制作游戏，并了解整数，按钮，颜色和Actions。")
         ]
     }
 
@@ -54,6 +57,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         
         switch indexPath.row {
         case 0: stormViewer()
+        case 1: guessTheFlag()
         default:
             break
         }
@@ -63,6 +67,11 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
 extension MasterViewController {
     private func stormViewer() {
         let vc = StormViewerViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func guessTheFlag() {
+        let vc = GuessTheFlagViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }

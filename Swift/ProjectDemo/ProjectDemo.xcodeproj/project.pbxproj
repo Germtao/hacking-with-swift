@@ -20,6 +20,9 @@
 		3B21EFD32660CE97002E6154 /* StormViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EFD22660CE97002E6154 /* StormViewerViewController.swift */; };
 		3B21EFD52660D633002E6154 /* StormViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFD42660D633002E6154 /* StormViewer.storyboard */; };
 		3B21EFD72660D6A9002E6154 /* StormViewerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EFD62660D6A9002E6154 /* StormViewerDetailViewController.swift */; };
+		3B21EFDA2660E0BE002E6154 /* Flag.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFD92660E0BE002E6154 /* Flag.xcassets */; };
+		3B21EFDD2660E203002E6154 /* GuessTheFlagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EFDB2660E203002E6154 /* GuessTheFlagViewController.swift */; };
+		3B21EFDE2660E203002E6154 /* GuessTheFlagViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFDC2660E203002E6154 /* GuessTheFlagViewController.xib */; };
 		3B98D89626608CE800F483DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B98D89526608CE800F483DB /* AppDelegate.swift */; };
 		3B98D89826608CE800F483DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B98D89726608CE800F483DB /* SceneDelegate.swift */; };
 		3B98D89A26608CE800F483DB /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B98D89926608CE800F483DB /* MasterViewController.swift */; };
@@ -46,6 +49,9 @@
 		3B21EFD22660CE97002E6154 /* StormViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormViewerViewController.swift; sourceTree = "<group>"; };
 		3B21EFD42660D633002E6154 /* StormViewer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StormViewer.storyboard; sourceTree = "<group>"; };
 		3B21EFD62660D6A9002E6154 /* StormViewerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormViewerDetailViewController.swift; sourceTree = "<group>"; };
+		3B21EFD92660E0BE002E6154 /* Flag.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Flag.xcassets; sourceTree = "<group>"; };
+		3B21EFDB2660E203002E6154 /* GuessTheFlagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagViewController.swift; sourceTree = "<group>"; };
+		3B21EFDC2660E203002E6154 /* GuessTheFlagViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuessTheFlagViewController.xib; sourceTree = "<group>"; };
 		3B98D89226608CE800F483DB /* ProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B98D89526608CE800F483DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B98D89726608CE800F483DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +105,16 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		3B21EFD82660E075002E6154 /* Project-2 */ = {
+			isa = PBXGroup;
+			children = (
+				3B21EFD92660E0BE002E6154 /* Flag.xcassets */,
+				3B21EFDB2660E203002E6154 /* GuessTheFlagViewController.swift */,
+				3B21EFDC2660E203002E6154 /* GuessTheFlagViewController.xib */,
+			);
+			path = "Project-2";
+			sourceTree = "<group>";
+		};
 		3B98D88926608CE800F483DB = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +134,7 @@
 		3B98D89426608CE800F483DB /* ProjectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3B21EFD82660E075002E6154 /* Project-2 */,
 				3B21EFBC2660CC51002E6154 /* Project-1 */,
 				3B98D89526608CE800F483DB /* AppDelegate.swift */,
 				3B98D89726608CE800F483DB /* SceneDelegate.swift */,
@@ -194,11 +211,13 @@
 				3B21EFCA2660CC89002E6154 /* nssl0041.jpg in Resources */,
 				3B21EFD12660CC89002E6154 /* nssl0046.jpg in Resources */,
 				3B21EFCB2660CC89002E6154 /* nssl0051.jpg in Resources */,
+				3B21EFDA2660E0BE002E6154 /* Flag.xcassets in Resources */,
 				3B21EFC82660CC89002E6154 /* nssl0049.jpg in Resources */,
 				3B21EFD02660CC89002E6154 /* nssl0045.jpg in Resources */,
 				3B21EFCE2660CC89002E6154 /* nssl0043.jpg in Resources */,
 				3B21EFC92660CC89002E6154 /* nssl0042.jpg in Resources */,
 				3B21EFCC2660CC89002E6154 /* nssl0033.jpg in Resources */,
+				3B21EFDE2660E203002E6154 /* GuessTheFlagViewController.xib in Resources */,
 				3B21EFD52660D633002E6154 /* StormViewer.storyboard in Resources */,
 				3B21EFCD2660CC89002E6154 /* nssl0091.jpg in Resources */,
 				3B98D8A226608CEB00F483DB /* LaunchScreen.storyboard in Resources */,
@@ -216,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B21EFDD2660E203002E6154 /* GuessTheFlagViewController.swift in Sources */,
 				3B98D89A26608CE800F483DB /* MasterViewController.swift in Sources */,
 				3B21EFD72660D6A9002E6154 /* StormViewerDetailViewController.swift in Sources */,
 				3B21EFD32660CE97002E6154 /* StormViewerViewController.swift in Sources */,
