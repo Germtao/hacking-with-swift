@@ -19,7 +19,10 @@ class MasterViewController: UIViewController {
                    description: "使用 UIKit 制作游戏，并了解整数，按钮，颜色和Actions。"),
             Master(title: "Project 3: Social Media",
                    subtitle: "UIBarButtonItem, UIActivityViewController, URL",
-                   description: "通过修改 Project 1，让用户共享到Facebook和Twitter。")
+                   description: "通过修改 Project 1，让用户共享到Facebook和Twitter。"),
+            Master(title: "Project 4: Easy Browser",
+                   subtitle: "loadView(), WKWebView, URLRequest, UIToolbar, UIProgressView, key-value observing",
+                   description: "嵌入Web Kit并了解有关委托，KVO，类和UIToolbar的信息。")
         ]
     }
 

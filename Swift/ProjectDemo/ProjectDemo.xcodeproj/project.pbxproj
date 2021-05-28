@@ -23,6 +23,7 @@
 		3B21EFDA2660E0BE002E6154 /* Flag.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFD92660E0BE002E6154 /* Flag.xcassets */; };
 		3B21EFDD2660E203002E6154 /* GuessTheFlagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EFDB2660E203002E6154 /* GuessTheFlagViewController.swift */; };
 		3B21EFDE2660E203002E6154 /* GuessTheFlagViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFDC2660E203002E6154 /* GuessTheFlagViewController.xib */; };
+		3B21EFF72660F632002E6154 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EFF62660F632002E6154 /* WebViewController.swift */; };
 		3B98D89626608CE800F483DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B98D89526608CE800F483DB /* AppDelegate.swift */; };
 		3B98D89826608CE800F483DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B98D89726608CE800F483DB /* SceneDelegate.swift */; };
 		3B98D89A26608CE800F483DB /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B98D89926608CE800F483DB /* MasterViewController.swift */; };
@@ -52,6 +53,7 @@
 		3B21EFD92660E0BE002E6154 /* Flag.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Flag.xcassets; sourceTree = "<group>"; };
 		3B21EFDB2660E203002E6154 /* GuessTheFlagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagViewController.swift; sourceTree = "<group>"; };
 		3B21EFDC2660E203002E6154 /* GuessTheFlagViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuessTheFlagViewController.xib; sourceTree = "<group>"; };
+		3B21EFF62660F632002E6154 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		3B98D89226608CE800F483DB /* ProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B98D89526608CE800F483DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B98D89726608CE800F483DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,14 @@
 			path = "Project-2";
 			sourceTree = "<group>";
 		};
+		3B21EFF52660F3D5002E6154 /* Project-4 */ = {
+			isa = PBXGroup;
+			children = (
+				3B21EFF62660F632002E6154 /* WebViewController.swift */,
+			);
+			path = "Project-4";
+			sourceTree = "<group>";
+		};
 		3B98D88926608CE800F483DB = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +144,7 @@
 		3B98D89426608CE800F483DB /* ProjectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3B21EFF52660F3D5002E6154 /* Project-4 */,
 				3B21EFD82660E075002E6154 /* Project-2 */,
 				3B21EFBC2660CC51002E6154 /* Project-1 */,
 				3B98D89526608CE800F483DB /* AppDelegate.swift */,
@@ -238,6 +249,7 @@
 				3B21EFDD2660E203002E6154 /* GuessTheFlagViewController.swift in Sources */,
 				3B98D89A26608CE800F483DB /* MasterViewController.swift in Sources */,
 				3B21EFD72660D6A9002E6154 /* StormViewerDetailViewController.swift in Sources */,
+				3B21EFF72660F632002E6154 /* WebViewController.swift in Sources */,
 				3B21EFD32660CE97002E6154 /* StormViewerViewController.swift in Sources */,
 				3B98D89626608CE800F483DB /* AppDelegate.swift in Sources */,
 				3B98D8AD26608EEF00F483DB /* MasterViewCell.swift in Sources */,
