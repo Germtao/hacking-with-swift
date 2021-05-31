@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B1537C72664BC010099DB06 /* WordScrambleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1537C62664BC010099DB06 /* WordScrambleViewController.swift */; };
+		3B1537C92664C2B40099DB06 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B1537C82664C2B40099DB06 /* start.txt */; };
 		3B21EFC82660CC89002E6154 /* nssl0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBE2660CC88002E6154 /* nssl0049.jpg */; };
 		3B21EFC92660CC89002E6154 /* nssl0042.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBF2660CC88002E6154 /* nssl0042.jpg */; };
 		3B21EFCA2660CC89002E6154 /* nssl0041.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFC02660CC88002E6154 /* nssl0041.jpg */; };
@@ -37,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B1537C62664BC010099DB06 /* WordScrambleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleViewController.swift; sourceTree = "<group>"; };
+		3B1537C82664C2B40099DB06 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		3B21EFBE2660CC88002E6154 /* nssl0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0049.jpg; sourceTree = "<group>"; };
 		3B21EFBF2660CC88002E6154 /* nssl0042.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0042.jpg; sourceTree = "<group>"; };
 		3B21EFC02660CC88002E6154 /* nssl0041.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0041.jpg; sourceTree = "<group>"; };
@@ -79,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B1537C52664BBE00099DB06 /* Project-5 */ = {
+			isa = PBXGroup;
+			children = (
+				3B1537C82664C2B40099DB06 /* start.txt */,
+				3B1537C62664BC010099DB06 /* WordScrambleViewController.swift */,
+			);
+			path = "Project-5";
+			sourceTree = "<group>";
+		};
 		3B21EFBC2660CC51002E6154 /* Project-1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +157,7 @@
 		3B98D89426608CE800F483DB /* ProjectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3B1537C52664BBE00099DB06 /* Project-5 */,
 				3B21EFF52660F3D5002E6154 /* Project-4 */,
 				3B21EFD82660E075002E6154 /* Project-2 */,
 				3B21EFBC2660CC51002E6154 /* Project-1 */,
@@ -220,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B21EFCA2660CC89002E6154 /* nssl0041.jpg in Resources */,
+				3B1537C92664C2B40099DB06 /* start.txt in Resources */,
 				3B21EFD12660CC89002E6154 /* nssl0046.jpg in Resources */,
 				3B21EFCB2660CC89002E6154 /* nssl0051.jpg in Resources */,
 				3B21EFDA2660E0BE002E6154 /* Flag.xcassets in Resources */,
@@ -247,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B21EFDD2660E203002E6154 /* GuessTheFlagViewController.swift in Sources */,
+				3B1537C72664BC010099DB06 /* WordScrambleViewController.swift in Sources */,
 				3B98D89A26608CE800F483DB /* MasterViewController.swift in Sources */,
 				3B21EFD72660D6A9002E6154 /* StormViewerDetailViewController.swift in Sources */,
 				3B21EFF72660F632002E6154 /* WebViewController.swift in Sources */,

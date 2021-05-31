@@ -22,7 +22,10 @@ class MasterViewController: UIViewController {
                    description: "通过修改 Project 1，让用户共享到Facebook和Twitter。"),
             Master(title: "Project 4: Easy Browser",
                    subtitle: "loadView(), WKWebView, URLRequest, UIToolbar, UIProgressView, key-value observing",
-                   description: "嵌入Web Kit并了解有关委托，KVO，类和UIToolbar的信息。")
+                   description: "嵌入Web Kit并了解有关委托，KVO，类和UIToolbar的信息。"),
+            Master(title: "Project 5: Word Scramble",
+                   subtitle: "闭包、方法返回值、布尔值、NSRange",
+                   description: "在学习 闭包 和 布尔值 的同时创建一个字谜游戏。")
         ]
     }
 
@@ -65,6 +68,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 0, 2: stormViewer()
         case 1:    guessTheFlag()
         case 3:    easyBrowser()
+        case 4:    wordScramble()
         default:
             break
         }
@@ -84,6 +88,11 @@ extension MasterViewController {
     
     private func easyBrowser() {
         let vc = WebViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func wordScramble() {
+        let vc = WordScrambleViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
