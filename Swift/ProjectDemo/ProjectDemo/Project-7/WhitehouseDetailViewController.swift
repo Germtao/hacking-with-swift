@@ -1,15 +1,16 @@
 //
-//  DetailViewController.swift
-//  WhitehousePetitions
+//  WhitehouseDetailViewController.swift
+//  ProjectDemo
 //
-//  Created by QDSG on 2020/9/1.
+//  Created by QDSG on 2021/5/31.
 //
 
 import UIKit
 import WebKit
 
-class DetailViewController: UIViewController {
-    var webView: WKWebView!
+class WhitehouseDetailViewController: UIViewController {
+    
+    private var webView: WKWebView!
     var detailItem: Petition?
     
     override func loadView() {
@@ -20,7 +21,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        guard let item = detailItem else { return }
+        guard let detailItem = detailItem else { return }
         
         let html = """
         <html>
@@ -29,11 +30,12 @@ class DetailViewController: UIViewController {
         <style> body { font-size: 150%; } </style>
         </head>
         <body>
-        \(item.body)
+        \(detailItem.body)
         </body>
         </html>
         """
         
         webView.loadHTMLString(html, baseURL: nil)
     }
+
 }

@@ -28,7 +28,10 @@ class MasterViewController: UIViewController {
                    description: "在学习 闭包 和 布尔值 的同时创建一个字谜游戏。"),
             Master(title: "Project 6: Auto Layout",
                    subtitle: "NSLayoutConstraint，Visual Format Language(视觉格式语言)，布局锚点",
-                   description: "使用实际示例和代码来掌握 Auto Layout!")
+                   description: "使用实际示例和代码来掌握 Auto Layout!"),
+            Master(title: "Project 7: Whitehouse Petitions",
+                   subtitle: "JSON, Data, UITabBarController",
+                   description: "制作一个使用 JSON 和 TabBar 解析的 Whitehouse Petitions 的 App。")
         ]
     }
 
@@ -73,6 +76,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 3:    easyBrowser()
         case 4:    wordScramble()
         case 5:    autoLayout()
+        case 6:    whitehousePetition()
         default:
             break
         }
@@ -102,6 +106,12 @@ extension MasterViewController {
     
     private func autoLayout() {
         let vc = AutoLayoutViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func whitehousePetition() {
+        let storyboard = UIStoryboard(name: "Whitehouse", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "Whitehouse")
         navigationController?.pushViewController(vc, animated: true)
     }
 }
