@@ -25,7 +25,10 @@ class MasterViewController: UIViewController {
                    description: "嵌入Web Kit并了解有关委托，KVO，类和UIToolbar的信息。"),
             Master(title: "Project 5: Word Scramble",
                    subtitle: "闭包、方法返回值、布尔值、NSRange",
-                   description: "在学习 闭包 和 布尔值 的同时创建一个字谜游戏。")
+                   description: "在学习 闭包 和 布尔值 的同时创建一个字谜游戏。"),
+            Master(title: "Project 6: Auto Layout",
+                   subtitle: "NSLayoutConstraint，Visual Format Language(视觉格式语言)，布局锚点",
+                   description: "使用实际示例和代码来掌握 Auto Layout!")
         ]
     }
 
@@ -69,6 +72,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 1:    guessTheFlag()
         case 3:    easyBrowser()
         case 4:    wordScramble()
+        case 5:    autoLayout()
         default:
             break
         }
@@ -93,6 +97,11 @@ extension MasterViewController {
     
     private func wordScramble() {
         let vc = WordScrambleViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func autoLayout() {
+        let vc = AutoLayoutViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
