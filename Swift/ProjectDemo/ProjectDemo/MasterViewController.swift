@@ -63,7 +63,8 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         
         switch indexPath.row {
         case 0, 2: stormViewer()
-        case 1: guessTheFlag()
+        case 1:    guessTheFlag()
+        case 3:    easyBrowser()
         default:
             break
         }
@@ -78,6 +79,11 @@ extension MasterViewController {
     
     private func guessTheFlag() {
         let vc = GuessTheFlagViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func easyBrowser() {
+        let vc = WebViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
