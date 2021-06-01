@@ -34,7 +34,10 @@ class MasterViewController: UIViewController {
                    description: "制作一个使用 JSON 和 TabBar 解析的 Whitehouse Petitions 的 App。"),
             Master(title: "Project 8: 7 Swifty Words",
                    subtitle: "addTarget()、enumerated()、count()、index(of:)、joined()、属性观察器、范围运算符",
-                   description: "构建一个猜词游戏并一劳永逸地掌握 String。")
+                   description: "构建一个猜词游戏并一劳永逸地掌握 String。"),
+            Master(title: "Project 9: Grand Central Dispatch",
+                   subtitle: "DispatchQueue, perform(inBackground:)",
+                   description: "了解如何使用 GCD 在后台运行复杂的任务。")
         ]
     }
 
@@ -79,7 +82,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 3:    easyBrowser()
         case 4:    wordScramble()
         case 5:    autoLayout()
-        case 6:    whitehousePetition()
+        case 6, 8: whitehousePetition()
         case 7:    swiftyWords()
         default:
             break

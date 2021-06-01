@@ -10,25 +10,31 @@ import UIKit
 class WhitehouseViewController: UITableViewController {
     
     private var petitions = Petitions(results: []) {
-        didSet { tableView.reloadData() }
+        didSet {
+            performSelector(onMainThread: #selector(UITableView.reloadData), with: nil, waitUntilDone: false)
+        }
     }
+    
+    private var urlString = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.tableFooterView = UIView()
-
-        let urlString: String
         
         if navigationController?.tabBarItem.tag == 0 {
             urlString = "https://api.whitehouse.gov/v1/petitions.json?limit=100"
         } else {
             urlString = "https://api.whitehouse.gov/v1/petitions.json?signatureCountFloor=10000&limit=100"
         }
-        
+
+        performSelector(inBackground: #selector(fetchJSON), with: nil)
+    }
+    
+    @objc private func fetchJSON() {
         guard let url = URL(string: urlString),
               let data = try? Data(contentsOf: url) else {
-            showError()
+            performSelector(onMainThread: #selector(showError), with: nil, waitUntilDone: false)
             return
         }
         
@@ -39,14 +45,14 @@ class WhitehouseViewController: UITableViewController {
         let decoder = JSONDecoder()
         
         guard let jsonPetitions = try? decoder.decode(Petitions.self, from: json) else {
-            showError()
+            performSelector(onMainThread: #selector(showError), with: nil, waitUntilDone: false)
             return
         }
         
         petitions = jsonPetitions
     }
     
-    private func showError() {
+    @objc private func showError() {
         let alert = UIAlertController(title: "Loading Error",
                                       message: "There was a problem loading the feed; please check your connection and try again.",
                                       preferredStyle: .alert)
