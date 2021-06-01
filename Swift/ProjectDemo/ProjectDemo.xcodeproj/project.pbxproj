@@ -18,6 +18,10 @@
 		3B1537D92664EA670099DB06 /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1537D82664EA670099DB06 /* Petition.swift */; };
 		3B1537DB2664EA900099DB06 /* Petitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1537DA2664EA900099DB06 /* Petitions.swift */; };
 		3B1537DD2664EC970099DB06 /* WhitehouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1537DC2664EC970099DB06 /* WhitehouseDetailViewController.swift */; };
+		3B1537E12665CEFC0099DB06 /* SwiftyWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1537DF2665CEFC0099DB06 /* SwiftyWordsViewController.swift */; };
+		3B1537E22665CEFC0099DB06 /* SwiftyWordsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1537E02665CEFC0099DB06 /* SwiftyWordsViewController.xib */; };
+		3B1537E52665CF7C0099DB06 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B1537E32665CF7C0099DB06 /* level1.txt */; };
+		3B1537E62665CF7C0099DB06 /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B1537E42665CF7C0099DB06 /* level2.txt */; };
 		3B21EFC82660CC89002E6154 /* nssl0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBE2660CC88002E6154 /* nssl0049.jpg */; };
 		3B21EFC92660CC89002E6154 /* nssl0042.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBF2660CC88002E6154 /* nssl0042.jpg */; };
 		3B21EFCA2660CC89002E6154 /* nssl0041.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFC02660CC88002E6154 /* nssl0041.jpg */; };
@@ -59,6 +63,10 @@
 		3B1537D82664EA670099DB06 /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
 		3B1537DA2664EA900099DB06 /* Petitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petitions.swift; sourceTree = "<group>"; };
 		3B1537DC2664EC970099DB06 /* WhitehouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitehouseDetailViewController.swift; sourceTree = "<group>"; };
+		3B1537DF2665CEFC0099DB06 /* SwiftyWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyWordsViewController.swift; sourceTree = "<group>"; };
+		3B1537E02665CEFC0099DB06 /* SwiftyWordsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwiftyWordsViewController.xib; sourceTree = "<group>"; };
+		3B1537E32665CF7C0099DB06 /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
+		3B1537E42665CF7C0099DB06 /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
 		3B21EFBE2660CC88002E6154 /* nssl0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0049.jpg; sourceTree = "<group>"; };
 		3B21EFBF2660CC88002E6154 /* nssl0042.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0042.jpg; sourceTree = "<group>"; };
 		3B21EFC02660CC88002E6154 /* nssl0041.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0041.jpg; sourceTree = "<group>"; };
@@ -133,6 +141,17 @@
 			path = "Project-7";
 			sourceTree = "<group>";
 		};
+		3B1537DE2665C6130099DB06 /* Project-8 */ = {
+			isa = PBXGroup;
+			children = (
+				3B1537E32665CF7C0099DB06 /* level1.txt */,
+				3B1537E42665CF7C0099DB06 /* level2.txt */,
+				3B1537DF2665CEFC0099DB06 /* SwiftyWordsViewController.swift */,
+				3B1537E02665CEFC0099DB06 /* SwiftyWordsViewController.xib */,
+			);
+			path = "Project-8";
+			sourceTree = "<group>";
+		};
 		3B21EFBC2660CC51002E6154 /* Project-1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +217,7 @@
 		3B98D89426608CE800F483DB /* ProjectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3B1537DE2665C6130099DB06 /* Project-8 */,
 				3B1537D32664E8C60099DB06 /* Project-7 */,
 				3B1537CA2664D6470099DB06 /* Project-6 */,
 				3B1537C52664BBE00099DB06 /* Project-5 */,
@@ -285,6 +305,7 @@
 				3B21EFD02660CC89002E6154 /* nssl0045.jpg in Resources */,
 				3B21EFCE2660CC89002E6154 /* nssl0043.jpg in Resources */,
 				3B21EFC92660CC89002E6154 /* nssl0042.jpg in Resources */,
+				3B1537E52665CF7C0099DB06 /* level1.txt in Resources */,
 				3B21EFCC2660CC89002E6154 /* nssl0033.jpg in Resources */,
 				3B21EFDE2660E203002E6154 /* GuessTheFlagViewController.xib in Resources */,
 				3B1537D02664DFAE0099DB06 /* AutoLayout1ViewController.xib in Resources */,
@@ -293,6 +314,8 @@
 				3B98D8A226608CEB00F483DB /* LaunchScreen.storyboard in Resources */,
 				3B98D89F26608CEB00F483DB /* Assets.xcassets in Resources */,
 				3B98D8AE26608EEF00F483DB /* MasterViewCell.xib in Resources */,
+				3B1537E62665CF7C0099DB06 /* level2.txt in Resources */,
+				3B1537E22665CEFC0099DB06 /* SwiftyWordsViewController.xib in Resources */,
 				3B1537D72664E94A0099DB06 /* Whitehouse.storyboard in Resources */,
 				3B21EFCF2660CC89002E6154 /* nssl0034.jpg in Resources */,
 				3B98D89D26608CE800F483DB /* Main.storyboard in Resources */,
@@ -319,6 +342,7 @@
 				3B21EFD32660CE97002E6154 /* StormViewerViewController.swift in Sources */,
 				3B98D89626608CE800F483DB /* AppDelegate.swift in Sources */,
 				3B98D8AD26608EEF00F483DB /* MasterViewCell.swift in Sources */,
+				3B1537E12665CEFC0099DB06 /* SwiftyWordsViewController.swift in Sources */,
 				3B98D8B52660915200F483DB /* Master.swift in Sources */,
 				3B98D8B2266090E900F483DB /* UIView+Extension.swift in Sources */,
 				3B98D89826608CE800F483DB /* SceneDelegate.swift in Sources */,

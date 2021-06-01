@@ -31,7 +31,10 @@ class MasterViewController: UIViewController {
                    description: "使用实际示例和代码来掌握 Auto Layout!"),
             Master(title: "Project 7: Whitehouse Petitions",
                    subtitle: "JSON, Data, UITabBarController",
-                   description: "制作一个使用 JSON 和 TabBar 解析的 Whitehouse Petitions 的 App。")
+                   description: "制作一个使用 JSON 和 TabBar 解析的 Whitehouse Petitions 的 App。"),
+            Master(title: "Project 8: 7 Swifty Words",
+                   subtitle: "addTarget()、enumerated()、count()、index(of:)、joined()、属性观察器、范围运算符",
+                   description: "构建一个猜词游戏并一劳永逸地掌握 String。")
         ]
     }
 
@@ -77,6 +80,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 4:    wordScramble()
         case 5:    autoLayout()
         case 6:    whitehousePetition()
+        case 7:    swiftyWords()
         default:
             break
         }
@@ -112,6 +116,11 @@ extension MasterViewController {
     private func whitehousePetition() {
         let storyboard = UIStoryboard(name: "Whitehouse", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "Whitehouse")
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func swiftyWords() {
+        let vc = SwiftyWordsViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
