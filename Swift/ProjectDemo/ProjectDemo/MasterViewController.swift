@@ -37,7 +37,10 @@ class MasterViewController: UIViewController {
                    description: "构建一个猜词游戏并一劳永逸地掌握 String。"),
             Master(title: "Project 9: Grand Central Dispatch",
                    subtitle: "DispatchQueue, perform(inBackground:)",
-                   description: "了解如何使用 GCD 在后台运行复杂的任务。")
+                   description: "了解如何使用 GCD 在后台运行复杂的任务。"),
+            Master(title: "Project 10: Names to Faces",
+                   subtitle: "UICollectionView、UIImagePickerController、UUID、类",
+                   description: "开始使用 UICollectionView 和照片库。")
         ]
     }
 
@@ -84,6 +87,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 5:    autoLayout()
         case 6, 8: whitehousePetition()
         case 7:    swiftyWords()
+        case 9:    namesToFaces()
         default:
             break
         }
@@ -124,6 +128,11 @@ extension MasterViewController {
     
     private func swiftyWords() {
         let vc = SwiftyWordsViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func namesToFaces() {
+        let vc = NamesToFacesViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
