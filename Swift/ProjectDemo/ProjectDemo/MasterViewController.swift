@@ -46,7 +46,10 @@ class MasterViewController: UIViewController {
                    description: "深入 SpriteKit，尝试快速 2D 游戏。"),
             Master(title: "Project 12: UserDefaults",
                    subtitle: "UserDefaults, NSCoding, Codable, NSKeyedArchiver",
-                   description: "了解如何保存用户设置和数据以备后用。")
+                   description: "了解如何保存用户设置和数据以备后用。"),
+            Master(title: "Project 13: Instafilter",
+                   subtitle: "Core Image, UISlider, 写入图片库",
+                   description: "使用 Core Image 滤镜和 UISlider 制作照片处理程序。")
         ]
     }
 
@@ -95,6 +98,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 7:    swiftyWords()
         case 9, 11: namesToFaces()
         case 10:   pachinko()
+        case 12:   instafilter()
         default:
             break
         }
@@ -145,6 +149,11 @@ extension MasterViewController {
     
     private func pachinko() {
         let vc = GameViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func instafilter() {
+        let vc = InstafilterViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }

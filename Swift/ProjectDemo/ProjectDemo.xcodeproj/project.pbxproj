@@ -58,6 +58,8 @@
 		3B15383C26662F560099DB06 /* ballGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B15382026662F560099DB06 /* ballGreen.png */; };
 		3B15383D26662F560099DB06 /* bouncer.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B15382126662F560099DB06 /* bouncer.png */; };
 		3B15383E26662F560099DB06 /* ballBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B15382226662F560099DB06 /* ballBlue.png */; };
+		3B15384226672D4A0099DB06 /* InstafilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15384026672D4A0099DB06 /* InstafilterViewController.swift */; };
+		3B15384326672D4A0099DB06 /* InstafilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B15384126672D4A0099DB06 /* InstafilterViewController.xib */; };
 		3B21EFC82660CC89002E6154 /* nssl0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBE2660CC88002E6154 /* nssl0049.jpg */; };
 		3B21EFC92660CC89002E6154 /* nssl0042.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBF2660CC88002E6154 /* nssl0042.jpg */; };
 		3B21EFCA2660CC89002E6154 /* nssl0041.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFC02660CC88002E6154 /* nssl0041.jpg */; };
@@ -139,6 +141,8 @@
 		3B15382026662F560099DB06 /* ballGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ballGreen.png; sourceTree = "<group>"; };
 		3B15382126662F560099DB06 /* bouncer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bouncer.png; sourceTree = "<group>"; };
 		3B15382226662F560099DB06 /* ballBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ballBlue.png; sourceTree = "<group>"; };
+		3B15384026672D4A0099DB06 /* InstafilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafilterViewController.swift; sourceTree = "<group>"; };
+		3B15384126672D4A0099DB06 /* InstafilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstafilterViewController.xib; sourceTree = "<group>"; };
 		3B21EFBE2660CC88002E6154 /* nssl0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0049.jpg; sourceTree = "<group>"; };
 		3B21EFBF2660CC88002E6154 /* nssl0042.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0042.jpg; sourceTree = "<group>"; };
 		3B21EFC02660CC88002E6154 /* nssl0041.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0041.jpg; sourceTree = "<group>"; };
@@ -282,6 +286,15 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		3B15383F26672CE60099DB06 /* Project-13 */ = {
+			isa = PBXGroup;
+			children = (
+				3B15384026672D4A0099DB06 /* InstafilterViewController.swift */,
+				3B15384126672D4A0099DB06 /* InstafilterViewController.xib */,
+			);
+			path = "Project-13";
+			sourceTree = "<group>";
+		};
 		3B21EFBC2660CC51002E6154 /* Project-1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +360,7 @@
 		3B98D89426608CE800F483DB /* ProjectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3B15383F26672CE60099DB06 /* Project-13 */,
 				3B1537FD266627C20099DB06 /* Project-11 */,
 				3B1537E82665E2FF0099DB06 /* Project-10 */,
 				3B1537DE2665C6130099DB06 /* Project-8 */,
@@ -479,6 +493,7 @@
 				3B15382A26662F560099DB06 /* slotBaseGood@2x.png in Resources */,
 				3B15383226662F560099DB06 /* slotGlowGood@2x.png in Resources */,
 				3B98D89D26608CE800F483DB /* Main.storyboard in Resources */,
+				3B15384326672D4A0099DB06 /* InstafilterViewController.xib in Resources */,
 				3B15380326662B550099DB06 /* GameScene.sks in Resources */,
 				3B15380126662AC80099DB06 /* GameViewController.xib in Resources */,
 				3B15383326662F560099DB06 /* slotBaseGood.png in Resources */,
@@ -499,6 +514,7 @@
 				3B1537DB2664EA900099DB06 /* Petitions.swift in Sources */,
 				3B98D89A26608CE800F483DB /* MasterViewController.swift in Sources */,
 				3B21EFD72660D6A9002E6154 /* StormViewerDetailViewController.swift in Sources */,
+				3B15384226672D4A0099DB06 /* InstafilterViewController.swift in Sources */,
 				3B1537D92664EA670099DB06 /* Petition.swift in Sources */,
 				3B21EFF72660F632002E6154 /* WebViewController.swift in Sources */,
 				3B1537CF2664DFAE0099DB06 /* AutoLayout1ViewController.swift in Sources */,
