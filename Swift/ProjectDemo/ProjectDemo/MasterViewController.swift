@@ -49,7 +49,10 @@ class MasterViewController: UIViewController {
                    description: "了解如何保存用户设置和数据以备后用。"),
             Master(title: "Project 13: Instafilter",
                    subtitle: "Core Image, UISlider, 写入图片库",
-                   description: "使用 Core Image 滤镜和 UISlider 制作照片处理程序。")
+                   description: "使用 Core Image 滤镜和 UISlider 制作照片处理程序。"),
+            Master(title: "Project 14: Whack-a-Penguin",
+                   subtitle: "SKCropNode、SKTexture、asyncAfter()",
+                   description: "使用 SKCropNode 和少量的 Grand Central Dispatch 构建游戏。")
         ]
     }
 
@@ -99,6 +102,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 9, 11: namesToFaces()
         case 10:   pachinko()
         case 12:   instafilter()
+        case 13:   whackAPenguin()
         default:
             break
         }
@@ -154,6 +158,11 @@ extension MasterViewController {
     
     private func instafilter() {
         let vc = InstafilterViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func whackAPenguin() {
+        let vc = WhackGameViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }

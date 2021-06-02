@@ -60,6 +60,19 @@
 		3B15383E26662F560099DB06 /* ballBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B15382226662F560099DB06 /* ballBlue.png */; };
 		3B15384226672D4A0099DB06 /* InstafilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15384026672D4A0099DB06 /* InstafilterViewController.swift */; };
 		3B15384326672D4A0099DB06 /* InstafilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B15384126672D4A0099DB06 /* InstafilterViewController.xib */; };
+		3B15384E266755280099DB06 /* whackBad.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3B153846266755280099DB06 /* whackBad.caf */; };
+		3B15384F266755280099DB06 /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3B153847266755280099DB06 /* whack.caf */; };
+		3B153850266755280099DB06 /* gameOver@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B153848266755280099DB06 /* gameOver@2x.png */; };
+		3B153851266755280099DB06 /* penguinEvil@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B153849266755280099DB06 /* penguinEvil@2x.png */; };
+		3B153852266755280099DB06 /* whackHole@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B15384A266755280099DB06 /* whackHole@2x.png */; };
+		3B153853266755280099DB06 /* penguinGood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B15384B266755280099DB06 /* penguinGood@2x.png */; };
+		3B153854266755280099DB06 /* whackMask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B15384C266755280099DB06 /* whackMask@2x.png */; };
+		3B153855266755280099DB06 /* whackBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B15384D266755280099DB06 /* whackBackground@2x.png */; };
+		3B153859266755F00099DB06 /* WhackGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3B153858266755F00099DB06 /* WhackGameScene.sks */; };
+		3B15385B2667562F0099DB06 /* WhackGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15385A2667562F0099DB06 /* WhackGameScene.swift */; };
+		3B15385D266756880099DB06 /* WhackSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15385C266756880099DB06 /* WhackSlot.swift */; };
+		3B153860266758430099DB06 /* WhackGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15385E266758420099DB06 /* WhackGameViewController.swift */; };
+		3B153861266758430099DB06 /* WhackGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B15385F266758430099DB06 /* WhackGameViewController.xib */; };
 		3B21EFC82660CC89002E6154 /* nssl0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBE2660CC88002E6154 /* nssl0049.jpg */; };
 		3B21EFC92660CC89002E6154 /* nssl0042.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBF2660CC88002E6154 /* nssl0042.jpg */; };
 		3B21EFCA2660CC89002E6154 /* nssl0041.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFC02660CC88002E6154 /* nssl0041.jpg */; };
@@ -143,6 +156,19 @@
 		3B15382226662F560099DB06 /* ballBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ballBlue.png; sourceTree = "<group>"; };
 		3B15384026672D4A0099DB06 /* InstafilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafilterViewController.swift; sourceTree = "<group>"; };
 		3B15384126672D4A0099DB06 /* InstafilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstafilterViewController.xib; sourceTree = "<group>"; };
+		3B153846266755280099DB06 /* whackBad.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whackBad.caf; sourceTree = "<group>"; };
+		3B153847266755280099DB06 /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
+		3B153848266755280099DB06 /* gameOver@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gameOver@2x.png"; sourceTree = "<group>"; };
+		3B153849266755280099DB06 /* penguinEvil@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "penguinEvil@2x.png"; sourceTree = "<group>"; };
+		3B15384A266755280099DB06 /* whackHole@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whackHole@2x.png"; sourceTree = "<group>"; };
+		3B15384B266755280099DB06 /* penguinGood@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "penguinGood@2x.png"; sourceTree = "<group>"; };
+		3B15384C266755280099DB06 /* whackMask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whackMask@2x.png"; sourceTree = "<group>"; };
+		3B15384D266755280099DB06 /* whackBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whackBackground@2x.png"; sourceTree = "<group>"; };
+		3B153858266755F00099DB06 /* WhackGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WhackGameScene.sks; sourceTree = "<group>"; };
+		3B15385A2667562F0099DB06 /* WhackGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackGameScene.swift; sourceTree = "<group>"; };
+		3B15385C266756880099DB06 /* WhackSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackSlot.swift; sourceTree = "<group>"; };
+		3B15385E266758420099DB06 /* WhackGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackGameViewController.swift; sourceTree = "<group>"; };
+		3B15385F266758430099DB06 /* WhackGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhackGameViewController.xib; sourceTree = "<group>"; };
 		3B21EFBE2660CC88002E6154 /* nssl0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0049.jpg; sourceTree = "<group>"; };
 		3B21EFBF2660CC88002E6154 /* nssl0042.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0042.jpg; sourceTree = "<group>"; };
 		3B21EFC02660CC88002E6154 /* nssl0041.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0041.jpg; sourceTree = "<group>"; };
@@ -295,6 +321,34 @@
 			path = "Project-13";
 			sourceTree = "<group>";
 		};
+		3B153844266754D90099DB06 /* Project-14 */ = {
+			isa = PBXGroup;
+			children = (
+				3B153858266755F00099DB06 /* WhackGameScene.sks */,
+				3B15385A2667562F0099DB06 /* WhackGameScene.swift */,
+				3B15385C266756880099DB06 /* WhackSlot.swift */,
+				3B15385E266758420099DB06 /* WhackGameViewController.swift */,
+				3B15385F266758430099DB06 /* WhackGameViewController.xib */,
+				3B153845266755280099DB06 /* Content */,
+			);
+			path = "Project-14";
+			sourceTree = "<group>";
+		};
+		3B153845266755280099DB06 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				3B153846266755280099DB06 /* whackBad.caf */,
+				3B153847266755280099DB06 /* whack.caf */,
+				3B153848266755280099DB06 /* gameOver@2x.png */,
+				3B153849266755280099DB06 /* penguinEvil@2x.png */,
+				3B15384A266755280099DB06 /* whackHole@2x.png */,
+				3B15384B266755280099DB06 /* penguinGood@2x.png */,
+				3B15384C266755280099DB06 /* whackMask@2x.png */,
+				3B15384D266755280099DB06 /* whackBackground@2x.png */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
 		3B21EFBC2660CC51002E6154 /* Project-1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,6 +414,7 @@
 		3B98D89426608CE800F483DB /* ProjectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3B153844266754D90099DB06 /* Project-14 */,
 				3B15383F26672CE60099DB06 /* Project-13 */,
 				3B1537FD266627C20099DB06 /* Project-11 */,
 				3B1537E82665E2FF0099DB06 /* Project-10 */,
@@ -442,6 +497,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B153861266758430099DB06 /* WhackGameViewController.xib in Resources */,
 				3B15383126662F560099DB06 /* slotGlowGood.png in Resources */,
 				3B21EFCA2660CC89002E6154 /* nssl0041.jpg in Resources */,
 				3B15383826662F560099DB06 /* ballCyan@2x.png in Resources */,
@@ -462,6 +518,7 @@
 				3B21EFC92660CC89002E6154 /* nssl0042.jpg in Resources */,
 				3B15382626662F560099DB06 /* slotGlowBad@2x.png in Resources */,
 				3B1537E52665CF7C0099DB06 /* level1.txt in Resources */,
+				3B153850266755280099DB06 /* gameOver@2x.png in Resources */,
 				3B21EFCC2660CC89002E6154 /* nssl0033.jpg in Resources */,
 				3B15382726662F560099DB06 /* ballPurple.png in Resources */,
 				3B15382326662F560099DB06 /* ballGrey.png in Resources */,
@@ -474,25 +531,33 @@
 				3B15383C26662F560099DB06 /* ballGreen.png in Resources */,
 				3B1537F02665E5130099DB06 /* NamesToFacesCell.xib in Resources */,
 				3B21EFCD2660CC89002E6154 /* nssl0091.jpg in Resources */,
+				3B15384F266755280099DB06 /* whack.caf in Resources */,
 				3B15383526662F560099DB06 /* ballCyan.png in Resources */,
 				3B98D8A226608CEB00F483DB /* LaunchScreen.storyboard in Resources */,
 				3B15383E26662F560099DB06 /* ballBlue.png in Resources */,
 				3B15383626662F560099DB06 /* ballRed@2x.png in Resources */,
 				3B98D89F26608CEB00F483DB /* Assets.xcassets in Resources */,
+				3B153854266755280099DB06 /* whackMask@2x.png in Resources */,
 				3B15382D26662F560099DB06 /* slotBaseBad@2x.png in Resources */,
 				3B98D8AE26608EEF00F483DB /* MasterViewCell.xib in Resources */,
 				3B1537E62665CF7C0099DB06 /* level2.txt in Resources */,
 				3B15382926662F560099DB06 /* ballRed.png in Resources */,
+				3B15384E266755280099DB06 /* whackBad.caf in Resources */,
 				3B15383A26662F560099DB06 /* background@2x.jpg in Resources */,
 				3B1537E22665CEFC0099DB06 /* SwiftyWordsViewController.xib in Resources */,
+				3B153855266755280099DB06 /* whackBackground@2x.png in Resources */,
 				3B15382F26662F560099DB06 /* spark.png in Resources */,
 				3B15382526662F560099DB06 /* ballBlue@2x.png in Resources */,
 				3B15383B26662F560099DB06 /* ballGreen@2x.png in Resources */,
 				3B1537D72664E94A0099DB06 /* Whitehouse.storyboard in Resources */,
+				3B153859266755F00099DB06 /* WhackGameScene.sks in Resources */,
 				3B21EFCF2660CC89002E6154 /* nssl0034.jpg in Resources */,
 				3B15382A26662F560099DB06 /* slotBaseGood@2x.png in Resources */,
+				3B153853266755280099DB06 /* penguinGood@2x.png in Resources */,
 				3B15383226662F560099DB06 /* slotGlowGood@2x.png in Resources */,
 				3B98D89D26608CE800F483DB /* Main.storyboard in Resources */,
+				3B153851266755280099DB06 /* penguinEvil@2x.png in Resources */,
+				3B153852266755280099DB06 /* whackHole@2x.png in Resources */,
 				3B15384326672D4A0099DB06 /* InstafilterViewController.xib in Resources */,
 				3B15380326662B550099DB06 /* GameScene.sks in Resources */,
 				3B15380126662AC80099DB06 /* GameViewController.xib in Resources */,
@@ -514,6 +579,7 @@
 				3B1537DB2664EA900099DB06 /* Petitions.swift in Sources */,
 				3B98D89A26608CE800F483DB /* MasterViewController.swift in Sources */,
 				3B21EFD72660D6A9002E6154 /* StormViewerDetailViewController.swift in Sources */,
+				3B153860266758430099DB06 /* WhackGameViewController.swift in Sources */,
 				3B15384226672D4A0099DB06 /* InstafilterViewController.swift in Sources */,
 				3B1537D92664EA670099DB06 /* Petition.swift in Sources */,
 				3B21EFF72660F632002E6154 /* WebViewController.swift in Sources */,
@@ -525,11 +591,13 @@
 				3B15380026662AC80099DB06 /* GameViewController.swift in Sources */,
 				3B1537FB26661ABB0099DB06 /* NamesToFacesViewController.swift in Sources */,
 				3B1537E12665CEFC0099DB06 /* SwiftyWordsViewController.swift in Sources */,
+				3B15385D266756880099DB06 /* WhackSlot.swift in Sources */,
 				3B98D8B52660915200F483DB /* Master.swift in Sources */,
 				3B15380526662B7A0099DB06 /* GameScene.swift in Sources */,
 				3B98D8B2266090E900F483DB /* UIView+Extension.swift in Sources */,
 				3B98D89826608CE800F483DB /* SceneDelegate.swift in Sources */,
 				3B1537DD2664EC970099DB06 /* WhitehouseDetailViewController.swift in Sources */,
+				3B15385B2667562F0099DB06 /* WhackGameScene.swift in Sources */,
 				3B1537EF2665E5130099DB06 /* NamesToFacesCell.swift in Sources */,
 				3B1537CC2664DEC60099DB06 /* AutoLayoutViewController.swift in Sources */,
 			);
