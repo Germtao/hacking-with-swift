@@ -64,7 +64,10 @@ class MasterViewController: UIViewController {
                    description: "在您了解每像素碰撞检测的同时躲避空间碎片。"),
             Master(title: "Project 18: Debugging",
                    subtitle: "print()、assert()、断点和查看调试",
-                   description: "每个人迟早都会遇到问题，所以学会发现和解决问题是一项重要的技能。")
+                   description: "每个人迟早都会遇到问题，所以学会发现和解决问题是一项重要的技能。"),
+            Master(title: "Project 19: JavaScript Injection",
+                   subtitle: "Safari extensions, UITextView, NotificationCenter",
+                   description: "为 JavaScript 开发人员使用一个很酷的功能扩展 Safari。")
         ]
     }
 
@@ -119,6 +122,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 15:   mkMapView()
         case 16:   spaceRaceGame()
         case 17:   debugging()
+        case 18:   javascriptInjection()
         default:
             break
         }
@@ -206,6 +210,11 @@ extension MasterViewController {
         for i in 1 ... 100 {
             print("Got number \(i)")
         }
+    }
+    
+    private func javascriptInjection() {
+        let vc = JavascriptInjectionViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
