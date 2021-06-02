@@ -58,7 +58,10 @@ class MasterViewController: UIViewController {
                    description: "通过动画使您的界面栩栩如生，并同时满足 switch/case。"),
             Master(title: "Project 16: Capital Cities",
                    subtitle: "MKMapView、MKAnnotation、MKPinAnnotationView、CLLocationCoordinate2D",
-                   description: "在您了解 MKMapView 和注释的同时，向用户传授地理知识。")
+                   description: "在您了解 MKMapView 和注释的同时，向用户传授地理知识。"),
+            Master(title: "Project 17: Space Race",
+                   subtitle: "每像素碰撞检测、推进粒子系统、线性和角度阻尼",
+                   description: "在您了解每像素碰撞检测的同时躲避空间碎片。")
         ]
     }
 
@@ -111,6 +114,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 13:   whackAPenguin()
         case 14:   animation()
         case 15:   mkMapView()
+        case 16:   spaceRaceGame()
         default:
             break
         }
@@ -181,6 +185,11 @@ extension MasterViewController {
     
     private func mkMapView() {
         let vc = MapViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func spaceRaceGame() {
+        let vc = SpaceRaceViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
