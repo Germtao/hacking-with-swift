@@ -67,7 +67,10 @@ class MasterViewController: UIViewController {
                    description: "每个人迟早都会遇到问题，所以学会发现和解决问题是一项重要的技能。"),
             Master(title: "Project 19: JavaScript Injection",
                    subtitle: "Safari extensions, UITextView, NotificationCenter",
-                   description: "为 JavaScript 开发人员使用一个很酷的功能扩展 Safari。")
+                   description: "为 JavaScript 开发人员使用一个很酷的功能扩展 Safari。"),
+            Master(title: "Project 20: Fireworks Night",
+                   subtitle: "Timer, follow(path:), sprite color blending, shake gestures",
+                   description: "了解计时器和颜色混合，同时让事情变得精彩！")
         ]
     }
 
@@ -123,6 +126,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 16:   spaceRaceGame()
         case 17:   debugging()
         case 18:   javascriptInjection()
+        case 19:   fireworksNight()
         default:
             break
         }
@@ -214,6 +218,11 @@ extension MasterViewController {
     
     private func javascriptInjection() {
         let vc = JavascriptInjectionViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func fireworksNight() {
+        let vc = FireworksGameViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
