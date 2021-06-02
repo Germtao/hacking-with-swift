@@ -110,7 +110,7 @@ class NamesToFacesViewController: UICollectionViewController, UIImagePickerContr
     // MARK: - UICollectionViewDelegate
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let model = namesToFaces[indexPath.item]
+        var model = namesToFaces[indexPath.item]
         
         let alert = UIAlertController(title: "重命名", message: nil, preferredStyle: .alert)
         alert.addTextField()
@@ -120,8 +120,9 @@ class NamesToFacesViewController: UICollectionViewController, UIImagePickerContr
         alert.addAction(UIAlertAction(title: "确定", style: .default, handler: { [unowned self, alert] _ in
             guard let newName = alert.textFields?[0].text else { return }
             model.name = newName
+            self.namesToFaces[indexPath.item] = model
             
-            self.collectionView.reloadData()
+//            self.collectionView.reloadData()
             
             self.save()
         }))
