@@ -40,7 +40,10 @@ class MasterViewController: UIViewController {
                    description: "了解如何使用 GCD 在后台运行复杂的任务。"),
             Master(title: "Project 10: Names to Faces",
                    subtitle: "UICollectionView、UIImagePickerController、UUID、类",
-                   description: "开始使用 UICollectionView 和照片库。")
+                   description: "开始使用 UICollectionView 和照片库。"),
+            Master(title: "Project 11: Pachinko",
+                   subtitle: "SpriteKit、物理、混合模式、弧度、CGFloat、NSKeyedUnarchiver",
+                   description: "深入 SpriteKit，尝试快速 2D 游戏。")
         ]
     }
 
@@ -88,6 +91,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 6, 8: whitehousePetition()
         case 7:    swiftyWords()
         case 9:    namesToFaces()
+        case 10:   pachinko()
         default:
             break
         }
@@ -133,6 +137,11 @@ extension MasterViewController {
     
     private func namesToFaces() {
         let vc = NamesToFacesViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func pachinko() {
+        let vc = GameViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
