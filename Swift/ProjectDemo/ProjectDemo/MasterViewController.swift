@@ -61,7 +61,10 @@ class MasterViewController: UIViewController {
                    description: "在您了解 MKMapView 和注释的同时，向用户传授地理知识。"),
             Master(title: "Project 17: Space Race",
                    subtitle: "每像素碰撞检测、推进粒子系统、线性和角度阻尼",
-                   description: "在您了解每像素碰撞检测的同时躲避空间碎片。")
+                   description: "在您了解每像素碰撞检测的同时躲避空间碎片。"),
+            Master(title: "Project 18: Debugging",
+                   subtitle: "print()、assert()、断点和查看调试",
+                   description: "每个人迟早都会遇到问题，所以学会发现和解决问题是一项重要的技能。")
         ]
     }
 
@@ -115,6 +118,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 14:   animation()
         case 15:   mkMapView()
         case 16:   spaceRaceGame()
+        case 17:   debugging()
         default:
             break
         }
@@ -191,6 +195,17 @@ extension MasterViewController {
     private func spaceRaceGame() {
         let vc = SpaceRaceViewController()
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func debugging() {
+        print("I'm inside the viewDidLoad() method!")
+        print(1, 2, 3, 4, 5, separator: "-")
+
+        assert(1 == 1, "Maths failure!")
+
+        for i in 1 ... 100 {
+            print("Got number \(i)")
+        }
     }
 }
 
