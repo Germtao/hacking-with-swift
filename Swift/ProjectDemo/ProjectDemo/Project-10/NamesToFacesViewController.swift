@@ -58,17 +58,34 @@ class NamesToFacesViewController: UICollectionViewController, UIImagePickerContr
     @objc private func load() {
         let defaults = UserDefaults.standard
         
-        if let saveModel = defaults.object(forKey: "namesToFaces") as? Data {
-            if let decodedModel = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(saveModel) as? [NamesToFaces] {
-                namesToFaces = decodedModel
-            }
+//        if let saveModel = defaults.object(forKey: "namesToFaces") as? Data {
+//            if let decodedModel = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(saveModel) as? [NamesToFaces] {
+//                namesToFaces = decodedModel
+//            }
+//        }
+        
+        guard let saveModel = defaults.object(forKey: "namesToFaces") as? Data else { return }
+        
+        let jsonDecoder = JSONDecoder()
+        
+        do {
+            namesToFaces = try jsonDecoder.decode([NamesToFaces].self, from: saveModel)
+        } catch {
+            print("Failed to load namesToFaces.")
         }
     }
     
     private func save() {
-        if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: namesToFaces, requiringSecureCoding: false) {
-            UserDefaults.standard.set(savedData, forKey: "namesToFaces")
+//        if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: namesToFaces, requiringSecureCoding: false) {
+//            UserDefaults.standard.set(savedData, forKey: "namesToFaces")
+//        }
+        
+        let jsonEncoder = JSONEncoder()
+        guard let saveData = try? jsonEncoder.encode(namesToFaces) else {
+            print("Failed to save namesToFaces.")
+            return
         }
+        UserDefaults.standard.set(saveData, forKey: "namesToFaces")
     }
 
     @objc private func addNewPerson() {

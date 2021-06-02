@@ -7,7 +7,7 @@
 
 import Foundation
 
-class NamesToFaces: NSObject, NSCoding {
+class NamesToFaces: NSObject, NSCoding, Codable {
     var name: String
     var image: String
     
