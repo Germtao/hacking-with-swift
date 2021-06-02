@@ -52,7 +52,10 @@ class MasterViewController: UIViewController {
                    description: "使用 Core Image 滤镜和 UISlider 制作照片处理程序。"),
             Master(title: "Project 14: Whack-a-Penguin",
                    subtitle: "SKCropNode、SKTexture、asyncAfter()",
-                   description: "使用 SKCropNode 和少量的 Grand Central Dispatch 构建游戏。")
+                   description: "使用 SKCropNode 和少量的 Grand Central Dispatch 构建游戏。"),
+            Master(title: "Project 15: Animation",
+                   subtitle: "Core Animation, CGAffineTransform",
+                   description: "通过动画使您的界面栩栩如生，并同时满足 switch/case。")
         ]
     }
 
@@ -103,6 +106,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 10:   pachinko()
         case 12:   instafilter()
         case 13:   whackAPenguin()
+        case 14:   animation()
         default:
             break
         }
@@ -163,6 +167,11 @@ extension MasterViewController {
     
     private func whackAPenguin() {
         let vc = WhackGameViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func animation() {
+        let vc = AnimationViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
