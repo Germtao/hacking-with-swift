@@ -33,13 +33,42 @@ class NamesToFacesViewController: UICollectionViewController, UIImagePickerContr
         fatalError("init(coder:) has not been implemented")
     }
     
-    private var namesToFaces: [NamesToFaces] = []
+    private var namesToFaces: [NamesToFaces] = [] {
+        didSet {
+            performSelector(onMainThread: #selector(reload), with: nil, waitUntilDone: false)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
 
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewPerson))
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        performSelector(inBackground: #selector(load), with: nil)
+    }
+    
+    @objc private func reload() {
+        collectionView.reloadData()
+    }
+    
+    @objc private func load() {
+        let defaults = UserDefaults.standard
+        
+        if let saveModel = defaults.object(forKey: "namesToFaces") as? Data {
+            if let decodedModel = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(saveModel) as? [NamesToFaces] {
+                namesToFaces = decodedModel
+            }
+        }
+    }
+    
+    private func save() {
+        if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: namesToFaces, requiringSecureCoding: false) {
+            UserDefaults.standard.set(savedData, forKey: "namesToFaces")
+        }
     }
 
     @objc private func addNewPerson() {
@@ -64,7 +93,7 @@ class NamesToFacesViewController: UICollectionViewController, UIImagePickerContr
     // MARK: - UICollectionViewDelegate
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        var model = namesToFaces[indexPath.item]
+        let model = namesToFaces[indexPath.item]
         
         let alert = UIAlertController(title: "重命名", message: nil, preferredStyle: .alert)
         alert.addTextField()
@@ -74,8 +103,10 @@ class NamesToFacesViewController: UICollectionViewController, UIImagePickerContr
         alert.addAction(UIAlertAction(title: "确定", style: .default, handler: { [unowned self, alert] _ in
             guard let newName = alert.textFields?[0].text else { return }
             model.name = newName
-            self.namesToFaces[indexPath.item] = model
+            
             self.collectionView.reloadData()
+            
+            self.save()
         }))
         
         present(alert, animated: true)
@@ -84,7 +115,7 @@ class NamesToFacesViewController: UICollectionViewController, UIImagePickerContr
     // MARK: - UIImagePickerControllerDelegate
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        guard let image = info[.originalImage] as? UIImage else { return }
+        guard let image = info[.editedImage] as? UIImage else { return }
         
         let imageName = UUID().uuidString
         let imagePath = getDocumentsDirectory().appendingPathComponent(imageName)
@@ -95,7 +126,6 @@ class NamesToFacesViewController: UICollectionViewController, UIImagePickerContr
         
         let model = NamesToFaces(name: "Unknown", image: imageName)
         namesToFaces.append(model)
-        collectionView.reloadData()
         
         dismiss(animated: true)
     }

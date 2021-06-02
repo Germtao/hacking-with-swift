@@ -43,7 +43,10 @@ class MasterViewController: UIViewController {
                    description: "开始使用 UICollectionView 和照片库。"),
             Master(title: "Project 11: Pachinko",
                    subtitle: "SpriteKit、物理、混合模式、弧度、CGFloat、NSKeyedUnarchiver",
-                   description: "深入 SpriteKit，尝试快速 2D 游戏。")
+                   description: "深入 SpriteKit，尝试快速 2D 游戏。"),
+            Master(title: "Project 12: UserDefaults",
+                   subtitle: "UserDefaults, NSCoding, Codable, NSKeyedArchiver",
+                   description: "了解如何保存用户设置和数据以备后用。")
         ]
     }
 
@@ -90,7 +93,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 5:    autoLayout()
         case 6, 8: whitehousePetition()
         case 7:    swiftyWords()
-        case 9:    namesToFaces()
+        case 9, 11: namesToFaces()
         case 10:   pachinko()
         default:
             break
