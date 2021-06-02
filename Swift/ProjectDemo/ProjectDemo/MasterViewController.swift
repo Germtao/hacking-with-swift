@@ -55,7 +55,10 @@ class MasterViewController: UIViewController {
                    description: "使用 SKCropNode 和少量的 Grand Central Dispatch 构建游戏。"),
             Master(title: "Project 15: Animation",
                    subtitle: "Core Animation, CGAffineTransform",
-                   description: "通过动画使您的界面栩栩如生，并同时满足 switch/case。")
+                   description: "通过动画使您的界面栩栩如生，并同时满足 switch/case。"),
+            Master(title: "Project 16: Capital Cities",
+                   subtitle: "MKMapView、MKAnnotation、MKPinAnnotationView、CLLocationCoordinate2D",
+                   description: "在您了解 MKMapView 和注释的同时，向用户传授地理知识。")
         ]
     }
 
@@ -107,6 +110,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 12:   instafilter()
         case 13:   whackAPenguin()
         case 14:   animation()
+        case 15:   mkMapView()
         default:
             break
         }
@@ -172,6 +176,11 @@ extension MasterViewController {
     
     private func animation() {
         let vc = AnimationViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func mkMapView() {
+        let vc = MapViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
