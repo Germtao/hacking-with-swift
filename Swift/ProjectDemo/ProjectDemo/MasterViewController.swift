@@ -70,7 +70,10 @@ class MasterViewController: UIViewController {
                    description: "为 JavaScript 开发人员使用一个很酷的功能扩展 Safari。"),
             Master(title: "Project 20: Fireworks Night",
                    subtitle: "Timer, follow(path:), sprite color blending, shake gestures",
-                   description: "了解计时器和颜色混合，同时让事情变得精彩！")
+                   description: "了解计时器和颜色混合，同时让事情变得精彩！"),
+            Master(title: "Project 21: Local Notifications",
+                   subtitle: "UNUserNotificationCenter、UNNotificationRequest、UNMutableNotificationContent、UNCalendarNotificationTrigger 和 UNTimeIntervalNotificationTrigger",
+                   description: "即使您的应用未运行，也可以发送提醒、提示和警报。")
         ]
     }
 
@@ -127,6 +130,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 17:   debugging()
         case 18:   javascriptInjection()
         case 19:   fireworksNight()
+        case 20:   localNotification()
         default:
             break
         }
@@ -223,6 +227,11 @@ extension MasterViewController {
     
     private func fireworksNight() {
         let vc = FireworksGameViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func localNotification() {
+        let vc = LocalNotificationViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
