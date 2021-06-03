@@ -79,7 +79,10 @@ class MasterViewController: UIViewController {
                    description: "学习使用我们的第一个物理设备项目查找和范围 iBeacon。"),
             Master(title: "Project 23: Swifty Ninja",
                    subtitle: "SKShapeNode、AVAudioPlayer、UIBezierPath、自定义枚举",
-                   description: "学习在 SpriteKit 中绘制形状，同时制作有趣且紧张的切片游戏。")
+                   description: "学习在 SpriteKit 中绘制形状，同时制作有趣且紧张的切片游戏。"),
+            Master(title: "Project 25: Selfie Share",
+                   subtitle: "多点连接框架(Multipeer Connectivity Framework)",
+                   description: "制作多人照片共享应用程序。")
         ]
     }
 
@@ -139,6 +142,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 20:   localNotification()
         case 21:   location()
         case 22:   swiftyNinja()
+        case 23:   selfieShare()
         default:
             break
         }
@@ -250,6 +254,11 @@ extension MasterViewController {
     
     private func swiftyNinja() {
         let vc = SwiftyNinjaViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func selfieShare() {
+        let vc = SelfieShareViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
