@@ -85,7 +85,10 @@ class MasterViewController: UIViewController {
                    description: "制作多人照片共享应用程序。"),
             Master(title: "Project 26: Marble Maze",
                    subtitle: "Core Motion、碰撞位掩码、数组反转、编译器指令",
-                   description: "通过在涡旋迷宫周围操纵球来响应设备倾斜。")
+                   description: "通过在涡旋迷宫周围操纵球来响应设备倾斜。"),
+            Master(title: "Project 27: Core Graphics",
+                   subtitle: "Core Graphics",
+                   description: "使用 Apple 的高速绘图框架绘制 2D 形状。")
         ]
     }
 
@@ -147,6 +150,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 22:   swiftyNinja()
         case 23:   selfieShare()
         case 24:   marbleMaze()
+        case 25:   coreGraphics()
         default:
             break
         }
@@ -268,6 +272,11 @@ extension MasterViewController {
     
     private func marbleMaze() {
         let vc = MarbleMazeViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func coreGraphics() {
+        let vc = CoreGraphicsViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }

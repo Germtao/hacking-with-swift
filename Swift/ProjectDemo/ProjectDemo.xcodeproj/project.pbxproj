@@ -151,6 +151,10 @@
 		3B15399A2668A40C0099DB06 /* background_26@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B15398D2668A40C0099DB06 /* background_26@2x.jpg */; };
 		3B15399B2668A40C0099DB06 /* player_26.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B15398E2668A40C0099DB06 /* player_26.png */; };
 		3B15399D2668A4FC0099DB06 /* background_26.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B15399C2668A4FC0099DB06 /* background_26.jpg */; };
+		3B1539A12668A5F00099DB06 /* mouse@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B15399F2668A5F00099DB06 /* mouse@2x.png */; };
+		3B1539A22668A5F00099DB06 /* mouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1539A02668A5F00099DB06 /* mouse.png */; };
+		3B1539A52668A9FA0099DB06 /* CoreGraphicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1539A32668A9FA0099DB06 /* CoreGraphicsViewController.swift */; };
+		3B1539A62668A9FA0099DB06 /* CoreGraphicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1539A42668A9FA0099DB06 /* CoreGraphicsViewController.xib */; };
 		3B21EFC82660CC89002E6154 /* nssl0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBE2660CC88002E6154 /* nssl0049.jpg */; };
 		3B21EFC92660CC89002E6154 /* nssl0042.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBF2660CC88002E6154 /* nssl0042.jpg */; };
 		3B21EFCA2660CC89002E6154 /* nssl0041.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFC02660CC88002E6154 /* nssl0041.jpg */; };
@@ -325,6 +329,10 @@
 		3B15398D2668A40C0099DB06 /* background_26@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background_26@2x.jpg"; sourceTree = "<group>"; };
 		3B15398E2668A40C0099DB06 /* player_26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_26.png; sourceTree = "<group>"; };
 		3B15399C2668A4FC0099DB06 /* background_26.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_26.jpg; sourceTree = "<group>"; };
+		3B15399F2668A5F00099DB06 /* mouse@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mouse@2x.png"; sourceTree = "<group>"; };
+		3B1539A02668A5F00099DB06 /* mouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouse.png; sourceTree = "<group>"; };
+		3B1539A32668A9FA0099DB06 /* CoreGraphicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphicsViewController.swift; sourceTree = "<group>"; };
+		3B1539A42668A9FA0099DB06 /* CoreGraphicsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreGraphicsViewController.xib; sourceTree = "<group>"; };
 		3B21EFBE2660CC88002E6154 /* nssl0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0049.jpg; sourceTree = "<group>"; };
 		3B21EFBF2660CC88002E6154 /* nssl0042.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0042.jpg; sourceTree = "<group>"; };
 		3B21EFC02660CC88002E6154 /* nssl0041.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0041.jpg; sourceTree = "<group>"; };
@@ -685,6 +693,17 @@
 			path = Content;
 			sourceTree = "<group>";
 		};
+		3B15399E2668A5CE0099DB06 /* Project-27 */ = {
+			isa = PBXGroup;
+			children = (
+				3B1539A02668A5F00099DB06 /* mouse.png */,
+				3B15399F2668A5F00099DB06 /* mouse@2x.png */,
+				3B1539A32668A9FA0099DB06 /* CoreGraphicsViewController.swift */,
+				3B1539A42668A9FA0099DB06 /* CoreGraphicsViewController.xib */,
+			);
+			path = "Project-27";
+			sourceTree = "<group>";
+		};
 		3B21EFBC2660CC51002E6154 /* Project-1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -750,6 +769,7 @@
 		3B98D89426608CE800F483DB /* ProjectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3B15399E2668A5CE0099DB06 /* Project-27 */,
 				3B1539782668A3180099DB06 /* Project-26 */,
 				3B15396F26687B630099DB06 /* Project-25 */,
 				3B1539392668785A0099DB06 /* Project-23 */,
@@ -845,6 +865,7 @@
 			files = (
 				3B153861266758430099DB06 /* WhackGameViewController.xib in Resources */,
 				3B1539922668A40C0099DB06 /* player_26@2x.png in Resources */,
+				3B1539A62668A9FA0099DB06 /* CoreGraphicsViewController.xib in Resources */,
 				3B15383126662F560099DB06 /* slotGlowGood.png in Resources */,
 				3B21EFCA2660CC89002E6154 /* nssl0041.jpg in Resources */,
 				3B15383826662F560099DB06 /* ballCyan@2x.png in Resources */,
@@ -861,6 +882,7 @@
 				3B153968266879E90099DB06 /* sliceBombFuse.caf in Resources */,
 				3B21EFCB2660CC89002E6154 /* nssl0051.jpg in Resources */,
 				3B21EFDA2660E0BE002E6154 /* Flag.xcassets in Resources */,
+				3B1539A12668A5F00099DB06 /* mouse@2x.png in Resources */,
 				3B15397726687C8C0099DB06 /* SelfieShareCell.xib in Resources */,
 				3B153963266879E90099DB06 /* explosion.caf in Resources */,
 				3B15383726662F560099DB06 /* slotGlowBad.png in Resources */,
@@ -946,6 +968,7 @@
 				3B153889266762DA0099DB06 /* SpaceRaceGameScene.sks in Resources */,
 				3B153969266879E90099DB06 /* sliceHitBomb.sks in Resources */,
 				3B1539962668A40C0099DB06 /* block@2x.png in Resources */,
+				3B1539A22668A5F00099DB06 /* mouse.png in Resources */,
 				3B21EFCF2660CC89002E6154 /* nssl0034.jpg in Resources */,
 				3B15382A26662F560099DB06 /* slotBaseGood@2x.png in Resources */,
 				3B153959266879E90099DB06 /* sliceFuse.sks in Resources */,
@@ -1002,6 +1025,7 @@
 				3B15386E26675EBE0099DB06 /* MapViewController.swift in Sources */,
 				3B21EFD32660CE97002E6154 /* StormViewerViewController.swift in Sources */,
 				3B98D89626608CE800F483DB /* AppDelegate.swift in Sources */,
+				3B1539A52668A9FA0099DB06 /* CoreGraphicsViewController.swift in Sources */,
 				3B98D8AD26608EEF00F483DB /* MasterViewCell.swift in Sources */,
 				3B15380026662AC80099DB06 /* GameViewController.swift in Sources */,
 				3B15397E2668A3840099DB06 /* MarbleMazeGameScene.swift in Sources */,

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoreGraphicsViewController" customModule="ProjectDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="jIX-GE-3qJ" id="8Cr-hz-r5e"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jIX-GE-3qJ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPN-xq-kU9">
+                    <rect key="frame" x="191.5" y="812" width="31" height="30"/>
+                    <state key="normal" title="重绘"/>
+                    <connections>
+                        <action selector="redrawTapped" destination="-1" eventType="touchUpInside" id="Wo4-TR-Eab"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dPN-xq-kU9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2eQ-Be-sQ6"/>
+                <constraint firstItem="jIX-GE-3qJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3F7-rs-HFN"/>
+                <constraint firstAttribute="bottom" secondItem="jIX-GE-3qJ" secondAttribute="bottom" id="ciF-se-t2j"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dPN-xq-kU9" secondAttribute="bottom" constant="20" id="gr2-5W-pLr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jIX-GE-3qJ" secondAttribute="trailing" id="j8B-cs-pKR"/>
+                <constraint firstItem="jIX-GE-3qJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pYc-4W-tBl"/>
+            </constraints>
+            <point key="canvasLocation" x="77" y="142"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
