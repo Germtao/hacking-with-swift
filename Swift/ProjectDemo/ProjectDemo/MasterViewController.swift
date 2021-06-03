@@ -82,7 +82,10 @@ class MasterViewController: UIViewController {
                    description: "学习在 SpriteKit 中绘制形状，同时制作有趣且紧张的切片游戏。"),
             Master(title: "Project 25: Selfie Share",
                    subtitle: "多点连接框架(Multipeer Connectivity Framework)",
-                   description: "制作多人照片共享应用程序。")
+                   description: "制作多人照片共享应用程序。"),
+            Master(title: "Project 26: Marble Maze",
+                   subtitle: "Core Motion、碰撞位掩码、数组反转、编译器指令",
+                   description: "通过在涡旋迷宫周围操纵球来响应设备倾斜。")
         ]
     }
 
@@ -143,6 +146,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 21:   location()
         case 22:   swiftyNinja()
         case 23:   selfieShare()
+        case 24:   marbleMaze()
         default:
             break
         }
@@ -259,6 +263,11 @@ extension MasterViewController {
     
     private func selfieShare() {
         let vc = SelfieShareViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func marbleMaze() {
+        let vc = MarbleMazeViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
