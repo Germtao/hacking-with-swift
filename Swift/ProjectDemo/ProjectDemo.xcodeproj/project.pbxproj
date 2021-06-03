@@ -106,6 +106,8 @@
 		3B15392F266780DD0099DB06 /* FireworksGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15392D266780DD0099DB06 /* FireworksGameViewController.swift */; };
 		3B153930266780DD0099DB06 /* FireworksGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B15392E266780DD0099DB06 /* FireworksGameViewController.xib */; };
 		3B1539332667883C0099DB06 /* LocalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1539322667883C0099DB06 /* LocalNotificationViewController.swift */; };
+		3B15393726686ED60099DB06 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15393526686ED60099DB06 /* LocationViewController.swift */; };
+		3B15393826686ED60099DB06 /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B15393626686ED60099DB06 /* LocationViewController.xib */; };
 		3B21EFC82660CC89002E6154 /* nssl0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBE2660CC88002E6154 /* nssl0049.jpg */; };
 		3B21EFC92660CC89002E6154 /* nssl0042.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBF2660CC88002E6154 /* nssl0042.jpg */; };
 		3B21EFCA2660CC89002E6154 /* nssl0041.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFC02660CC88002E6154 /* nssl0041.jpg */; };
@@ -235,6 +237,8 @@
 		3B15392D266780DD0099DB06 /* FireworksGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireworksGameViewController.swift; sourceTree = "<group>"; };
 		3B15392E266780DD0099DB06 /* FireworksGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FireworksGameViewController.xib; sourceTree = "<group>"; };
 		3B1539322667883C0099DB06 /* LocalNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationViewController.swift; sourceTree = "<group>"; };
+		3B15393526686ED60099DB06 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		3B15393626686ED60099DB06 /* LocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
 		3B21EFBE2660CC88002E6154 /* nssl0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0049.jpg; sourceTree = "<group>"; };
 		3B21EFBF2660CC88002E6154 /* nssl0042.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0042.jpg; sourceTree = "<group>"; };
 		3B21EFC02660CC88002E6154 /* nssl0041.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0041.jpg; sourceTree = "<group>"; };
@@ -506,6 +510,15 @@
 			path = "Project-21";
 			sourceTree = "<group>";
 		};
+		3B15393426686EBF0099DB06 /* Project-22 */ = {
+			isa = PBXGroup;
+			children = (
+				3B15393526686ED60099DB06 /* LocationViewController.swift */,
+				3B15393626686ED60099DB06 /* LocationViewController.xib */,
+			);
+			path = "Project-22";
+			sourceTree = "<group>";
+		};
 		3B21EFBC2660CC51002E6154 /* Project-1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -571,6 +584,7 @@
 		3B98D89426608CE800F483DB /* ProjectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3B15393426686EBF0099DB06 /* Project-22 */,
 				3B1539312667831F0099DB06 /* Project-21 */,
 				3B15391926677DCB0099DB06 /* Project-20 */,
 				3B15388C2667673C0099DB06 /* Project-19 */,
@@ -703,6 +717,7 @@
 				3B15392726677FAE0099DB06 /* background.png in Resources */,
 				3B21EFD52660D633002E6154 /* StormViewer.storyboard in Resources */,
 				3B15383C26662F560099DB06 /* ballGreen.png in Resources */,
+				3B15393826686ED60099DB06 /* LocationViewController.xib in Resources */,
 				3B1537F02665E5130099DB06 /* NamesToFacesCell.xib in Resources */,
 				3B21EFCD2660CC89002E6154 /* nssl0091.jpg in Resources */,
 				3B15384F266755280099DB06 /* whack.caf in Resources */,
@@ -766,6 +781,7 @@
 				3B1537F22665E5F60099DB06 /* NamesToFaces.swift in Sources */,
 				3B1537C72664BC010099DB06 /* WordScrambleViewController.swift in Sources */,
 				3B1537DB2664EA900099DB06 /* Petitions.swift in Sources */,
+				3B15393726686ED60099DB06 /* LocationViewController.swift in Sources */,
 				3B98D89A26608CE800F483DB /* MasterViewController.swift in Sources */,
 				3B21EFD72660D6A9002E6154 /* StormViewerDetailViewController.swift in Sources */,
 				3B153860266758430099DB06 /* WhackGameViewController.swift in Sources */,
@@ -872,7 +888,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -927,7 +943,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
