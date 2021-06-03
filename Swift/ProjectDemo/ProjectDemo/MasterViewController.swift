@@ -76,7 +76,10 @@ class MasterViewController: UIViewController {
                    description: "即使您的应用未运行，也可以发送提醒、提示和警报。"),
             Master(title: "Project 22: Detect-a-Beacon",
                    subtitle: "CLLocationManager、CLBeaconRegion、CLProximity",
-                   description: "学习使用我们的第一个物理设备项目查找和范围 iBeacon。")
+                   description: "学习使用我们的第一个物理设备项目查找和范围 iBeacon。"),
+            Master(title: "Project 23: Swifty Ninja",
+                   subtitle: "SKShapeNode、AVAudioPlayer、UIBezierPath、自定义枚举",
+                   description: "学习在 SpriteKit 中绘制形状，同时制作有趣且紧张的切片游戏。")
         ]
     }
 
@@ -135,6 +138,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 19:   fireworksNight()
         case 20:   localNotification()
         case 21:   location()
+        case 22:   swiftyNinja()
         default:
             break
         }
@@ -241,6 +245,11 @@ extension MasterViewController {
     
     private func location() {
         let vc = LocationViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func swiftyNinja() {
+        let vc = SwiftyNinjaViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -108,6 +108,28 @@
 		3B1539332667883C0099DB06 /* LocalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1539322667883C0099DB06 /* LocalNotificationViewController.swift */; };
 		3B15393726686ED60099DB06 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15393526686ED60099DB06 /* LocationViewController.swift */; };
 		3B15393826686ED60099DB06 /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B15393626686ED60099DB06 /* LocationViewController.xib */; };
+		3B15393C2668787C0099DB06 /* SwiftyNinjaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15393A2668787B0099DB06 /* SwiftyNinjaViewController.swift */; };
+		3B15393D2668787C0099DB06 /* SwiftyNinjaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B15393B2668787B0099DB06 /* SwiftyNinjaViewController.xib */; };
+		3B15393F266878C00099DB06 /* SwiftyNinjaGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3B15393E266878C00099DB06 /* SwiftyNinjaGameScene.sks */; };
+		3B153941266878FB0099DB06 /* SwiftyNinjaGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B153940266878FB0099DB06 /* SwiftyNinjaGameScene.swift */; };
+		3B153959266879E90099DB06 /* sliceFuse.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3B153943266879E90099DB06 /* sliceFuse.sks */; };
+		3B15395A266879E90099DB06 /* sliceLife@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B153944266879E90099DB06 /* sliceLife@2x.png */; };
+		3B15395B266879E90099DB06 /* sliceBomb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B153945266879E90099DB06 /* sliceBomb@2x.png */; };
+		3B15395C266879E90099DB06 /* sliceBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B153946266879E90099DB06 /* sliceBackground.png */; };
+		3B15395D266879E90099DB06 /* sliceLifeGone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B153947266879E90099DB06 /* sliceLifeGone@2x.png */; };
+		3B15395F266879E90099DB06 /* wrong.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3B153949266879E90099DB06 /* wrong.caf */; };
+		3B153961266879E90099DB06 /* launch.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3B15394B266879E90099DB06 /* launch.caf */; };
+		3B153963266879E90099DB06 /* explosion.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3B15394D266879E90099DB06 /* explosion.caf */; };
+		3B153964266879E90099DB06 /* sliceBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B15394E266879E90099DB06 /* sliceBackground@2x.png */; };
+		3B153965266879E90099DB06 /* sliceBomb.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B15394F266879E90099DB06 /* sliceBomb.png */; };
+		3B153966266879E90099DB06 /* sliceLifeGone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B153950266879E90099DB06 /* sliceLifeGone.png */; };
+		3B153967266879E90099DB06 /* sliceHitEnemy.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3B153951266879E90099DB06 /* sliceHitEnemy.sks */; };
+		3B153968266879E90099DB06 /* sliceBombFuse.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3B153952266879E90099DB06 /* sliceBombFuse.caf */; };
+		3B153969266879E90099DB06 /* sliceHitBomb.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3B153953266879E90099DB06 /* sliceHitBomb.sks */; };
+		3B15396B266879E90099DB06 /* sliceLife.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B153955266879E90099DB06 /* sliceLife.png */; };
+		3B15396C266879E90099DB06 /* swoosh3.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3B153956266879E90099DB06 /* swoosh3.caf */; };
+		3B15396D266879E90099DB06 /* swoosh2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3B153957266879E90099DB06 /* swoosh2.caf */; };
+		3B15396E266879E90099DB06 /* swoosh1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3B153958266879E90099DB06 /* swoosh1.caf */; };
 		3B21EFC82660CC89002E6154 /* nssl0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBE2660CC88002E6154 /* nssl0049.jpg */; };
 		3B21EFC92660CC89002E6154 /* nssl0042.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBF2660CC88002E6154 /* nssl0042.jpg */; };
 		3B21EFCA2660CC89002E6154 /* nssl0041.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFC02660CC88002E6154 /* nssl0041.jpg */; };
@@ -239,6 +261,28 @@
 		3B1539322667883C0099DB06 /* LocalNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationViewController.swift; sourceTree = "<group>"; };
 		3B15393526686ED60099DB06 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		3B15393626686ED60099DB06 /* LocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
+		3B15393A2668787B0099DB06 /* SwiftyNinjaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyNinjaViewController.swift; sourceTree = "<group>"; };
+		3B15393B2668787B0099DB06 /* SwiftyNinjaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwiftyNinjaViewController.xib; sourceTree = "<group>"; };
+		3B15393E266878C00099DB06 /* SwiftyNinjaGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SwiftyNinjaGameScene.sks; sourceTree = "<group>"; };
+		3B153940266878FB0099DB06 /* SwiftyNinjaGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyNinjaGameScene.swift; sourceTree = "<group>"; };
+		3B153943266879E90099DB06 /* sliceFuse.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sliceFuse.sks; sourceTree = "<group>"; };
+		3B153944266879E90099DB06 /* sliceLife@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sliceLife@2x.png"; sourceTree = "<group>"; };
+		3B153945266879E90099DB06 /* sliceBomb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sliceBomb@2x.png"; sourceTree = "<group>"; };
+		3B153946266879E90099DB06 /* sliceBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliceBackground.png; sourceTree = "<group>"; };
+		3B153947266879E90099DB06 /* sliceLifeGone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sliceLifeGone@2x.png"; sourceTree = "<group>"; };
+		3B153949266879E90099DB06 /* wrong.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = wrong.caf; sourceTree = "<group>"; };
+		3B15394B266879E90099DB06 /* launch.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = launch.caf; sourceTree = "<group>"; };
+		3B15394D266879E90099DB06 /* explosion.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = explosion.caf; sourceTree = "<group>"; };
+		3B15394E266879E90099DB06 /* sliceBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sliceBackground@2x.png"; sourceTree = "<group>"; };
+		3B15394F266879E90099DB06 /* sliceBomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliceBomb.png; sourceTree = "<group>"; };
+		3B153950266879E90099DB06 /* sliceLifeGone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliceLifeGone.png; sourceTree = "<group>"; };
+		3B153951266879E90099DB06 /* sliceHitEnemy.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sliceHitEnemy.sks; sourceTree = "<group>"; };
+		3B153952266879E90099DB06 /* sliceBombFuse.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sliceBombFuse.caf; sourceTree = "<group>"; };
+		3B153953266879E90099DB06 /* sliceHitBomb.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sliceHitBomb.sks; sourceTree = "<group>"; };
+		3B153955266879E90099DB06 /* sliceLife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliceLife.png; sourceTree = "<group>"; };
+		3B153956266879E90099DB06 /* swoosh3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh3.caf; sourceTree = "<group>"; };
+		3B153957266879E90099DB06 /* swoosh2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh2.caf; sourceTree = "<group>"; };
+		3B153958266879E90099DB06 /* swoosh1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh1.caf; sourceTree = "<group>"; };
 		3B21EFBE2660CC88002E6154 /* nssl0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0049.jpg; sourceTree = "<group>"; };
 		3B21EFBF2660CC88002E6154 /* nssl0042.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0042.jpg; sourceTree = "<group>"; };
 		3B21EFC02660CC88002E6154 /* nssl0041.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0041.jpg; sourceTree = "<group>"; };
@@ -519,6 +563,43 @@
 			path = "Project-22";
 			sourceTree = "<group>";
 		};
+		3B1539392668785A0099DB06 /* Project-23 */ = {
+			isa = PBXGroup;
+			children = (
+				3B153942266879E90099DB06 /* Content */,
+				3B15393E266878C00099DB06 /* SwiftyNinjaGameScene.sks */,
+				3B15393A2668787B0099DB06 /* SwiftyNinjaViewController.swift */,
+				3B15393B2668787B0099DB06 /* SwiftyNinjaViewController.xib */,
+				3B153940266878FB0099DB06 /* SwiftyNinjaGameScene.swift */,
+			);
+			path = "Project-23";
+			sourceTree = "<group>";
+		};
+		3B153942266879E90099DB06 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				3B153943266879E90099DB06 /* sliceFuse.sks */,
+				3B153944266879E90099DB06 /* sliceLife@2x.png */,
+				3B153945266879E90099DB06 /* sliceBomb@2x.png */,
+				3B153946266879E90099DB06 /* sliceBackground.png */,
+				3B153947266879E90099DB06 /* sliceLifeGone@2x.png */,
+				3B153949266879E90099DB06 /* wrong.caf */,
+				3B15394B266879E90099DB06 /* launch.caf */,
+				3B15394D266879E90099DB06 /* explosion.caf */,
+				3B15394E266879E90099DB06 /* sliceBackground@2x.png */,
+				3B15394F266879E90099DB06 /* sliceBomb.png */,
+				3B153950266879E90099DB06 /* sliceLifeGone.png */,
+				3B153951266879E90099DB06 /* sliceHitEnemy.sks */,
+				3B153952266879E90099DB06 /* sliceBombFuse.caf */,
+				3B153953266879E90099DB06 /* sliceHitBomb.sks */,
+				3B153955266879E90099DB06 /* sliceLife.png */,
+				3B153956266879E90099DB06 /* swoosh3.caf */,
+				3B153957266879E90099DB06 /* swoosh2.caf */,
+				3B153958266879E90099DB06 /* swoosh1.caf */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
 		3B21EFBC2660CC51002E6154 /* Project-1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -584,6 +665,7 @@
 		3B98D89426608CE800F483DB /* ProjectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3B1539392668785A0099DB06 /* Project-23 */,
 				3B15393426686EBF0099DB06 /* Project-22 */,
 				3B1539312667831F0099DB06 /* Project-21 */,
 				3B15391926677DCB0099DB06 /* Project-20 */,
@@ -686,17 +768,21 @@
 				3B1537C92664C2B40099DB06 /* start.txt in Resources */,
 				3B153918266775FC0099DB06 /* Action.js in Resources */,
 				3B21EFD12660CC89002E6154 /* nssl0046.jpg in Resources */,
+				3B153968266879E90099DB06 /* sliceBombFuse.caf in Resources */,
 				3B21EFCB2660CC89002E6154 /* nssl0051.jpg in Resources */,
 				3B21EFDA2660E0BE002E6154 /* Flag.xcassets in Resources */,
+				3B153963266879E90099DB06 /* explosion.caf in Resources */,
 				3B15383726662F560099DB06 /* slotGlowBad.png in Resources */,
 				3B15383426662F560099DB06 /* background.jpg in Resources */,
 				3B15392826677FAE0099DB06 /* rocket.png in Resources */,
 				3B15382826662F560099DB06 /* ballYellow@2x.png in Resources */,
+				3B153964266879E90099DB06 /* sliceBackground@2x.png in Resources */,
 				3B21EFC82660CC89002E6154 /* nssl0049.jpg in Resources */,
 				3B21EFD02660CC89002E6154 /* nssl0045.jpg in Resources */,
 				3B21EFCE2660CC89002E6154 /* nssl0043.jpg in Resources */,
 				3B15386626675AAF0099DB06 /* penguin@2x.png in Resources */,
 				3B153883266762800099DB06 /* hammer@2x.png in Resources */,
+				3B15396B266879E90099DB06 /* sliceLife.png in Resources */,
 				3B21EFC92660CC89002E6154 /* nssl0042.jpg in Resources */,
 				3B15387F266762800099DB06 /* spark_spcae.png in Resources */,
 				3B15382626662F560099DB06 /* slotGlowBad@2x.png in Resources */,
@@ -705,16 +791,21 @@
 				3B21EFCC2660CC89002E6154 /* nssl0033.jpg in Resources */,
 				3B15382726662F560099DB06 /* ballPurple.png in Resources */,
 				3B15382326662F560099DB06 /* ballGrey.png in Resources */,
+				3B15395F266879E90099DB06 /* wrong.caf in Resources */,
 				3B15387E266762800099DB06 /* bigSpark.png in Resources */,
 				3B21EFDE2660E203002E6154 /* GuessTheFlagViewController.xib in Resources */,
 				3B15386A26675AC20099DB06 /* AnimationViewController.xib in Resources */,
+				3B15396C266879E90099DB06 /* swoosh3.caf in Resources */,
 				3B15392926677FAE0099DB06 /* fuse.sks in Resources */,
 				3B15383D26662F560099DB06 /* bouncer.png in Resources */,
 				3B15382426662F560099DB06 /* FireParticles.sks in Resources */,
 				3B15382C26662F560099DB06 /* slotBaseBad.png in Resources */,
 				3B1537D02664DFAE0099DB06 /* AutoLayout1ViewController.xib in Resources */,
+				3B153967266879E90099DB06 /* sliceHitEnemy.sks in Resources */,
+				3B15395D266879E90099DB06 /* sliceLifeGone@2x.png in Resources */,
 				3B15392C26677FAE0099DB06 /* rocket@2x.png in Resources */,
 				3B15392726677FAE0099DB06 /* background.png in Resources */,
+				3B15396D266879E90099DB06 /* swoosh2.caf in Resources */,
 				3B21EFD52660D633002E6154 /* StormViewer.storyboard in Resources */,
 				3B15383C26662F560099DB06 /* ballGreen.png in Resources */,
 				3B15393826686ED60099DB06 /* LocationViewController.xib in Resources */,
@@ -728,6 +819,8 @@
 				3B15383E26662F560099DB06 /* ballBlue.png in Resources */,
 				3B15383626662F560099DB06 /* ballRed@2x.png in Resources */,
 				3B98D89F26608CEB00F483DB /* Assets.xcassets in Resources */,
+				3B15395C266879E90099DB06 /* sliceBackground.png in Resources */,
+				3B153965266879E90099DB06 /* sliceBomb.png in Resources */,
 				3B153916266775880099DB06 /* JavascriptInjectionViewController.xib in Resources */,
 				3B153930266780DD0099DB06 /* FireworksGameViewController.xib in Resources */,
 				3B153854266755280099DB06 /* whackMask@2x.png in Resources */,
@@ -737,6 +830,8 @@
 				3B15382926662F560099DB06 /* ballRed.png in Resources */,
 				3B15384E266755280099DB06 /* whackBad.caf in Resources */,
 				3B153881266762800099DB06 /* ball@2x.png in Resources */,
+				3B15396E266879E90099DB06 /* swoosh1.caf in Resources */,
+				3B15395A266879E90099DB06 /* sliceLife@2x.png in Resources */,
 				3B15383A26662F560099DB06 /* background@2x.jpg in Resources */,
 				3B1537E22665CEFC0099DB06 /* SwiftyWordsViewController.xib in Resources */,
 				3B15386526675AAF0099DB06 /* penguin.png in Resources */,
@@ -746,13 +841,19 @@
 				3B15382526662F560099DB06 /* ballBlue@2x.png in Resources */,
 				3B15383B26662F560099DB06 /* ballGreen@2x.png in Resources */,
 				3B1537D72664E94A0099DB06 /* Whitehouse.storyboard in Resources */,
+				3B15393F266878C00099DB06 /* SwiftyNinjaGameScene.sks in Resources */,
 				3B153859266755F00099DB06 /* WhackGameScene.sks in Resources */,
 				3B153889266762DA0099DB06 /* SpaceRaceGameScene.sks in Resources */,
+				3B153969266879E90099DB06 /* sliceHitBomb.sks in Resources */,
 				3B21EFCF2660CC89002E6154 /* nssl0034.jpg in Resources */,
 				3B15382A26662F560099DB06 /* slotBaseGood@2x.png in Resources */,
+				3B153959266879E90099DB06 /* sliceFuse.sks in Resources */,
 				3B153853266755280099DB06 /* penguinGood@2x.png in Resources */,
+				3B153966266879E90099DB06 /* sliceLifeGone.png in Resources */,
 				3B153882266762800099DB06 /* starfield.sks in Resources */,
+				3B153961266879E90099DB06 /* launch.caf in Resources */,
 				3B15383226662F560099DB06 /* slotGlowGood@2x.png in Resources */,
+				3B15393D2668787C0099DB06 /* SwiftyNinjaViewController.xib in Resources */,
 				3B15391B26677E5C0099DB06 /* FireworksGameScene.sks in Resources */,
 				3B15392B26677FAE0099DB06 /* background@2x.png in Resources */,
 				3B98D89D26608CE800F483DB /* Main.storyboard in Resources */,
@@ -764,6 +865,7 @@
 				3B15380126662AC80099DB06 /* GameViewController.xib in Resources */,
 				3B15387D266762800099DB06 /* tv@2x.png in Resources */,
 				3B15383326662F560099DB06 /* slotBaseGood.png in Resources */,
+				3B15395B266879E90099DB06 /* sliceBomb@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,6 +903,7 @@
 				3B1539332667883C0099DB06 /* LocalNotificationViewController.swift in Sources */,
 				3B1537FB26661ABB0099DB06 /* NamesToFacesViewController.swift in Sources */,
 				3B1537E12665CEFC0099DB06 /* SwiftyWordsViewController.swift in Sources */,
+				3B153941266878FB0099DB06 /* SwiftyNinjaGameScene.swift in Sources */,
 				3B15385D266756880099DB06 /* WhackSlot.swift in Sources */,
 				3B98D8B52660915200F483DB /* Master.swift in Sources */,
 				3B15380526662B7A0099DB06 /* GameScene.swift in Sources */,
@@ -809,6 +912,7 @@
 				3B1537DD2664EC970099DB06 /* WhitehouseDetailViewController.swift in Sources */,
 				3B15386926675AC20099DB06 /* AnimationViewController.swift in Sources */,
 				3B15385B2667562F0099DB06 /* WhackGameScene.swift in Sources */,
+				3B15393C2668787C0099DB06 /* SwiftyNinjaViewController.swift in Sources */,
 				3B1537EF2665E5130099DB06 /* NamesToFacesCell.swift in Sources */,
 				3B153886266762CD0099DB06 /* SpaceRaceViewController.swift in Sources */,
 				3B1537CC2664DEC60099DB06 /* AutoLayoutViewController.swift in Sources */,
