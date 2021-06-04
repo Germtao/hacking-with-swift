@@ -94,7 +94,10 @@ class MasterViewController: UIViewController {
                    description: "使用设备钥匙串和触控 ID 安全地保存用户数据。"),
             Master(title: "Project 30: Instruments",
                    subtitle: "Profiling, shadows, image caching",
-                   description: "成为一名漏洞侦探并追踪丢失的内存、缓慢的绘图等等。")
+                   description: "成为一名漏洞侦探并追踪丢失的内存、缓慢的绘图等等。"),
+            Master(title: "Project 31: Multibrowser",
+                   subtitle: "UIStackView，iPad 多任务处理，大小分类",
+                   description: "开始使用 UIStackView，看看 iPad 多任务处理有多简单。")
         ]
     }
 
@@ -159,6 +162,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 25:   coreGraphics()
         case 26:   secretSwift()
         case 27:   instruments()
+        case 28:   multibrowser()
         default:
             break
         }
@@ -295,6 +299,11 @@ extension MasterViewController {
     
     private func instruments() {
         let vc = SelectionViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func multibrowser() {
+        let vc = MultibrowserViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
