@@ -91,7 +91,10 @@ class MasterViewController: UIViewController {
                    description: "使用 Apple 的高速绘图框架绘制 2D 形状。"),
             Master(title: "Project 28: Secret Swift",
                    subtitle: "Touch ID 和 Face ID、设备钥匙串",
-                   description: "使用设备钥匙串和触控 ID 安全地保存用户数据。")
+                   description: "使用设备钥匙串和触控 ID 安全地保存用户数据。"),
+            Master(title: "Project 30: Instruments",
+                   subtitle: "Profiling, shadows, image caching",
+                   description: "成为一名漏洞侦探并追踪丢失的内存、缓慢的绘图等等。")
         ]
     }
 
@@ -155,6 +158,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 24:   marbleMaze()
         case 25:   coreGraphics()
         case 26:   secretSwift()
+        case 27:   instruments()
         default:
             break
         }
@@ -286,6 +290,11 @@ extension MasterViewController {
     
     private func secretSwift() {
         let vc = SecretSwiftViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func instruments() {
+        let vc = SelectionViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
