@@ -155,6 +155,10 @@
 		3B1539A22668A5F00099DB06 /* mouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1539A02668A5F00099DB06 /* mouse.png */; };
 		3B1539A52668A9FA0099DB06 /* CoreGraphicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1539A32668A9FA0099DB06 /* CoreGraphicsViewController.swift */; };
 		3B1539A62668A9FA0099DB06 /* CoreGraphicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1539A42668A9FA0099DB06 /* CoreGraphicsViewController.xib */; };
+		3B1539AA2668DBD70099DB06 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1539A82668DBD70099DB06 /* KeychainWrapper.swift */; };
+		3B1539AB2668DBD70099DB06 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1539A92668DBD70099DB06 /* KeychainItemAccessibility.swift */; };
+		3B1539AE2668DC0F0099DB06 /* SecretSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1539AC2668DC0F0099DB06 /* SecretSwiftViewController.swift */; };
+		3B1539AF2668DC0F0099DB06 /* SecretSwiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1539AD2668DC0F0099DB06 /* SecretSwiftViewController.xib */; };
 		3B21EFC82660CC89002E6154 /* nssl0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBE2660CC88002E6154 /* nssl0049.jpg */; };
 		3B21EFC92660CC89002E6154 /* nssl0042.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBF2660CC88002E6154 /* nssl0042.jpg */; };
 		3B21EFCA2660CC89002E6154 /* nssl0041.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFC02660CC88002E6154 /* nssl0041.jpg */; };
@@ -333,6 +337,10 @@
 		3B1539A02668A5F00099DB06 /* mouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouse.png; sourceTree = "<group>"; };
 		3B1539A32668A9FA0099DB06 /* CoreGraphicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphicsViewController.swift; sourceTree = "<group>"; };
 		3B1539A42668A9FA0099DB06 /* CoreGraphicsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreGraphicsViewController.xib; sourceTree = "<group>"; };
+		3B1539A82668DBD70099DB06 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		3B1539A92668DBD70099DB06 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		3B1539AC2668DC0F0099DB06 /* SecretSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSwiftViewController.swift; sourceTree = "<group>"; };
+		3B1539AD2668DC0F0099DB06 /* SecretSwiftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecretSwiftViewController.xib; sourceTree = "<group>"; };
 		3B21EFBE2660CC88002E6154 /* nssl0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0049.jpg; sourceTree = "<group>"; };
 		3B21EFBF2660CC88002E6154 /* nssl0042.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0042.jpg; sourceTree = "<group>"; };
 		3B21EFC02660CC88002E6154 /* nssl0041.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0041.jpg; sourceTree = "<group>"; };
@@ -704,6 +712,17 @@
 			path = "Project-27";
 			sourceTree = "<group>";
 		};
+		3B1539A72668DBCB0099DB06 /* Project-28 */ = {
+			isa = PBXGroup;
+			children = (
+				3B1539A92668DBD70099DB06 /* KeychainItemAccessibility.swift */,
+				3B1539A82668DBD70099DB06 /* KeychainWrapper.swift */,
+				3B1539AC2668DC0F0099DB06 /* SecretSwiftViewController.swift */,
+				3B1539AD2668DC0F0099DB06 /* SecretSwiftViewController.xib */,
+			);
+			path = "Project-28";
+			sourceTree = "<group>";
+		};
 		3B21EFBC2660CC51002E6154 /* Project-1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -769,6 +788,7 @@
 		3B98D89426608CE800F483DB /* ProjectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3B1539A72668DBCB0099DB06 /* Project-28 */,
 				3B15399E2668A5CE0099DB06 /* Project-27 */,
 				3B1539782668A3180099DB06 /* Project-26 */,
 				3B15396F26687B630099DB06 /* Project-25 */,
@@ -919,6 +939,7 @@
 				3B1537D02664DFAE0099DB06 /* AutoLayout1ViewController.xib in Resources */,
 				3B153967266879E90099DB06 /* sliceHitEnemy.sks in Resources */,
 				3B15399A2668A40C0099DB06 /* background_26@2x.jpg in Resources */,
+				3B1539AF2668DC0F0099DB06 /* SecretSwiftViewController.xib in Resources */,
 				3B15395D266879E90099DB06 /* sliceLifeGone@2x.png in Resources */,
 				3B15392C26677FAE0099DB06 /* rocket@2x.png in Resources */,
 				3B15392726677FAE0099DB06 /* background.png in Resources */,
@@ -1024,12 +1045,14 @@
 				3B153915266775880099DB06 /* JavascriptInjectionViewController.swift in Sources */,
 				3B15386E26675EBE0099DB06 /* MapViewController.swift in Sources */,
 				3B21EFD32660CE97002E6154 /* StormViewerViewController.swift in Sources */,
+				3B1539AB2668DBD70099DB06 /* KeychainItemAccessibility.swift in Sources */,
 				3B98D89626608CE800F483DB /* AppDelegate.swift in Sources */,
 				3B1539A52668A9FA0099DB06 /* CoreGraphicsViewController.swift in Sources */,
 				3B98D8AD26608EEF00F483DB /* MasterViewCell.swift in Sources */,
 				3B15380026662AC80099DB06 /* GameViewController.swift in Sources */,
 				3B15397E2668A3840099DB06 /* MarbleMazeGameScene.swift in Sources */,
 				3B1539332667883C0099DB06 /* LocalNotificationViewController.swift in Sources */,
+				3B1539AE2668DC0F0099DB06 /* SecretSwiftViewController.swift in Sources */,
 				3B1537FB26661ABB0099DB06 /* NamesToFacesViewController.swift in Sources */,
 				3B1537E12665CEFC0099DB06 /* SwiftyWordsViewController.swift in Sources */,
 				3B153941266878FB0099DB06 /* SwiftyNinjaGameScene.swift in Sources */,
@@ -1048,6 +1071,7 @@
 				3B1537EF2665E5130099DB06 /* NamesToFacesCell.swift in Sources */,
 				3B153886266762CD0099DB06 /* SpaceRaceViewController.swift in Sources */,
 				3B1537CC2664DEC60099DB06 /* AutoLayoutViewController.swift in Sources */,
+				3B1539AA2668DBD70099DB06 /* KeychainWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

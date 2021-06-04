@@ -88,7 +88,10 @@ class MasterViewController: UIViewController {
                    description: "通过在涡旋迷宫周围操纵球来响应设备倾斜。"),
             Master(title: "Project 27: Core Graphics",
                    subtitle: "Core Graphics",
-                   description: "使用 Apple 的高速绘图框架绘制 2D 形状。")
+                   description: "使用 Apple 的高速绘图框架绘制 2D 形状。"),
+            Master(title: "Project 28: Secret Swift",
+                   subtitle: "Touch ID 和 Face ID、设备钥匙串",
+                   description: "使用设备钥匙串和触控 ID 安全地保存用户数据。")
         ]
     }
 
@@ -151,6 +154,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 23:   selfieShare()
         case 24:   marbleMaze()
         case 25:   coreGraphics()
+        case 26:   secretSwift()
         default:
             break
         }
@@ -277,6 +281,11 @@ extension MasterViewController {
     
     private func coreGraphics() {
         let vc = CoreGraphicsViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func secretSwift() {
+        let vc = SecretSwiftViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
