@@ -97,7 +97,10 @@ class MasterViewController: UIViewController {
                    description: "成为一名漏洞侦探并追踪丢失的内存、缓慢的绘图等等。"),
             Master(title: "Project 31: Multibrowser",
                    subtitle: "UIStackView，iPad 多任务处理，大小分类",
-                   description: "开始使用 UIStackView，看看 iPad 多任务处理有多简单。")
+                   description: "开始使用 UIStackView，看看 iPad 多任务处理有多简单。"),
+            Master(title: "Project 32: SwiftSearcher",
+                   subtitle: "核心聚焦、SFSafariViewController、NSAttributedString、动态类型、自动调整 UITableViewCell 大小",
+                   description: "将您的应用程序内容添加到 iOS 9 的 Spotlight 搜索并利用新的 Safari 集成。")
         ]
     }
 
@@ -163,6 +166,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 26:   secretSwift()
         case 27:   instruments()
         case 28:   multibrowser()
+        case 29:   swiftSearcher()
         default:
             break
         }
@@ -304,6 +308,11 @@ extension MasterViewController {
     
     private func multibrowser() {
         let vc = MultibrowserViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func swiftSearcher() {
+        let vc = SwiftSearcherViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
