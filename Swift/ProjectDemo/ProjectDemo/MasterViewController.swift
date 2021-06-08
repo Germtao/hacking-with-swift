@@ -100,7 +100,10 @@ class MasterViewController: UIViewController {
                    description: "开始使用 UIStackView，看看 iPad 多任务处理有多简单。"),
             Master(title: "Project 32: SwiftSearcher",
                    subtitle: "核心聚焦、SFSafariViewController、NSAttributedString、动态类型、自动调整 UITableViewCell 大小",
-                   description: "将您的应用程序内容添加到 iOS 9 的 Spotlight 搜索并利用新的 Safari 集成。")
+                   description: "将您的应用程序内容添加到 iOS 9 的 Spotlight 搜索并利用新的 Safari 集成。"),
+            Master(title: "Project 33: What's that Whistle?",
+                   subtitle: "CloudKit、CKRecord、CKQuery、CKQuerySubscription、AVAudioRecorder 和 推送消息",
+                   description: "使用 Apple 的免费平台即服务：CloudKit 构建一个众包歌曲识别应用程序。")
         ]
     }
 
@@ -167,6 +170,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
         case 27:   instruments()
         case 28:   multibrowser()
         case 29:   swiftSearcher()
+        case 30:   whistle()
         default:
             break
         }
@@ -313,6 +317,11 @@ extension MasterViewController {
     
     private func swiftSearcher() {
         let vc = SwiftSearcherViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func whistle() {
+        let vc = WhistleViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }

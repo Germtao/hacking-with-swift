@@ -213,6 +213,15 @@
 		3B153A1A266A22BB0099DB06 /* MultibrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B153A18266A22BB0099DB06 /* MultibrowserViewController.xib */; };
 		3B153A22266DB37B0099DB06 /* SwiftSearcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B153A20266DB37A0099DB06 /* SwiftSearcherViewController.swift */; };
 		3B153A23266DB37B0099DB06 /* SwiftSearcherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B153A21266DB37A0099DB06 /* SwiftSearcherViewController.xib */; };
+		3B153A26266DF5BA0099DB06 /* WhistleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B153A25266DF5BA0099DB06 /* WhistleViewController.swift */; };
+		3B153A28266DF5E70099DB06 /* Whistle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B153A27266DF5E70099DB06 /* Whistle.swift */; };
+		3B153A2C266E01C70099DB06 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B153A2B266E01C70099DB06 /* CloudKit.framework */; };
+		3B153A2E266E02500099DB06 /* RecordWhistleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B153A2D266E02500099DB06 /* RecordWhistleViewController.swift */; };
+		3B153A30266E158D0099DB06 /* SelectGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B153A2F266E158D0099DB06 /* SelectGenreViewController.swift */; };
+		3B153A32266E1C050099DB06 /* MyGenresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B153A31266E1C050099DB06 /* MyGenresViewController.swift */; };
+		3B153A34266E21C30099DB06 /* AddCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B153A33266E21C30099DB06 /* AddCommentsViewController.swift */; };
+		3B153A36266E24420099DB06 /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B153A35266E24420099DB06 /* SubmitViewController.swift */; };
+		3B153A38266F06990099DB06 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B153A37266F06990099DB06 /* ResultsViewController.swift */; };
 		3B21EFC82660CC89002E6154 /* nssl0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBE2660CC88002E6154 /* nssl0049.jpg */; };
 		3B21EFC92660CC89002E6154 /* nssl0042.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFBF2660CC88002E6154 /* nssl0042.jpg */; };
 		3B21EFCA2660CC89002E6154 /* nssl0041.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21EFC02660CC88002E6154 /* nssl0041.jpg */; };
@@ -449,6 +458,16 @@
 		3B153A18266A22BB0099DB06 /* MultibrowserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultibrowserViewController.xib; sourceTree = "<group>"; };
 		3B153A20266DB37A0099DB06 /* SwiftSearcherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSearcherViewController.swift; sourceTree = "<group>"; };
 		3B153A21266DB37A0099DB06 /* SwiftSearcherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwiftSearcherViewController.xib; sourceTree = "<group>"; };
+		3B153A25266DF5BA0099DB06 /* WhistleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhistleViewController.swift; sourceTree = "<group>"; };
+		3B153A27266DF5E70099DB06 /* Whistle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whistle.swift; sourceTree = "<group>"; };
+		3B153A29266E017C0099DB06 /* ProjectDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProjectDemo.entitlements; sourceTree = "<group>"; };
+		3B153A2B266E01C70099DB06 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		3B153A2D266E02500099DB06 /* RecordWhistleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWhistleViewController.swift; sourceTree = "<group>"; };
+		3B153A2F266E158D0099DB06 /* SelectGenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenreViewController.swift; sourceTree = "<group>"; };
+		3B153A31266E1C050099DB06 /* MyGenresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGenresViewController.swift; sourceTree = "<group>"; };
+		3B153A33266E21C30099DB06 /* AddCommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommentsViewController.swift; sourceTree = "<group>"; };
+		3B153A35266E24420099DB06 /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
+		3B153A37266F06990099DB06 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		3B21EFBE2660CC88002E6154 /* nssl0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0049.jpg; sourceTree = "<group>"; };
 		3B21EFBF2660CC88002E6154 /* nssl0042.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0042.jpg; sourceTree = "<group>"; };
 		3B21EFC02660CC88002E6154 /* nssl0041.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0041.jpg; sourceTree = "<group>"; };
@@ -485,6 +504,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B153A2C266E01C70099DB06 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -914,6 +934,29 @@
 			path = "Project-32";
 			sourceTree = "<group>";
 		};
+		3B153A24266DF53A0099DB06 /* Project-33 */ = {
+			isa = PBXGroup;
+			children = (
+				3B153A25266DF5BA0099DB06 /* WhistleViewController.swift */,
+				3B153A2D266E02500099DB06 /* RecordWhistleViewController.swift */,
+				3B153A2F266E158D0099DB06 /* SelectGenreViewController.swift */,
+				3B153A31266E1C050099DB06 /* MyGenresViewController.swift */,
+				3B153A33266E21C30099DB06 /* AddCommentsViewController.swift */,
+				3B153A35266E24420099DB06 /* SubmitViewController.swift */,
+				3B153A37266F06990099DB06 /* ResultsViewController.swift */,
+				3B153A27266DF5E70099DB06 /* Whistle.swift */,
+			);
+			path = "Project-33";
+			sourceTree = "<group>";
+		};
+		3B153A2A266E01C70099DB06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B153A2B266E01C70099DB06 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3B21EFBC2660CC51002E6154 /* Project-1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -965,6 +1008,7 @@
 			children = (
 				3B98D89426608CE800F483DB /* ProjectDemo */,
 				3B98D89326608CE800F483DB /* Products */,
+				3B153A2A266E01C70099DB06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -979,6 +1023,8 @@
 		3B98D89426608CE800F483DB /* ProjectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3B153A29266E017C0099DB06 /* ProjectDemo.entitlements */,
+				3B153A24266DF53A0099DB06 /* Project-33 */,
 				3B153A1F266DB37A0099DB06 /* Project-32 */,
 				3B153A16266A227B0099DB06 /* Project-31 */,
 				3B1539B02669C2320099DB06 /* Project-30 */,
@@ -1283,13 +1329,18 @@
 				3B15384226672D4A0099DB06 /* InstafilterViewController.swift in Sources */,
 				3B1537D92664EA670099DB06 /* Petition.swift in Sources */,
 				3B21EFF72660F632002E6154 /* WebViewController.swift in Sources */,
+				3B153A36266E24420099DB06 /* SubmitViewController.swift in Sources */,
 				3B1537CF2664DFAE0099DB06 /* AutoLayout1ViewController.swift in Sources */,
+				3B153A32266E1C050099DB06 /* MyGenresViewController.swift in Sources */,
 				3B15391D26677EA50099DB06 /* FireworksGameScene.swift in Sources */,
 				3B1537D22664DFC00099DB06 /* AutoLayout2ViewController.swift in Sources */,
+				3B153A26266DF5BA0099DB06 /* WhistleViewController.swift in Sources */,
 				3B153915266775880099DB06 /* JavascriptInjectionViewController.swift in Sources */,
 				3B153A22266DB37B0099DB06 /* SwiftSearcherViewController.swift in Sources */,
+				3B153A38266F06990099DB06 /* ResultsViewController.swift in Sources */,
 				3B153A19266A22BB0099DB06 /* MultibrowserViewController.swift in Sources */,
 				3B15386E26675EBE0099DB06 /* MapViewController.swift in Sources */,
+				3B153A34266E21C30099DB06 /* AddCommentsViewController.swift in Sources */,
 				3B21EFD32660CE97002E6154 /* StormViewerViewController.swift in Sources */,
 				3B1539AB2668DBD70099DB06 /* KeychainItemAccessibility.swift in Sources */,
 				3B98D89626608CE800F483DB /* AppDelegate.swift in Sources */,
@@ -1305,9 +1356,11 @@
 				3B153A152669C6420099DB06 /* ImageViewController.swift in Sources */,
 				3B15385D266756880099DB06 /* WhackSlot.swift in Sources */,
 				3B98D8B52660915200F483DB /* Master.swift in Sources */,
+				3B153A28266DF5E70099DB06 /* Whistle.swift in Sources */,
 				3B15380526662B7A0099DB06 /* GameScene.swift in Sources */,
 				3B15397226687BAE0099DB06 /* SelfieShareViewController.swift in Sources */,
 				3B98D8B2266090E900F483DB /* UIView+Extension.swift in Sources */,
+				3B153A2E266E02500099DB06 /* RecordWhistleViewController.swift in Sources */,
 				3B98D89826608CE800F483DB /* SceneDelegate.swift in Sources */,
 				3B1537DD2664EC970099DB06 /* WhitehouseDetailViewController.swift in Sources */,
 				3B15386926675AC20099DB06 /* AnimationViewController.swift in Sources */,
@@ -1315,6 +1368,7 @@
 				3B15397626687C8C0099DB06 /* SelfieShareCell.swift in Sources */,
 				3B15393C2668787C0099DB06 /* SwiftyNinjaViewController.swift in Sources */,
 				3B15397B2668A3410099DB06 /* MarbleMazeViewController.swift in Sources */,
+				3B153A30266E158D0099DB06 /* SelectGenreViewController.swift in Sources */,
 				3B1537EF2665E5130099DB06 /* NamesToFacesCell.swift in Sources */,
 				3B153886266762CD0099DB06 /* SpaceRaceViewController.swift in Sources */,
 				3B1537CC2664DEC60099DB06 /* AutoLayoutViewController.swift in Sources */,
@@ -1466,7 +1520,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProjectDemo/ProjectDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UW8B3X7J9;
 				INFOPLIST_FILE = ProjectDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1484,7 +1540,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProjectDemo/ProjectDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UW8B3X7J9;
 				INFOPLIST_FILE = ProjectDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
